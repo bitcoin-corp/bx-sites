@@ -1,0 +1,364 @@
+{
+  "defaults": {
+    "holdingHow": [
+      [
+        "Get bWalletX",
+        "Install bWalletX on your phone, in Chrome or on the web. It is the one wallet every b*X product uses."
+      ],
+      [
+        "We build {{name}}",
+        "{{name}} is not live yet. This page says honestly what it will be; nothing here works today beyond connecting your wallet."
+      ],
+      [
+        "Come back when it opens",
+        "When {{name}} opens, your bWalletX is your sign-in. No new account, no password."
+      ]
+    ],
+    "holdingWhy": [
+      [
+        "One wallet",
+        "Same key",
+        "Your bWalletX identity works across every b*X product."
+      ],
+      [
+        "Yours",
+        "Owned by you",
+        "What you make is signed by your own key, not held hostage by a platform."
+      ],
+      [
+        "Honest",
+        "No made-up features",
+        "This is a holding page. We will only describe what exists once it exists."
+      ],
+      [
+        "Open",
+        "BRC-100",
+        "Built on the open BRC-100 wallet interface, so other compatible wallets can work too."
+      ]
+    ],
+    "liveHow": [
+      [
+        "Get bWalletX",
+        "Install bWalletX on your phone, in Chrome or on the web."
+      ],
+      [
+        "Connect",
+        "Tap Connect bWalletX. Your wallet signs a one-time challenge; no password."
+      ],
+      [
+        "Use {{name}}",
+        "Everything you do here is tied to your own key."
+      ]
+    ],
+    "liveWhy": [
+      [
+        "One wallet",
+        "Same key",
+        "Your bWalletX identity works across every b*X product."
+      ],
+      [
+        "Yours",
+        "Owned by you",
+        "What you make is signed by your own key, not held hostage by a platform."
+      ],
+      [
+        "Paid",
+        "Money to you",
+        "Payments go straight to your bWalletX."
+      ],
+      [
+        "Open",
+        "BRC-100",
+        "Built on the open BRC-100 wallet interface, so other compatible wallets can work too."
+      ]
+    ]
+  },
+  "sites": [
+    {
+      "domain": "bwalletx.com",
+      "base": "bWallet",
+      "accent": "#ffd24d",
+      "status": "live",
+      "managedElsewhere": true,
+      "flickOff": null,
+      "tagline": "The wallet",
+      "purpose": "bWalletX itself: the BRC-100 wallet on web, Chrome, iOS and Android.",
+      "eyebrow": "Bitcoin SV wallet",
+      "headline": "One wallet.<br>*Every* app.",
+      "lede": "bWalletX is the wallet behind every b*X product."
+    },
+    {
+      "domain": "bchatx.com",
+      "base": "bChat",
+      "accent": "#4dc3ff",
+      "status": "live",
+      "managedElsewhere": true,
+      "flickOff": "X / Twitter",
+      "tagline": "Your posts, owned",
+      "purpose": "Bring your X/Twitter posts to Bitcoin and keep posting there.",
+      "eyebrow": "X / Twitter → bChatX · part of FLICK OFF",
+      "headline": "Your posts.<br>*Owned* by you.",
+      "lede": "Bring your X/Twitter posts to Bitcoin, dated and signed by you."
+    },
+    {
+      "domain": "bfriendsx.com",
+      "base": "bFriends",
+      "accent": "#5b8cff",
+      "status": "live",
+      "managedElsewhere": true,
+      "flickOff": "Facebook",
+      "tagline": "Bring your people with you",
+      "purpose": "Bring your Facebook friends graph with you.",
+      "eyebrow": "Facebook → bFriendsX · part of FLICK OFF",
+      "headline": "Your people.<br>*Bring* them.",
+      "lede": "Your friends graph, kept in your own wallet."
+    },
+    {
+      "domain": "bjobsx.com",
+      "base": "bJobs",
+      "accent": "#3fb4a3",
+      "status": "live",
+      "managedElsewhere": true,
+      "flickOff": "LinkedIn",
+      "tagline": "Work, paid in Bitcoin",
+      "purpose": "Your LinkedIn work history and network, owned by you.",
+      "eyebrow": "LinkedIn → bJobsX · part of FLICK OFF",
+      "headline": "Your career.<br>*Owned* by you.",
+      "lede": "Your work history, signed and kept in your wallet."
+    },
+    {
+      "domain": "bvideox.com",
+      "base": "bVideo",
+      "accent": "#ff5f57",
+      "status": "live",
+      "managedElsewhere": true,
+      "flickOff": "YouTube",
+      "tagline": "Your channel, owned by you",
+      "purpose": "Bring your YouTube channel to Bitcoin with original upload dates.",
+      "eyebrow": "YouTube → bVideoX · part of FLICK OFF",
+      "headline": "Your channel.<br>*Owned* by you.",
+      "lede": "Bring your YouTube videos to Bitcoin with their original upload dates."
+    },
+    {
+      "domain": "bmoviesx.com",
+      "base": "bMovies",
+      "accent": "#ff4fa3",
+      "status": "holding",
+      "managedElsewhere": false,
+      "flickOff": "Instagram / TikTok",
+      "tagline": "Reels, clips and films, owned by you",
+      "purpose": "Bring your Instagram and TikTok clips, and your films, to a home you own.",
+      "eyebrow": "Instagram / TikTok → bMoviesX · coming soon",
+      "headline": "Your reels.<br>Your *films*.",
+      "lede": "bMoviesX is coming. It will let you bring your Instagram and TikTok clips, and the films you have made, into your own bWalletX, dated and signed by you. It is not open yet."
+    },
+    {
+      "domain": "bmusicx.com",
+      "base": "bMusic",
+      "accent": "#ff8a3d",
+      "status": "live",
+      "managedElsewhere": true,
+      "flickOff": "SoundCloud",
+      "tagline": "Your tracks, owned by you",
+      "purpose": "Bring your SoundCloud tracks, and your own masters (Spotify can't export audio).",
+      "eyebrow": "SoundCloud → bMusicX · part of FLICK OFF",
+      "headline": "Your tracks.<br>*Owned* by you.",
+      "lede": "Bring your SoundCloud uploads and your masters into your own wallet."
+    },
+    {
+      "domain": "bdrivex.com",
+      "base": "bDrive",
+      "accent": "#4fd18b",
+      "status": "live",
+      "managedElsewhere": true,
+      "flickOff": "Google Drive",
+      "tagline": "Your files, kept on chain",
+      "purpose": "Your Google Drive files, kept in storage you control; built on bStoreX.",
+      "eyebrow": "Google Drive → bDriveX · part of FLICK OFF",
+      "headline": "Your files.<br>*Kept* by you.",
+      "lede": "Your files in storage you pay for with your wallet, built on bStoreX."
+    },
+    {
+      "domain": "bwriterx.com",
+      "base": "bWriter",
+      "accent": "#e8e3d3",
+      "status": "live",
+      "managedElsewhere": true,
+      "flickOff": "Google Docs",
+      "tagline": "Write it down. Keep it forever.",
+      "purpose": "Your Google Docs, signed and kept by you.",
+      "eyebrow": "Google Docs → bWriterX · part of FLICK OFF",
+      "headline": "Your words.<br>*Kept* forever.",
+      "lede": "Your documents, signed by you and kept in your wallet."
+    },
+    {
+      "domain": "bmintx.com",
+      "base": "bMint",
+      "accent": "#ffd24d",
+      "status": "live",
+      "managedElsewhere": true,
+      "flickOff": "home",
+      "tagline": "You made it. Prove it's yours.",
+      "purpose": "Minting, and the home of FLICK OFF.",
+      "eyebrow": "Minting · home of FLICK OFF",
+      "headline": "You made it.<br>*Prove* it.",
+      "lede": "Mint what you made, signed by your own key."
+    },
+    {
+      "domain": "bwebx.com",
+      "base": "bWeb",
+      "accent": "#7c8cff",
+      "status": "holding",
+      "managedElsewhere": false,
+      "flickOff": null,
+      "tagline": "Mint a website",
+      "purpose": "Mint websites, and the catch-all for anything else you want to bring.",
+      "eyebrow": "Websites · coming soon",
+      "headline": "Your site.<br>*Minted*.",
+      "lede": "bWebX is coming. It will let you mint a website to Bitcoin, signed by you, and be the catch-all for anything the other b*X products don't cover yet. It is not open yet."
+    },
+    {
+      "domain": "bmailx.com",
+      "base": "bMail",
+      "accent": "#ffb84d",
+      "status": "live",
+      "managedElsewhere": true,
+      "flickOff": null,
+      "tagline": "Mail",
+      "purpose": "Email, with your wallet as your address.",
+      "eyebrow": "Mail",
+      "headline": "Your mail.<br>*Yours*.",
+      "lede": "Email tied to your wallet."
+    },
+    {
+      "domain": "bcalx.com",
+      "base": "bCal",
+      "accent": "#5fd0ff",
+      "status": "live",
+      "managedElsewhere": true,
+      "flickOff": null,
+      "tagline": "Calendar",
+      "purpose": "A calendar tied to your wallet.",
+      "eyebrow": "Calendar",
+      "headline": "Your time.<br>*Yours*.",
+      "lede": "A calendar tied to your wallet."
+    },
+    {
+      "domain": "bphonex.com",
+      "base": "bPhone",
+      "accent": "#5bff9d",
+      "status": "holding",
+      "managedElsewhere": false,
+      "flickOff": null,
+      "tagline": "Phone calls",
+      "purpose": "Phone calls between bWalletX identities.",
+      "eyebrow": "Calls · coming soon",
+      "headline": "Call by *key*.",
+      "lede": "bPhoneX is coming. It will let you call people by their bWalletX identity instead of a phone number. It is not open yet."
+    },
+    {
+      "domain": "bradiox.com",
+      "base": "bRadio",
+      "accent": "#ff6b6b",
+      "status": "live",
+      "managedElsewhere": true,
+      "flickOff": null,
+      "tagline": "Radio and Spaces",
+      "purpose": "Live radio and Spaces you can join with your wallet.",
+      "eyebrow": "Radio / Spaces",
+      "headline": "Your show.<br>*Live*.",
+      "lede": "Live audio rooms tied to your wallet."
+    },
+    {
+      "domain": "bnewsx.com",
+      "base": "bNews",
+      "accent": "#d9d4c7",
+      "status": "live",
+      "managedElsewhere": true,
+      "flickOff": null,
+      "tagline": "News",
+      "purpose": "News, with writers paid directly.",
+      "eyebrow": "News",
+      "headline": "News you can *trust*.",
+      "lede": "News, signed by the people who wrote it."
+    },
+    {
+      "domain": "bgamesx.com",
+      "base": "bGames",
+      "accent": "#b46bff",
+      "status": "holding",
+      "managedElsewhere": false,
+      "flickOff": null,
+      "tagline": "Games",
+      "purpose": "Games where what you win sits in your own wallet.",
+      "eyebrow": "Games · coming soon",
+      "headline": "Play.<br>*Keep* it.",
+      "lede": "bGamesX is coming. It will be a home for games that use your bWalletX for sign-in and keep what you earn in your own wallet. It is not open yet."
+    },
+    {
+      "domain": "bstorex.com",
+      "base": "bStore",
+      "accent": "#4fe0c0",
+      "status": "live",
+      "managedElsewhere": true,
+      "flickOff": null,
+      "tagline": "Storage you pay for with your wallet",
+      "purpose": "The storage layer: S3/R2-style buckets on Hetzner, paid by wallet time-lock or subscription.",
+      "eyebrow": "Storage layer",
+      "headline": "Your buckets.<br>*Your* keys.",
+      "lede": "S3/R2-style storage, paid by wallet time-lock or subscription."
+    },
+    {
+      "domain": "bsharesx.com",
+      "base": "bShares",
+      "accent": "#9fd34d",
+      "status": "live",
+      "managedElsewhere": true,
+      "flickOff": null,
+      "tagline": "Shares and cap tables",
+      "purpose": "Share registers and cap tables.",
+      "eyebrow": "Shares / cap tables",
+      "headline": "Your register.<br>*Kept* right.",
+      "lede": "Share registers kept the modern way."
+    },
+    {
+      "domain": "bvaultx.com",
+      "base": "bVault",
+      "accent": "#c9a24d",
+      "status": "live",
+      "managedElsewhere": true,
+      "flickOff": null,
+      "tagline": "Vault",
+      "purpose": "A vault for what you own.",
+      "eyebrow": "Vault",
+      "headline": "Your vault.<br>*Locked*.",
+      "lede": "A vault for what you own."
+    },
+    {
+      "domain": "bsvex.com",
+      "base": "BSVE",
+      "accent": "#f2c94c",
+      "status": "live",
+      "managedElsewhere": true,
+      "flickOff": null,
+      "tagline": "Bitcoin exchange, coming",
+      "purpose": "Buy BSV and swap into BSV. Regulated and KYC'd; coming, no trading yet.",
+      "eyebrow": "Exchange · coming",
+      "headline": "Buy BSV.<br>*Coming*.",
+      "lede": "BSVEX will let you buy BSV and swap into BSV, regulated and with KYC. It is not open for trading."
+    },
+    {
+      "domain": "b0-x.com",
+      "base": "b0-",
+      "accent": "#ffd24d",
+      "status": "live",
+      "managedElsewhere": true,
+      "flickOff": null,
+      "tagline": "Deploy on bStoreX",
+      "purpose": "Deploy and hosting on bStoreX, plus on-chain publishing with OpNS names.",
+      "eyebrow": "Deploy / hosting",
+      "headline": "Ship it.<br>*On chain*.",
+      "lede": "Hosting on bStoreX and on-chain publishing with OpNS names."
+    }
+  ]
+}
