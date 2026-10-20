@@ -40,9 +40,9 @@ export function build() {
     copyFileSync(join(root, 'templates', 'favicon.svg'), join(out, 'favicon.svg'));
     writeFileSync(join(out, 'package.json'), JSON.stringify({ name: slug + '-site', private: true, type: 'module', dependencies: { '@bsv/sdk': '2.8.10', '@bwalletx/connect': '0.5.0' } }, null, 2) + '\n');
     // every site's /flick-off goes to its switch on bmintx.com (one home for the campaign), www -> apex
-    const flick = s.flickOffPath ? `https://bmintx.com/flick-off/${s.flickOffPath}` : 'https://bmintx.com/flick-off';
+    const flickUrl = s.flickOffPath ? `https://bmintx.com/flick-off/${s.flickOffPath}` : 'https://bmintx.com/flick-off';
     const redirects = [{ source: '/:path*', has: [{ type: 'host', value: 'www.' + s.domain }], destination: `https://${s.domain}/:path*`, permanent: true }];
-    if (s.domain !== 'bmintx.com') redirects.push({ source: '/flick-off', destination: flick, permanent: false }, { source: '/flick-off/:path*', destination: 'https://bmintx.com/flick-off/:path*', permanent: false });
+    if (s.domain !== 'bmintx.com') redirects.push({ source: '/flick-off', destination: flickUrl, permanent: false }, { source: '/flick-off/:path*', destination: 'https://bmintx.com/flick-off/:path*', permanent: false });
     writeFileSync(join(out, 'vercel.json'), JSON.stringify({ cleanUrls: true, redirects }, null, 2) + '\n');
     if (s.managedElsewhere) writeFileSync(join(out, 'DO-NOT-DEPLOY.txt'), `${s.domain} is managed elsewhere. This build is for reference only.\n`);
   }
