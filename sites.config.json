@@ -96,9 +96,10 @@
       "flickOff": "X / Twitter",
       "tagline": "Your posts, owned",
       "purpose": "Bring your X/Twitter posts to Bitcoin and keep posting there.",
-      "eyebrow": "X / Twitter → bChatX · part of FLICK OFF",
+      "eyebrow": "X / Twitter \u2192 bChatX \u00b7 part of FLICK OFF",
       "headline": "Your posts.<br>*Owned* by you.",
-      "lede": "Bring your X/Twitter posts to Bitcoin, dated and signed by you."
+      "lede": "Bring your X/Twitter posts to Bitcoin, dated and signed by you.",
+      "flickOffPath": "x"
     },
     {
       "domain": "bfriendsx.com",
@@ -109,7 +110,7 @@
       "flickOff": "Facebook",
       "tagline": "Bring your people with you",
       "purpose": "Bring your Facebook friends graph with you.",
-      "eyebrow": "Facebook → bFriendsX · part of FLICK OFF",
+      "eyebrow": "Facebook \u2192 bFriendsX \u00b7 part of FLICK OFF",
       "headline": "Your people.<br>*Bring* them.",
       "lede": "Your friends graph, kept in your own wallet."
     },
@@ -122,7 +123,7 @@
       "flickOff": "LinkedIn",
       "tagline": "Work, paid in Bitcoin",
       "purpose": "Your LinkedIn work history and network, owned by you.",
-      "eyebrow": "LinkedIn → bJobsX · part of FLICK OFF",
+      "eyebrow": "LinkedIn \u2192 bJobsX \u00b7 part of FLICK OFF",
       "headline": "Your career.<br>*Owned* by you.",
       "lede": "Your work history, signed and kept in your wallet."
     },
@@ -135,9 +136,10 @@
       "flickOff": "YouTube",
       "tagline": "Your channel, owned by you",
       "purpose": "Bring your YouTube channel to Bitcoin with original upload dates.",
-      "eyebrow": "YouTube → bVideoX · part of FLICK OFF",
+      "eyebrow": "YouTube \u2192 bVideoX \u00b7 part of FLICK OFF",
       "headline": "Your channel.<br>*Owned* by you.",
-      "lede": "Bring your YouTube videos to Bitcoin with their original upload dates."
+      "lede": "Bring your YouTube videos to Bitcoin with their original upload dates.",
+      "flickOffPath": "youtube"
     },
     {
       "domain": "bmoviesx.com",
@@ -148,7 +150,7 @@
       "flickOff": "Instagram / TikTok",
       "tagline": "Reels, clips and films, owned by you",
       "purpose": "Bring your Instagram and TikTok clips, and your films, to a home you own.",
-      "eyebrow": "Instagram / TikTok → bMoviesX · coming soon",
+      "eyebrow": "Instagram / TikTok \u2192 bMoviesX \u00b7 coming soon",
       "headline": "Your reels.<br>Your *films*.",
       "lede": "bMoviesX is coming. It will let you bring your Instagram and TikTok clips, and the films you have made, into your own bWalletX, dated and signed by you. It is not open yet."
     },
@@ -161,7 +163,7 @@
       "flickOff": "SoundCloud",
       "tagline": "Your tracks, owned by you",
       "purpose": "Bring your SoundCloud tracks, and your own masters (Spotify can't export audio).",
-      "eyebrow": "SoundCloud → bMusicX · part of FLICK OFF",
+      "eyebrow": "SoundCloud \u2192 bMusicX \u00b7 part of FLICK OFF",
       "headline": "Your tracks.<br>*Owned* by you.",
       "lede": "Bring your SoundCloud uploads and your masters into your own wallet."
     },
@@ -174,7 +176,7 @@
       "flickOff": "Google Drive",
       "tagline": "Your files, kept on chain",
       "purpose": "Your Google Drive files, kept in storage you control; built on bStoreX.",
-      "eyebrow": "Google Drive → bDriveX · part of FLICK OFF",
+      "eyebrow": "Google Drive \u2192 bDriveX \u00b7 part of FLICK OFF",
       "headline": "Your files.<br>*Kept* by you.",
       "lede": "Your files in storage you pay for with your wallet, built on bStoreX."
     },
@@ -187,7 +189,7 @@
       "flickOff": "Google Docs",
       "tagline": "Write it down. Keep it forever.",
       "purpose": "Your Google Docs, signed and kept by you.",
-      "eyebrow": "Google Docs → bWriterX · part of FLICK OFF",
+      "eyebrow": "Google Docs \u2192 bWriterX \u00b7 part of FLICK OFF",
       "headline": "Your words.<br>*Kept* forever.",
       "lede": "Your documents, signed by you and kept in your wallet."
     },
@@ -200,7 +202,7 @@
       "flickOff": "home",
       "tagline": "You made it. Prove it's yours.",
       "purpose": "Minting, and the home of FLICK OFF.",
-      "eyebrow": "Minting · home of FLICK OFF",
+      "eyebrow": "Minting \u00b7 home of FLICK OFF",
       "headline": "You made it.<br>*Prove* it.",
       "lede": "Mint what you made, signed by your own key."
     },
@@ -213,7 +215,7 @@
       "flickOff": null,
       "tagline": "Mint a website",
       "purpose": "Mint websites, and the catch-all for anything else you want to bring.",
-      "eyebrow": "Websites · coming soon",
+      "eyebrow": "Websites \u00b7 coming soon",
       "headline": "Your site.<br>*Minted*.",
       "lede": "bWebX is coming. It will let you mint a website to Bitcoin, signed by you, and be the catch-all for anything the other b*X products don't cover yet. It is not open yet."
     },
@@ -252,7 +254,7 @@
       "flickOff": null,
       "tagline": "Phone calls",
       "purpose": "Phone calls between bWalletX identities.",
-      "eyebrow": "Calls · coming soon",
+      "eyebrow": "Calls \u00b7 coming soon",
       "headline": "Call by *key*.",
       "lede": "bPhoneX is coming. It will let you call people by their bWalletX identity instead of a phone number. It is not open yet."
     },
@@ -291,7 +293,7 @@
       "flickOff": null,
       "tagline": "Games",
       "purpose": "Games where what you win sits in your own wallet.",
-      "eyebrow": "Games · coming soon",
+      "eyebrow": "Games \u00b7 coming soon",
       "headline": "Play.<br>*Keep* it.",
       "lede": "bGamesX is coming. It will be a home for games that use your bWalletX for sign-in and keep what you earn in your own wallet. It is not open yet."
     },
@@ -343,7 +345,7 @@
       "flickOff": null,
       "tagline": "Bitcoin exchange, coming",
       "purpose": "Buy BSV and swap into BSV. Regulated and KYC'd; coming, no trading yet.",
-      "eyebrow": "Exchange · coming",
+      "eyebrow": "Exchange \u00b7 coming",
       "headline": "Buy BSV.<br>*Coming*.",
       "lede": "BSVEX will let you buy BSV and swap into BSV, regulated and with KYC. It is not open for trading."
     },
