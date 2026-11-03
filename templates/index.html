@@ -11,7 +11,7 @@
 <meta property="og:site_name" content="{{name}}">
 <meta property="og:title" content="{{name}} · {{tagline}}">
 <meta property="og:description" content="{{purpose}}">
-<meta name="twitter:card" content="summary">
+{{ogMeta}}
 <meta name="twitter:title" content="{{name}} · {{tagline}}">
 <meta name="twitter:description" content="{{purpose}}">
 <meta name="theme-color" content="#000000">
@@ -55,14 +55,26 @@ section{padding:88px 0;border-bottom:1px solid var(--line)}
 .card p{color:#d8d3c5;margin:0}
 .card b.n{font:700 44px 'Space Grotesk';color:var(--accent);display:block;line-height:1}
 .tag{display:inline-block;font:600 11px 'Space Grotesk';letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border:1px solid var(--line);border-radius:999px;padding:3px 10px}
+.btn-acc{background:var(--accent);color:#000!important}
+.btn-acc:hover{filter:brightness(1.08)}
+.btn:focus-visible,.nav-links a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.sec-lede{color:#d8d3c5;max-width:640px;margin:-6px 0 0}
+.note{margin:26px 0 0;color:var(--mute);font-size:14px;max-width:760px}
+.prices{margin-top:30px;border-top:1px solid var(--line)}
+.prices div{display:grid;grid-template-columns:1fr auto;gap:8px 24px;padding:20px 0;border-bottom:1px solid var(--line)}
+.prices b{font:700 20px 'Space Grotesk'}
+.prices span{color:#d8d3c5}
+.prices .amt{font:700 20px 'Space Grotesk';color:var(--ink);text-align:right;white-space:nowrap}
+.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
 footer{padding:40px 0;color:var(--mute);font-size:13px}
+footer .legal{display:block;margin-top:6px}
 </style>
 </head>
 <body>
 {{strip}}
 <header class="wrap nav">
   <a class="brand" href="/" aria-label="{{name}} home"><img src="/logo.svg" width="28" height="28" alt=""><span>{{base}}<span class="gold">X</span></span></a>
-  <nav class="nav-links" aria-label="Main"><a class="hide-s" href="#how">How it works</a>{{navFlick}}<span data-bwx></span></nav>
+  <nav class="nav-links" aria-label="Main"><a class="hide-s" href="#how">How it works</a>{{navExtra}}{{navFlick}}<span data-bwx></span></nav>
 </header>
 
 <main>
@@ -72,28 +84,29 @@ footer{padding:40px 0;color:var(--mute);font-size:13px}
     <p class="eyebrow">{{eyebrow}}</p>
     <h1>{{headline}}</h1>
     <p class="lede">{{lede}}</p>
-    <div class="ctas"><span data-bwx></span><a class="btn btn-ghost" href="https://bwalletx.com/get">Get bWalletX</a>{{ctaFlick}}</div>
+    <div class="ctas">{{heroCtas}}</div>
   </div>
 </section>
 
 <section id="how">
   <div class="wrap">
     <p class="kicker">How it works</p>
-    <h2>{{howTitle}}</h2>
+    <h2>{{howTitle}}</h2>{{howLede}}
     <div class="three">{{how}}</div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <p class="kicker">Why {{name}}</p>
-    <h2>{{purpose}}</h2>
+    <p class="kicker">{{whyKicker}}</p>
+    <h2>{{whyTitle}}</h2>
     <div class="four">{{why}}</div>
   </div>
 </section>
+{{sections}}
 </main>
 
-<footer class="wrap">{{name}} · part of the bWalletX family · <a href="https://bmintx.com/flick-off">FLICK OFF</a> · <a href="https://bwalletx.com/get">Get bWalletX</a></footer>
+<footer class="wrap">{{name}} · part of the bWalletX family · {{footerLinks}}<a href="https://bmintx.com/flick-off">FLICK OFF</a> · <a href="https://bwalletx.com/get">Get bWalletX</a><span class="legal">{{legal}}</span></footer>
 
 <script src="https://unpkg.com/@bwalletx/connect@0.5.0/dist/bwalletx-connect.global.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>

@@ -1,5 +1,5 @@
 // Builds dist/<domain>/ for every site in sites.config.json from templates/.
-import { readFileSync, writeFileSync, mkdirSync, rmSync, copyFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, rmSync, copyFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -22,13 +22,36 @@ export function build() {
     const flick = s.flickOff ? '<a class="hide-s" href="https://bmintx.com/flick-off">FLICK OFF</a>' : '';
     // headline: escape, then *word* -> outlined <em>; <br> is allowed through
     const headline = esc(s.headline).replace(/&lt;br&gt;/g, '<br>').replace(/\*([^*]+)\*/g, '<em>$1</em>');
+    const href = (u) => esc(u);
+    const btn = ([label, url, kind]) => `<a class="btn ${kind === 'primary' ? 'btn-acc' : 'btn-ghost'}" href="${href(url)}">${esc(label)}</a>`;
+    const ctaFlick = s.flickOff && s.flickOff !== 'home' ? '<a class="btn btn-ghost" href="https://bmintx.com/flick-off">About FLICK OFF</a>' : '';
+    const heroCtas = s.ctas ? s.ctas.map(btn).join('') : '<span data-bwx></span><a class="btn btn-ghost" href="https://bwalletx.com/get">Get bWalletX</a>' + ctaFlick;
+    const navExtra = (s.navLinks || []).map(([label, url]) => `<a class="hide-s" href="${href(url)}">${esc(label)}</a>`).join('');
+    // optional extra sections: { id, kicker, title, lede, cards: [[tag, h, p]], prices: [[name, detail, amount]], links: [[label, url, kind]], note }
+    const sections = (s.sections || []).map((x) => `<section${x.id ? ` id="${esc(x.id)}"` : ''}>
+  <div class="wrap">
+    <p class="kicker">${esc(x.kicker)}</p>
+    <h2>${esc(x.title)}</h2>${x.lede ? `<p class="sec-lede">${esc(x.lede)}</p>` : ''}
+    ${x.cards ? `<div class="four">${x.cards.map(([t, h, p]) => `<div class="card">${t ? `<span class="tag">${esc(t)}</span>` : ''}<h3>${esc(h)}</h3><p>${esc(p)}</p></div>`).join('')}</div>` : ''}
+    ${x.prices ? `<div class="prices">${x.prices.map(([n, d, a]) => `<div><b>${esc(n)}</b><span class="amt">${esc(a)}</span><span>${esc(d)}</span></div>`).join('')}</div>` : ''}
+    ${x.links ? `<div class="links">${x.links.map(btn).join('')}</div>` : ''}
+    ${x.note ? `<p class="note">${esc(x.note)}</p>` : ''}
+  </div>
+</section>`).join('\n');
+    const og = s.ogImage && existsSync(join(root, 'og', s.ogImage)) ? s.ogImage : null;
+    const ogMeta = og
+      ? `<meta property="og:image" content="https://${s.domain}/${og}">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n<meta property="og:image:alt" content="${esc(name + ': ' + s.tagline)}">\n<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:image" content="https://${s.domain}/${og}">`
+      : '<meta name="twitter:card" content="summary">';
     const v = {
-      domain: s.domain, name, base: esc(s.base), slug, accent: s.accent, strip,
+      domain: s.domain, name, base: esc(s.base), slug, accent: s.accent, strip, heroCtas, navExtra, sections, ogMeta,
+      howLede: s.howLede ? `<p class="sec-lede">${esc(s.howLede)}</p>` : '',
+      whyKicker: esc(s.whyKicker || 'Why ' + name), whyTitle: esc(s.whyTitle || s.purpose),
+      footerLinks: (s.footerLinks || []).map(([label, url]) => `<a href="${href(url)}">${esc(label)}</a> · `).join(''),
+      legal: esc(s.legal || defaults.legal || ''),
       tagline: esc(s.tagline), purpose: esc(s.purpose), eyebrow: esc(s.eyebrow), headline, lede: esc(s.lede),
       statusBadge: holding ? '<span class="status">Coming soon</span>' : '',
       navFlick: flick,
-      ctaFlick: s.flickOff && s.flickOff !== 'home' ? '<a class="btn btn-ghost" href="https://bmintx.com/flick-off">About FLICK OFF</a>' : '',
-      howTitle: holding ? 'Not open yet. Here is the plan.' : 'Connect. Sign. Own it.',
+      howTitle: esc(s.howTitle || (holding ? 'Not open yet. Here is the plan.' : 'Connect. Sign. Own it.')),
       how, why,
     };
     const out = join(dist, s.domain);
@@ -38,6 +61,7 @@ export function build() {
     for (const f of ['_auth.js', 'challenge.js', 'verify.js', 'session.js']) writeFileSync(join(out, 'api', 'bwalletx', f), fill(T('api/' + f), v));
     copyFileSync(join(root, 'templates', 'logo.svg'), join(out, 'logo.svg'));
     copyFileSync(join(root, 'templates', 'favicon.svg'), join(out, 'favicon.svg'));
+    if (og) copyFileSync(join(root, 'og', og), join(out, og));
     writeFileSync(join(out, 'package.json'), JSON.stringify({ name: slug + '-site', private: true, type: 'module', dependencies: { '@bsv/sdk': '2.8.10', '@bwalletx/connect': '0.5.0' } }, null, 2) + '\n');
     // every site's /flick-off goes to its switch on bmintx.com (one home for the campaign), www -> apex
     const flickUrl = s.flickOffPath ? `https://bmintx.com/flick-off/${s.flickOffPath}` : 'https://bmintx.com/flick-off';
