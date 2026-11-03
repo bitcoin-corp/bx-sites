@@ -3,6 +3,10 @@
 RB buys a b*X domain and tells the COO "new domain bfoox.com: <one line on what it's for>". The COO runs this.
 It's the engine behind bWebX. Owner of the package: COO. CEO brief: bitcoin-corp `docs/BX-MARKETING-WEB-STRUCTURE-2026-11-03.md`.
 
+## Before the domain is bought
+
+Send the CFO the domain-register row first (`finance/DOMAIN-REGISTER.md`): domain, owner company, purpose, who approved it, and the yearly renewal. Every domain is a cost we pay every year. If RB has already bought it, send the row the same day.
+
 ## One command
 
 ```
