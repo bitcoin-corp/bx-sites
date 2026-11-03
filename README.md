@@ -1,5 +1,7 @@
 # bx-sites
 
+**Licence: [Open BSV License version 4](LICENSE)**, © The Bitcoin Corporation Ltd. (GitHub labels it "Other" because it is not on GitHub's standard licence list.)
+
 Shared static-site template for the b*X product family (bWalletX, BSV).
 
 ```
