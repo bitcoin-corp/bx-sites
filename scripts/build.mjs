@@ -39,7 +39,20 @@ export function build() {
       <label class="chk consent"><input type="checkbox" name="consent" required> ${esc(f.consent)} <a href="${esc(f.privacy)}">Privacy</a></label>
       <button class="btn btn-primary" type="submit">${esc(f.button || 'Keep me posted')}</button>
       <p class="form-msg" aria-live="polite"></p>
-    </form>`;
+    </form>
+    <script>(function(){var f=document.currentScript.previousElementSibling;if(!f)return;var m=f.querySelector('.form-msg'),b=f.querySelector('button');
+    function say(t,k){m.textContent=t;m.className='form-msg '+(k||'')}
+    f.addEventListener('submit',function(e){e.preventDefault();var g=function(n){return (f.elements[n]&&f.elements[n].value||'').trim()};
+    if(g('hp'))return say('Thanks. We will be in touch.','ok');
+    if(!g('name'))return say('Please add your name.','err');
+    if(!/^[^\\s@]+@[^\\s@]+\\.[a-z]{2,}$/i.test(g('email')))return say('Please enter a valid email address.','err');
+    if(!f.elements.consent.checked)return say('Please tick the box so we can email you.','err');
+    var sp=[].slice.call(f.querySelectorAll('input[name=specialisms]:checked')).map(function(i){return i.value});
+    b.disabled=true;say('Sending…');
+    fetch(f.dataset.endpoint,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({name:g('name'),email:g('email'),specialisms:sp,consent:true,business:false,source:f.dataset.source})})
+    .then(function(r){if(r.status===429)throw new Error('busy');if(!r.ok)throw new Error(String(r.status));f.reset();say('Thanks. We will email you when applications open.','ok')})
+    .catch(function(x){say(x.message==='busy'?'Too many tries. Please wait a minute and try again.':'Something went wrong. Please email support@bwalletx.com','err')})
+    .then(function(){b.disabled=false})})})();</script>`;
     const sections = (s.sections || []).map((x) => `<section${x.id ? ` id="${esc(x.id)}"` : ''}>
   <div class="wrap">
     <p class="kicker">${esc(x.kicker)}</p>

@@ -646,7 +646,7 @@
           ],
           "form": {
             "live": false,
-            "endpoint": "https://push.bwalletx.com/clients/enquire",
+            "endpoint": "https://push.bwalletx.com/clients/interest",
             "source": "bmarketingx.com/interest",
             "title": "Tell us you're interested",
             "consent": "Email me about bMarketingX. I can unsubscribe any time.",
