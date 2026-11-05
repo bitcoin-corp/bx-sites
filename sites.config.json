@@ -490,13 +490,13 @@
       "ogLine": "Independent marketers run your campaign. You pay them directly.",
       "ctas": [
         [
-          "Marketers: start your bJobsX profile",
-          "https://bjobsx.com/",
+          "Get bWalletX",
+          "https://bwalletx.com/get",
           "primary"
         ],
         [
-          "Need a film first? bAdvertisingX",
-          "https://badvertisingx.com/",
+          "Claim your paymail",
+          "https://bnamesx.com/",
           "ghost"
         ]
       ],
@@ -608,20 +608,58 @@
         {
           "id": "marketers",
           "kicker": "For marketers",
-          "title": "Run campaigns with b.",
-          "lede": "Applications open when the Marketer Terms are ready. Start now with a bJobsX profile: your work history, in your own wallet.",
+          "title": "Get ready in three steps.",
+          "lede": "Applications open when the Marketer Terms are ready. Get set up now, so clients can find you and pay you by name on day one.",
           "links": [
             [
-              "Start your bJobsX profile",
-              "https://bjobsx.com/",
+              "Get bWalletX",
+              "https://bwalletx.com/get",
               "primary"
             ],
             [
-              "See paid work on bJobsX",
-              "https://bjobsx.com/browse",
+              "Claim your paymail",
+              "https://bnamesx.com/",
+              "ghost"
+            ],
+            [
+              "Start your bJobsX profile",
+              "https://bjobsx.com/",
               "ghost"
             ]
-          ]
+          ],
+          "cards": [
+            [
+              "1",
+              "Get bWalletX",
+              "Install bWalletX on your phone, in Chrome or on the web. It's your sign-in, and where clients pay you directly."
+            ],
+            [
+              "2",
+              "Claim your paymail",
+              "Pick name@bwalletx.com on bNamesX, so clients can pay you by name instead of a long address."
+            ],
+            [
+              "3",
+              "Start your bJobsX profile",
+              "Your work history, kept in your own wallet. It's what clients see when they pick a marketer."
+            ]
+          ],
+          "form": {
+            "live": false,
+            "endpoint": "https://push.bwalletx.com/clients/enquire",
+            "source": "bmarketingx.com/interest",
+            "title": "Tell us you're interested",
+            "consent": "Email me about bMarketingX. I can unsubscribe any time.",
+            "privacy": "https://bwalletx.com/privacy",
+            "specialisms": [
+              "Social",
+              "Launches",
+              "Partnerships",
+              "Community",
+              "Content"
+            ],
+            "button": "Keep me posted"
+          }
         },
         {
           "kicker": "Works with",

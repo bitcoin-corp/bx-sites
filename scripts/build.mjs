@@ -28,6 +28,18 @@ export function build() {
     const heroCtas = s.ctas ? s.ctas.map(btn).join('') : '<span data-bwx></span><a class="btn btn-ghost" href="https://bwalletx.com/get">Get bWalletX</a>' + ctaFlick;
     const navExtra = (s.navLinks || []).map(([label, url]) => `<a class="hide-s" href="${href(url)}">${esc(label)}</a>`).join('');
     // optional extra sections: { id, kicker, title, lede, cards: [[tag, h, p]], prices: [[name, detail, amount]], links: [[label, url, kind]], note }
+    // optional register-interest form in a section: { live, endpoint, source, title, consent, privacy, specialisms: [] }
+    // Posts JSON to the endpoint (CORS must allow this domain). Renders only when live is true.
+    const interestForm = (f) => `<form class="interest" data-endpoint="${esc(f.endpoint)}" data-source="${esc(f.source)}" novalidate>
+      <h3>${esc(f.title || 'Register your interest')}</h3>
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Email<input name="email" type="email" autocomplete="email" required></label>
+      ${f.specialisms ? `<fieldset><legend>What do you do?</legend>${f.specialisms.map((t) => `<label class="chk"><input type="checkbox" name="specialisms" value="${esc(t)}"> ${esc(t)}</label>`).join('')}</fieldset>` : ''}
+      <label class="hp" aria-hidden="true">Leave empty<input name="hp" tabindex="-1" autocomplete="off"></label>
+      <label class="chk consent"><input type="checkbox" name="consent" required> ${esc(f.consent)} <a href="${esc(f.privacy)}">Privacy</a></label>
+      <button class="btn btn-primary" type="submit">${esc(f.button || 'Keep me posted')}</button>
+      <p class="form-msg" aria-live="polite"></p>
+    </form>`;
     const sections = (s.sections || []).map((x) => `<section${x.id ? ` id="${esc(x.id)}"` : ''}>
   <div class="wrap">
     <p class="kicker">${esc(x.kicker)}</p>
@@ -36,6 +48,7 @@ export function build() {
     ${x.prices ? `<div class="prices">${x.prices.map(([n, d, a]) => `<div><b>${esc(n)}</b><span class="amt">${esc(a)}</span><span>${esc(d)}</span></div>`).join('')}</div>` : ''}
     ${x.links ? `<div class="links">${x.links.map(btn).join('')}</div>` : ''}
     ${x.note ? `<p class="note">${esc(x.note)}</p>` : ''}
+    ${x.form && x.form.live ? interestForm(x.form) : ''}
   </div>
 </section>`).join('\n');
     const og = s.ogImage && existsSync(join(root, 'og', s.ogImage)) ? s.ogImage : null;
