@@ -58,7 +58,7 @@ export function renderRoom(root, s, v) {
   const c = r.seal.cert;
   const cert = `<figure class="cert" aria-label="${esc(c.alt)}">
   <div class="cert-in">
-    <div class="cert-top">${bmark('cert-b')}<span>${esc(c.issuer)}</span><span class="cert-no mono">${esc(c.no)}</span></div>
+    <div class="cert-top">${bmark('cert-b')}<span>${esc(c.issuer.replace(/^b(?=[A-Z])/, ''))}</span><span class="cert-no mono">${esc(c.no)}</span></div>
     <p class="cert-k">${esc(c.kicker)}</p>
     <p class="cert-t">${esc(c.title)}</p>
     <dl>${c.rows.map(([k, val]) => `<div><dt>${esc(k)}</dt><dd>${esc(val)}</dd></div>`).join('')}</dl>
@@ -68,7 +68,7 @@ export function renderRoom(root, s, v) {
   <figcaption class="cap">${esc(c.caption)}</figcaption>
 </figure>`;
   const who = r.who.items.map(([h, p]) => `<li><h3>${esc(h)}</h3><p>${esc(p)}</p></li>`).join('');
-  const stack = r.stack.items.map(([nm, role, p, url]) => `<a class="stk" href="${esc(url)}"><span class="stk-n">${bmark('stk-b')}<span>${esc(nm.replace(/X$/, ''))}<i>X</i></span></span><span class="stk-r mono">${esc(role)}</span><span class="stk-p">${esc(p)}</span><span class="stk-go">${esc(new URL(url).host)} ${icon('arrow', 'ic-s')}</span></a>`).join('');
+  const stack = r.stack.items.map(([nm, role, p, url]) => `<a class="stk" href="${esc(url)}"><span class="stk-n">${bmark('stk-b')}<span>${esc(nm.replace(/^b(?=[A-Z])/, '').replace(/X$/, ''))}<i>X</i></span></span><span class="stk-r mono">${esc(role)}</span><span class="stk-p">${esc(p)}</span><span class="stk-go">${esc(new URL(url).host)} ${icon('arrow', 'ic-s')}</span></a>`).join('');
   const st = r.status;
   const status = `<div class="stat"><div><h3 class="mono"><i class="on"></i>${esc(st.liveTitle)}</h3><ul>${st.live.map((x) => `<li>${lead(x)}</li>`).join('')}</ul></div><div class="nx"><h3 class="mono"><i></i>${esc(st.nextTitle)}</h3><ul>${st.next.map((x) => `<li>${lead(x)}</li>`).join('')}</ul></div></div>`;
   const limits = r.limits.items.map((x) => `<li><span class="no" aria-hidden="true"></span><span>${lead(x)}</span></li>`).join('');
@@ -78,6 +78,7 @@ export function renderRoom(root, s, v) {
 
   const vals = {
     ...v,
+    mbase: v.base.replace(/^b(?=[A-Z])/, ""),
     roomNav: nav,
     heroArt: art(root, r.art),
     detailArt: r.detailArt ? art(root, r.detailArt) : '',

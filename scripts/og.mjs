@@ -23,7 +23,7 @@ export function renderOg(domain, version = 1, lang = 'en') {
   const file = `og-${slug}${lang === 'en' ? '' : '-' + lang}-v${version}.png`;
   const headline = esc(s.ogHeadline || s.headline).replace(/&lt;br&gt;/g, '<br>').replace(/\*([^*]+)\*/g, '<em>$1</em>');
   const html = readFileSync(join(root, 'templates', s.room ? 'og-room.html' : 'og.html'), 'utf8').replace(/\{\{(\w+)\}\}/g, (m, k) => ({
-    accent: s.accent, base: esc(s.base), domain: s.domain, eyebrow: esc(s.eyebrow).toUpperCase().replace(/\bB(?=[A-Z]+X\b)/g, 'b'),
+    accent: s.accent, base: esc(s.base), mbase: esc(s.base.replace(/^b(?=[A-Z])/, '')), domain: s.domain, eyebrow: esc(s.eyebrow).toUpperCase().replace(/\bB(?=[A-Z]+X\b)/g, 'b'),
     headline, line: esc(s.ogLine || s.tagline), action: esc(s.ogAction || 'Get bWalletX'),
     seal: esc(((s.room && s.room.labels && s.room.labels.sealed) || 'Sealed').toUpperCase()), urlPath: lang === 'en' ? '' : '/' + lang,
   })[k] ?? m);
