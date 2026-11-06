@@ -87,7 +87,7 @@ export function renderRoom(root, s, v) {
     const cards = x.cards.map((c, i) => `<article class="dc" data-i="${i}" role="group" aria-roledescription="slide" aria-label="${i + 1} ${esc(x.slide)} ${n}: ${esc(c.name)}">
   <div class="dc-ph"><img src="/photos/${esc(c.img)}" width="900" height="560" alt="${esc(c.alt)}"${i < 3 || i === n - 1 ? '' : ' loading="lazy"'} decoding="async" draggable="false"><span class="dc-st${c.sealed ? ' on' : ''}">${c.sealed ? icon('seal', 'ic-s') : '<i></i>'}${esc(c.sealed ? L.sealed : L.open)}</span></div>
   <div class="dc-b">
-    <p class="dc-k">${bmark('dc-bm')}<span>ChatX</span><i aria-hidden="true">·</i>${icon('lock', 'ic-s')}<span>${esc(x.tag)}</span></p>
+    <p class="dc-k"><span class="dc-wm" role="img" aria-label="bChatX">${bmark('dc-bm')}<b aria-hidden="true">Chat<i>X</i></b></span><i aria-hidden="true">·</i>${icon('lock', 'ic-s')}<span>${esc(x.tag)}</span></p>
     <p class="dc-t">${esc(c.name)}</p>
     <p class="dc-p">${esc(c.purpose)}</p>
     <ul class="dc-c">${c.chips.map(([t, s]) => `<li${s ? ` class="st st-${esc(s)}"` : ' class="st"'}>${esc(t)}</li>`).join('')}</ul>
@@ -102,6 +102,7 @@ export function renderRoom(root, s, v) {
     <button class="cf-a" id="cfPrev" type="button" aria-label="${esc(x.prev)}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5 M11 6l-6 6 6 6"/></svg></button>
     <div class="cf-dots" id="cfDots" role="group" aria-label="${esc(x.pick)}">${dots}</div>
     <button class="cf-a" id="cfNext" type="button" aria-label="${esc(x.next)}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14 M13 6l6 6-6 6"/></svg></button>
+    <button class="cf-a cf-pp" id="cfPlay" type="button" aria-label="${esc(x.pause)}" data-pause="${esc(x.pause)}" data-play="${esc(x.play)}"><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6v12 M15 6v12"/></svg><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg></button>
   </div>
   <p class="xr-n">${esc(x.note)} <a href="#photo-credits">${esc(x.credit)}</a></p>
 </section>`;
