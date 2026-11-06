@@ -723,7 +723,8 @@
           "sealed": "Sealed",
           "signed": "Signed",
           "awaiting": "Awaiting signature",
-          "draft": "Draft"
+          "draft": "Draft",
+          "open": "In progress"
         },
         "nav": [
           [
@@ -1107,7 +1108,194 @@
             "Get bWalletX",
             "https://bwalletx.com/get"
           ]
-        ]
+        ],
+        "examples": {
+          "kicker": "Example rooms · swipe",
+          "label": "Example bChatX deal rooms",
+          "note": "Examples with sample content, not real clients.",
+          "prev": "Previous room",
+          "next": "Next room",
+          "pick": "Choose a room",
+          "slide": "of",
+          "tag": "Private room",
+          "open": "In progress",
+          "credit": "Photos: Unsplash",
+          "creditsLead": "Photos from Unsplash, under the Unsplash License:",
+          "cards": [
+            {
+              "img": "hillside-villa.webp",
+              "alt": "Infinity pool and terrace on a hillside above the sea at dusk",
+              "name": "Hillside villa · Phase 2 drawings",
+              "purpose": "Drawings, permits and the main contract, agreed in one room.",
+              "sealed": true,
+              "chips": [
+                [
+                  "5 documents",
+                  ""
+                ],
+                [
+                  "5 signed",
+                  "signed"
+                ]
+              ],
+              "members": [
+                "Owner",
+                "Owner's rep.",
+                "Architect",
+                "Contractor"
+              ]
+            },
+            {
+              "img": "penthouse.webp",
+              "alt": "Empty top-floor room with floor-to-ceiling glass doors onto a sea-view terrace",
+              "name": "Penthouse fit-out · contractor agreement",
+              "purpose": "Scope, schedule and variations agreed with the fit-out contractor.",
+              "sealed": false,
+              "chips": [
+                [
+                  "3 documents",
+                  ""
+                ],
+                [
+                  "2 signed",
+                  "signed"
+                ],
+                [
+                  "1 awaiting signature",
+                  "awaiting"
+                ]
+              ],
+              "members": [
+                "Owner",
+                "Interior designer",
+                "Contractor"
+              ]
+            },
+            {
+              "img": "coastal-estate.webp",
+              "alt": "Two rattan chairs and a table on a wooden deck by a turquoise pool and the sea",
+              "name": "Coastal estate · sale and purchase",
+              "purpose": "Contract, surveys and title papers for buyer, seller and notary.",
+              "sealed": true,
+              "chips": [
+                [
+                  "6 documents",
+                  ""
+                ],
+                [
+                  "6 signed",
+                  "signed"
+                ]
+              ],
+              "members": [
+                "Buyer",
+                "Seller",
+                "Notary",
+                "Counsel"
+              ]
+            },
+            {
+              "img": "restoration.webp",
+              "alt": "Old wooden window frame with peeling paint and steel scaffolding behind it",
+              "name": "Restoration · heritage permits",
+              "purpose": "Heritage consents, surveys and method statements for the façade.",
+              "sealed": false,
+              "chips": [
+                [
+                  "7 documents",
+                  ""
+                ],
+                [
+                  "4 signed",
+                  "signed"
+                ],
+                [
+                  "2 drafts",
+                  "draft"
+                ]
+              ],
+              "members": [
+                "Owner",
+                "Conservation architect",
+                "Surveyor"
+              ]
+            },
+            {
+              "img": "family-office.webp",
+              "alt": "Quiet desk by a window with a clipboard and a pen in soft light",
+              "name": "Family office · lease renewals",
+              "purpose": "Twelve lease renewals, tracked and signed in one place.",
+              "sealed": false,
+              "chips": [
+                [
+                  "12 documents",
+                  ""
+                ],
+                [
+                  "9 signed",
+                  "signed"
+                ],
+                [
+                  "3 awaiting signature",
+                  "awaiting"
+                ]
+              ],
+              "members": [
+                "Family office",
+                "Property manager",
+                "Counsel"
+              ]
+            },
+            {
+              "img": "courtyard-house.webp",
+              "alt": "Courtyard of a modern single-storey house with a long pool and glass walls",
+              "name": "Courtyard house · handover",
+              "purpose": "Snag list, photos and the final sign-off at handover.",
+              "sealed": true,
+              "chips": [
+                [
+                  "4 documents",
+                  ""
+                ],
+                [
+                  "4 signed",
+                  "signed"
+                ]
+              ],
+              "members": [
+                "Owner",
+                "Contractor",
+                "Site manager"
+              ]
+            },
+            {
+              "img": "roof-terrace.webp",
+              "alt": "Roof terrace with outdoor sofas under a concrete frame at dusk",
+              "name": "Roof terrace · planning application",
+              "purpose": "Drawings, neighbour notices and the planning decision on file.",
+              "sealed": false,
+              "chips": [
+                [
+                  "4 documents",
+                  ""
+                ],
+                [
+                  "3 signed",
+                  "signed"
+                ],
+                [
+                  "1 awaiting signature",
+                  "awaiting"
+                ]
+              ],
+              "members": [
+                "Owner",
+                "Architect",
+                "Planning consultant"
+              ]
+            }
+          ]
+        }
       },
       "es": {
         "tagline": "La sala privada para negocios inmobiliarios de lujo",
@@ -1127,7 +1315,8 @@
             "sealed": "Sellado",
             "signed": "Firmado",
             "awaiting": "Pendiente de firma",
-            "draft": "Borrador"
+            "draft": "Borrador",
+            "open": "En curso"
           },
           "nav": [
             [
@@ -1511,7 +1700,194 @@
               "Obtener bWalletX",
               "https://bwalletx.com/get"
             ]
-          ]
+          ],
+          "examples": {
+            "kicker": "Salas de ejemplo · deslice",
+            "label": "Salas de negociación de ejemplo en bChatX",
+            "note": "Ejemplos con contenido de muestra, no son clientes reales.",
+            "prev": "Sala anterior",
+            "next": "Sala siguiente",
+            "pick": "Elegir una sala",
+            "slide": "de",
+            "tag": "Sala privada",
+            "open": "En curso",
+            "credit": "Fotos: Unsplash",
+            "creditsLead": "Fotos de Unsplash, bajo la Licencia de Unsplash:",
+            "cards": [
+              {
+                "img": "hillside-villa.webp",
+                "alt": "Piscina infinita y terraza en una ladera sobre el mar al atardecer",
+                "name": "Villa en la ladera · planos de la fase 2",
+                "purpose": "Planos, permisos y el contrato principal, acordados en una sola sala.",
+                "sealed": true,
+                "chips": [
+                  [
+                    "5 documentos",
+                    ""
+                  ],
+                  [
+                    "5 firmados",
+                    "signed"
+                  ]
+                ],
+                "members": [
+                  "Propietario",
+                  "Representante",
+                  "Arquitecto",
+                  "Constructor"
+                ]
+              },
+              {
+                "img": "penthouse.webp",
+                "alt": "Sala vacía en el último piso con puertas de vidrio hacia una terraza con vista al mar",
+                "name": "Adecuación de penthouse · contrato de obra",
+                "purpose": "Alcance, cronograma y cambios acordados con el contratista.",
+                "sealed": false,
+                "chips": [
+                  [
+                    "3 documentos",
+                    ""
+                  ],
+                  [
+                    "2 firmados",
+                    "signed"
+                  ],
+                  [
+                    "1 pendiente de firma",
+                    "awaiting"
+                  ]
+                ],
+                "members": [
+                  "Propietario",
+                  "Interiorista",
+                  "Contratista"
+                ]
+              },
+              {
+                "img": "coastal-estate.webp",
+                "alt": "Dos sillas de ratán y una mesa en una terraza de madera junto a una piscina turquesa y el mar",
+                "name": "Finca costera · compraventa",
+                "purpose": "Contrato, estudios técnicos y títulos para comprador, vendedor y notario.",
+                "sealed": true,
+                "chips": [
+                  [
+                    "6 documentos",
+                    ""
+                  ],
+                  [
+                    "6 firmados",
+                    "signed"
+                  ]
+                ],
+                "members": [
+                  "Comprador",
+                  "Vendedor",
+                  "Notario",
+                  "Abogado"
+                ]
+              },
+              {
+                "img": "restoration.webp",
+                "alt": "Marco de ventana antiguo con pintura descascarada y andamio metálico detrás",
+                "name": "Restauración · permisos de patrimonio",
+                "purpose": "Autorizaciones de patrimonio, estudios y memorias de obra para la fachada.",
+                "sealed": false,
+                "chips": [
+                  [
+                    "7 documentos",
+                    ""
+                  ],
+                  [
+                    "4 firmados",
+                    "signed"
+                  ],
+                  [
+                    "2 borradores",
+                    "draft"
+                  ]
+                ],
+                "members": [
+                  "Propietario",
+                  "Arquitecto restaurador",
+                  "Perito"
+                ]
+              },
+              {
+                "img": "family-office.webp",
+                "alt": "Escritorio tranquilo junto a una ventana, con un portapapeles y un bolígrafo a media luz",
+                "name": "Family office · renovación de arriendos",
+                "purpose": "Doce renovaciones de arriendo, con seguimiento y firma en un solo lugar.",
+                "sealed": false,
+                "chips": [
+                  [
+                    "12 documentos",
+                    ""
+                  ],
+                  [
+                    "9 firmados",
+                    "signed"
+                  ],
+                  [
+                    "3 pendientes de firma",
+                    "awaiting"
+                  ]
+                ],
+                "members": [
+                  "Family office",
+                  "Administrador",
+                  "Abogado"
+                ]
+              },
+              {
+                "img": "courtyard-house.webp",
+                "alt": "Patio de una casa moderna de una planta con una piscina larga y muros de vidrio",
+                "name": "Casa con patio · entrega de obra",
+                "purpose": "Lista de pendientes, fotos y el visto bueno final en la entrega.",
+                "sealed": true,
+                "chips": [
+                  [
+                    "4 documentos",
+                    ""
+                  ],
+                  [
+                    "4 firmados",
+                    "signed"
+                  ]
+                ],
+                "members": [
+                  "Propietario",
+                  "Constructor",
+                  "Residente de obra"
+                ]
+              },
+              {
+                "img": "roof-terrace.webp",
+                "alt": "Terraza en la azotea con sofás de exterior bajo un marco de concreto al anochecer",
+                "name": "Terraza en la azotea · licencia de construcción",
+                "purpose": "Planos, avisos a vecinos y la resolución de la licencia, archivados.",
+                "sealed": false,
+                "chips": [
+                  [
+                    "4 documentos",
+                    ""
+                  ],
+                  [
+                    "3 firmados",
+                    "signed"
+                  ],
+                  [
+                    "1 pendiente de firma",
+                    "awaiting"
+                  ]
+                ],
+                "members": [
+                  "Propietario",
+                  "Arquitecto",
+                  "Asesor urbanístico"
+                ]
+              }
+            ]
+          }
         }
       }
     },
@@ -1539,7 +1915,8 @@
           "sealed": "Sealed",
           "signed": "Signed",
           "awaiting": "Awaiting signature",
-          "draft": "Draft"
+          "draft": "Draft",
+          "open": "In progress"
         },
         "nav": [
           [
@@ -1927,7 +2304,191 @@
             "Get bWalletX",
             "https://bwalletx.com/get"
           ]
-        ]
+        ],
+        "examples": {
+          "kicker": "Example rooms · swipe",
+          "label": "Example bChatX deal rooms",
+          "note": "Examples with sample content, not real clients.",
+          "prev": "Previous room",
+          "next": "Next room",
+          "pick": "Choose a room",
+          "slide": "of",
+          "tag": "Private room",
+          "open": "In progress",
+          "credit": "Photos: Unsplash",
+          "creditsLead": "Photos from Unsplash, under the Unsplash License:",
+          "cards": [
+            {
+              "img": "blank-canvas.webp",
+              "alt": "A blank canvas on a warm wall, with window light on the floor",
+              "name": "Untitled, 2019 · certificate of authenticity",
+              "purpose": "Artist and gallery sign the certificate; its fingerprint is sealed.",
+              "sealed": true,
+              "chips": [
+                [
+                  "2 documents",
+                  ""
+                ],
+                [
+                  "2 signed",
+                  "signed"
+                ]
+              ],
+              "members": [
+                "Artist",
+                "Gallery"
+              ]
+            },
+            {
+              "img": "gallery-hallway.webp",
+              "alt": "An empty white gallery corridor",
+              "name": "Museum loan · condition report",
+              "purpose": "Loan terms, courier notes and condition reports, before and after.",
+              "sealed": false,
+              "chips": [
+                [
+                  "5 documents",
+                  ""
+                ],
+                [
+                  "3 signed",
+                  "signed"
+                ],
+                [
+                  "1 awaiting signature",
+                  "awaiting"
+                ]
+              ],
+              "members": [
+                "Lender",
+                "Museum",
+                "Registrar",
+                "Courier"
+              ]
+            },
+            {
+              "img": "gold-frame.webp",
+              "alt": "Corner of an empty gilded frame against a dark wall",
+              "name": "Private sale · consignment agreement",
+              "purpose": "Consignment terms between owner and gallery, signed and kept.",
+              "sealed": false,
+              "chips": [
+                [
+                  "3 documents",
+                  ""
+                ],
+                [
+                  "2 signed",
+                  "signed"
+                ],
+                [
+                  "1 awaiting signature",
+                  "awaiting"
+                ]
+              ],
+              "members": [
+                "Consignor",
+                "Gallery",
+                "Counsel"
+              ]
+            },
+            {
+              "img": "stretchers.webp",
+              "alt": "Backs of stretched canvases stacked against a wall",
+              "name": "Estate collection · provenance file",
+              "purpose": "Forty works, each with its records, receipts and exhibition history.",
+              "sealed": false,
+              "chips": [
+                [
+                  "40 records",
+                  ""
+                ],
+                [
+                  "32 signed",
+                  "signed"
+                ],
+                [
+                  "8 drafts",
+                  "draft"
+                ]
+              ],
+              "members": [
+                "Executor",
+                "Archivist",
+                "Counsel"
+              ]
+            },
+            {
+              "img": "brushes.webp",
+              "alt": "Used paintbrushes beside a palette of mixed oil paint",
+              "name": "Studio commission · commission agreement",
+              "purpose": "Brief, sketches and the sign-off for a commissioned work.",
+              "sealed": false,
+              "chips": [
+                [
+                  "4 documents",
+                  ""
+                ],
+                [
+                  "3 signed",
+                  "signed"
+                ],
+                [
+                  "1 awaiting signature",
+                  "awaiting"
+                ]
+              ],
+              "members": [
+                "Artist",
+                "Collector",
+                "Studio manager"
+              ]
+            },
+            {
+              "img": "crates.webp",
+              "alt": "Five weathered wooden shipping crates on a warm studio backdrop",
+              "name": "Exhibition · loan forms and crate lists",
+              "purpose": "Loan forms, crate lists and condition notes for the show.",
+              "sealed": true,
+              "chips": [
+                [
+                  "6 documents",
+                  ""
+                ],
+                [
+                  "6 signed",
+                  "signed"
+                ]
+              ],
+              "members": [
+                "Artist",
+                "Curator",
+                "Art handler"
+              ]
+            },
+            {
+              "img": "ink-roller.webp",
+              "alt": "A hand rolling black ink onto a printing plate",
+              "name": "Edition of 12 · print certificates",
+              "purpose": "One certificate per print, signed by the artist and the printer.",
+              "sealed": true,
+              "chips": [
+                [
+                  "12 documents",
+                  ""
+                ],
+                [
+                  "12 signed",
+                  "signed"
+                ]
+              ],
+              "members": [
+                "Artist",
+                "Print studio"
+              ]
+            }
+          ]
+        }
       },
       "es": {
         "tagline": "La sala privada para el expediente de una obra",
@@ -1947,7 +2508,8 @@
             "sealed": "Sellado",
             "signed": "Firmado",
             "awaiting": "Pendiente de firma",
-            "draft": "Borrador"
+            "draft": "Borrador",
+            "open": "En curso"
           },
           "nav": [
             [
@@ -2335,7 +2897,191 @@
               "Obtener bWalletX",
               "https://bwalletx.com/get"
             ]
-          ]
+          ],
+          "examples": {
+            "kicker": "Salas de ejemplo · deslice",
+            "label": "Salas de negociación de ejemplo en bChatX",
+            "note": "Ejemplos con contenido de muestra, no son clientes reales.",
+            "prev": "Sala anterior",
+            "next": "Sala siguiente",
+            "pick": "Elegir una sala",
+            "slide": "de",
+            "tag": "Sala privada",
+            "open": "En curso",
+            "credit": "Fotos: Unsplash",
+            "creditsLead": "Fotos de Unsplash, bajo la Licencia de Unsplash:",
+            "cards": [
+              {
+                "img": "blank-canvas.webp",
+                "alt": "Un lienzo en blanco sobre una pared cálida, con luz de ventana en el piso",
+                "name": "Sin título, 2019 · certificado de autenticidad",
+                "purpose": "Artista y galería firman el certificado; su huella queda sellada.",
+                "sealed": true,
+                "chips": [
+                  [
+                    "2 documentos",
+                    ""
+                  ],
+                  [
+                    "2 firmados",
+                    "signed"
+                  ]
+                ],
+                "members": [
+                  "Artista",
+                  "Galería"
+                ]
+              },
+              {
+                "img": "gallery-hallway.webp",
+                "alt": "Un pasillo de galería blanco y vacío",
+                "name": "Préstamo a museo · informe de estado",
+                "purpose": "Condiciones del préstamo, notas del courier e informes de estado, antes y después.",
+                "sealed": false,
+                "chips": [
+                  [
+                    "5 documentos",
+                    ""
+                  ],
+                  [
+                    "3 firmados",
+                    "signed"
+                  ],
+                  [
+                    "1 pendiente de firma",
+                    "awaiting"
+                  ]
+                ],
+                "members": [
+                  "Prestador",
+                  "Museo",
+                  "Registrador",
+                  "Courier"
+                ]
+              },
+              {
+                "img": "gold-frame.webp",
+                "alt": "Esquina de un marco dorado vacío sobre una pared oscura",
+                "name": "Venta privada · contrato de consignación",
+                "purpose": "Condiciones de consignación entre propietario y galería, firmadas y archivadas.",
+                "sealed": false,
+                "chips": [
+                  [
+                    "3 documentos",
+                    ""
+                  ],
+                  [
+                    "2 firmados",
+                    "signed"
+                  ],
+                  [
+                    "1 pendiente de firma",
+                    "awaiting"
+                  ]
+                ],
+                "members": [
+                  "Consignante",
+                  "Galería",
+                  "Abogado"
+                ]
+              },
+              {
+                "img": "stretchers.webp",
+                "alt": "Reversos de bastidores con tela apilados contra una pared",
+                "name": "Colección de una sucesión · expediente de procedencia",
+                "purpose": "Cuarenta obras, cada una con sus registros, recibos e historial de exposiciones.",
+                "sealed": false,
+                "chips": [
+                  [
+                    "40 registros",
+                    ""
+                  ],
+                  [
+                    "32 firmados",
+                    "signed"
+                  ],
+                  [
+                    "8 borradores",
+                    "draft"
+                  ]
+                ],
+                "members": [
+                  "Albacea",
+                  "Archivista",
+                  "Abogado"
+                ]
+              },
+              {
+                "img": "brushes.webp",
+                "alt": "Pinceles usados junto a una paleta con óleo mezclado",
+                "name": "Encargo de estudio · contrato de encargo",
+                "purpose": "Brief, bocetos y la aprobación final de una obra por encargo.",
+                "sealed": false,
+                "chips": [
+                  [
+                    "4 documentos",
+                    ""
+                  ],
+                  [
+                    "3 firmados",
+                    "signed"
+                  ],
+                  [
+                    "1 pendiente de firma",
+                    "awaiting"
+                  ]
+                ],
+                "members": [
+                  "Artista",
+                  "Coleccionista",
+                  "Jefe de taller"
+                ]
+              },
+              {
+                "img": "crates.webp",
+                "alt": "Cinco cajas de madera gastadas para transporte, sobre un fondo cálido de estudio",
+                "name": "Exposición · formularios de préstamo y listas de cajas",
+                "purpose": "Formularios de préstamo, listas de cajas y notas de estado para la muestra.",
+                "sealed": true,
+                "chips": [
+                  [
+                    "6 documentos",
+                    ""
+                  ],
+                  [
+                    "6 firmados",
+                    "signed"
+                  ]
+                ],
+                "members": [
+                  "Artista",
+                  "Curador",
+                  "Montajista"
+                ]
+              },
+              {
+                "img": "ink-roller.webp",
+                "alt": "Una mano pasando tinta negra con un rodillo sobre una plancha de grabado",
+                "name": "Edición de 12 · certificados de grabado",
+                "purpose": "Un certificado por estampa, firmado por el artista y el impresor.",
+                "sealed": true,
+                "chips": [
+                  [
+                    "12 documentos",
+                    ""
+                  ],
+                  [
+                    "12 firmados",
+                    "signed"
+                  ]
+                ],
+                "members": [
+                  "Artista",
+                  "Taller de grabado"
+                ]
+              }
+            ]
+          }
         }
       }
     }

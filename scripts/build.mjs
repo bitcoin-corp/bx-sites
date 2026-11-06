@@ -1,5 +1,5 @@
 // Builds dist/<domain>/ for every site in sites.config.json from templates/.
-import { readFileSync, writeFileSync, mkdirSync, rmSync, copyFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, rmSync, copyFileSync, existsSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { renderRoom } from './room.mjs';
@@ -109,6 +109,12 @@ export function build() {
     for (const f of ['_auth.js', 'challenge.js', 'verify.js', 'session.js']) writeFileSync(join(out, 'api', 'bwalletx', f), fill(T('api/' + f), v));
     copyFileSync(join(root, 'templates', 'logo.svg'), join(out, 'logo.svg'));
     copyFileSync(join(root, 'templates', 'favicon.svg'), join(out, 'favicon.svg'));
+    // self-hosted photos for this site (room example carousel); credits in templates/photos/CREDITS.json
+    const photos = join(root, 'templates', 'photos', s.domain);
+    if (existsSync(photos)) {
+      mkdirSync(join(out, 'photos'), { recursive: true });
+      for (const f of readdirSync(photos)) copyFileSync(join(photos, f), join(out, 'photos', f));
+    }
     writeFileSync(join(out, 'package.json'), JSON.stringify({ name: slug + '-site', private: true, type: 'module', dependencies: { '@bsv/sdk': '2.8.10', '@bwalletx/connect': '0.5.0' } }, null, 2) + '\n');
     // every site's /flick-off goes to its switch on bmintx.com (one home for the campaign), www -> apex
     const flickUrl = s.flickOffPath ? `https://bmintx.com/flick-off/${s.flickOffPath}` : 'https://bmintx.com/flick-off';

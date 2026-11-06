@@ -16,6 +16,7 @@
 <meta name="twitter:description" content="{{purpose}}">
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script>document.documentElement.classList.add('js')</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -48,7 +49,7 @@ ul,ol{list-style:none}
 @media(max-width:900px){.links>a.hide-s{display:none}}
 
 /* hero */
-.top{position:relative;isolation:isolate;overflow:hidden;min-height:min(860px,92svh);display:flex;flex-direction:column;border-bottom:1px solid var(--line)}
+.top{position:relative;isolation:isolate;overflow:hidden;min-height:min(780px,80svh);display:flex;flex-direction:column;border-bottom:1px solid var(--line)}
 .top .art{position:absolute;inset:0;z-index:-2}
 .top .art svg{position:absolute;inset:0;width:100%;height:100%;display:block}
 .top::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.85) 0,rgba(0,0,0,0) 22%),linear-gradient(0deg,#000 0,rgba(0,0,0,.6) 22%,rgba(0,0,0,0) 55%),linear-gradient(90deg,rgba(0,0,0,.92) 0,rgba(0,0,0,.7) 34%,rgba(0,0,0,0) 62%)}
@@ -134,6 +135,50 @@ h3{font:600 19px/1.25 var(--hf);letter-spacing:-.01em;color:#fff}
 .dr-note{margin-top:12px;font-size:12.5px;line-height:1.5;color:var(--dim)}
 @media(max-width:980px){.dr-grid{grid-template-columns:1fr 1fr}.dr-sealc{grid-column:1/-1;border-left:0!important;border-top:1px solid var(--line)}}
 @media(max-width:640px){.dr-grid{grid-template-columns:1fr}.dr-col+.dr-col{border-left:0;border-top:1px solid var(--line)}.dr-priv{margin-left:0}.dr-top{gap:10px;padding:14px 16px}.dr-col{padding:18px 16px 20px}}
+
+/* example rooms: fanned carousel of bChatX deal-room cards (after the bMoviesX "house originals" fan) */
+.xr{--cw:320px;--ch:456px;padding:30px 0 30px;text-align:center;overflow:hidden;border-bottom:1px solid var(--line)}
+.xr-k{margin:0}
+.cf{position:relative;height:calc(var(--ch) + 36px);margin:16px auto 0;max-width:1500px;display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:18px 16px;scrollbar-width:none;outline-offset:-4px}
+.cf::-webkit-scrollbar{display:none}
+.js .cf{display:block;overflow:hidden;padding:0;perspective:1400px;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.dc{flex:none;width:var(--cw);height:var(--ch);scroll-snap-align:center;display:flex;flex-direction:column;text-align:left;border-radius:16px;overflow:hidden;background:linear-gradient(180deg,#100f0d,#090909);border:1px solid rgba(255,210,77,.18);box-shadow:0 24px 60px -18px rgba(0,0,0,.9)}
+.js .dc{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);transition:transform .6s cubic-bezier(.2,.7,.2,1),opacity .6s,filter .6s,border-color .3s;cursor:pointer}
+.dc.on{border-color:rgba(255,210,77,.5);box-shadow:0 34px 90px -30px color-mix(in srgb,var(--acc) 60%,transparent),0 24px 60px -18px rgba(0,0,0,.9);cursor:default}
+.dc-ph{position:relative;flex:none;aspect-ratio:900/560;background:#161513}
+.dc-ph img{display:block;width:100%;height:100%;object-fit:cover;-webkit-user-drag:none}
+.dc-ph::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,0) 34%,rgba(0,0,0,0) 62%,#100f0d 100%)}
+.dc-st{position:absolute;z-index:1;top:12px;right:12px;display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;font:600 10.5px/1 var(--hf);letter-spacing:.16em;text-transform:uppercase;color:#e9d9a6;background:rgba(0,0,0,.6);border:1px solid rgba(233,217,166,.32);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.dc-st i{width:6px;height:6px;border-radius:50%;background:#e9d9a6}
+.dc-st.on{color:#000;background:var(--acc);border-color:var(--acc)}
+.dc-b{flex:1;min-height:0;display:flex;flex-direction:column;padding:12px 18px 16px}
+.dc-k{display:flex;align-items:center;gap:6px;font:500 10.5px/1 var(--mf);letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+.dc-k .dc-bm{width:9px;height:12px;color:#F5B800;flex:none}
+.dc-k span:first-of-type{font:700 12px/1 var(--hf);letter-spacing:-.01em;text-transform:none;color:#e6e1d5}
+.dc-k i{font-style:normal;color:#4a4842}
+.dc-k .ic-s{width:12px;height:12px;color:var(--acc)}
+.dc-t{margin-top:11px;font:600 17px/1.25 var(--hf);letter-spacing:-.012em;color:#fff;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.dc-p{margin-top:6px;font-size:13.5px;line-height:1.45;color:var(--mute);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.dc-c{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.dc-c .st{text-transform:none;letter-spacing:.01em;font-size:11px;padding:5px 9px}
+.dc-m{display:flex;align-items:center;gap:10px;margin-top:auto;padding-top:12px;border-top:1px solid var(--line)}
+.dc-av{display:flex;flex:none}
+.dc-av i{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font:600 9.5px/1 var(--hf);font-style:normal;letter-spacing:.02em;color:#e6e1d5;background:#1c1b18;box-shadow:0 0 0 2px #0b0b0a,0 0 0 3px var(--line2)}
+.dc-av i+i{margin-left:-6px}
+.dc-r{min-width:0;font-size:12px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cf-nav{display:none;align-items:center;justify-content:center;gap:12px;margin-top:4px}
+.js .cf-nav{display:flex}
+.cf-a{width:44px;height:44px;flex:none;border-radius:50%;border:1px solid var(--line2);background:#0a0a0a;color:var(--ink);display:grid;place-items:center;cursor:pointer;transition:border-color .16s,color .16s}
+.cf-a:hover{border-color:var(--gold);color:var(--gold)}
+.cf-a svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.cf-dots{display:flex;flex-wrap:wrap;justify-content:center}
+.cf-dots button{width:24px;height:24px;padding:0;border:0;background:none;cursor:pointer;display:grid;place-items:center}
+.cf-dots button::after{content:"";width:6px;height:6px;border-radius:50%;background:#3b3933;transition:background .2s}
+.cf-dots button[aria-current=true]::after{width:8px;height:8px;background:var(--gold)}
+.xr-n{margin-top:12px;padding:0 16px;font:500 11px/1.5 var(--mf);letter-spacing:.04em;color:var(--dim)}
+.xr-n a{color:#bdb8ab;text-underline-offset:3px}
+.xr-n a:hover{color:var(--ink)}
+@media(max-width:640px){.xr{--cw:min(300px,80vw);--ch:442px;padding:26px 0 26px}.dc-b{padding:12px 16px 14px}}
 
 /* how it works: numbered steps on hairlines (family) */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line2)}
@@ -252,6 +297,8 @@ footer{padding:40px 0 48px;color:var(--mute);font-size:13px}
 .foot nav a:hover{color:var(--ink)}
 .legal{margin-top:26px;padding-top:22px;border-top:1px solid var(--line);display:grid;gap:6px;color:var(--dim);font-size:12.5px;max-width:820px}
 .legal .disclaimer{color:#bdb8aa}
+.credits a{color:#a9a69c;text-underline-offset:3px}
+.credits a:hover{color:var(--ink)}
 </style>
 </head>
 <body>
@@ -274,6 +321,47 @@ footer{padding:40px 0 48px;color:var(--mute);font-size:13px}
   </div>
   <span class="art-cap" aria-hidden="true">{{artCaption}}</span>
 </section>
+
+{{examples}}
+<script>
+// example-rooms fan: arrows, dots, keys, swipe/drag, trackpad; gentle autoplay that pauses on hover/focus, stops on any
+// manual move, and never runs with prefers-reduced-motion.
+(function(){
+  var cf=document.getElementById('cf');if(!cf)return;
+  var cards=[].slice.call(cf.querySelectorAll('.dc')),dots=[].slice.call(document.querySelectorAll('#cfDots button')),n=cards.length,cur=0,dragged=false;
+  var rm=window.matchMedia?matchMedia('(prefers-reduced-motion: reduce)'):{matches:false};
+  function layout(){var w=cards[0].offsetWidth,k=innerWidth<640?.74:.6;cards.forEach(function(c,i){var d=i-cur;if(d>n/2)d-=n;if(d<-n/2)d+=n;var a=Math.abs(d);
+    c.style.transform='translate(-50%,-50%) translateX('+(d*w*k)+'px) translateZ('+(-a*150)+'px) rotateY('+(-Math.sign(d)*Math.min(a,1)*34)+'deg)';
+    c.style.opacity=a>3?0:a?1-a*.26:1;c.style.zIndex=100-a;c.style.filter=a?'brightness(.42) saturate(.8)':'none';c.style.pointerEvents=a>3?'none':'auto';
+    c.classList.toggle('on',a===0);c.setAttribute('aria-hidden',a===0?'false':'true')});
+    dots.forEach(function(b,i){b.setAttribute('aria-current',i===cur?'true':'false')})}
+  var timer=null,paused=false,stopped=rm.matches,seen=!('IntersectionObserver' in window);
+  function stop(){stopped=true;clearInterval(timer);timer=null;cf.setAttribute('aria-live','polite')}
+  function go(i,user){cur=(i+n)%n;layout();if(user)stop()}
+  cf.setAttribute('aria-live',stopped?'polite':'off');
+  if(!stopped)timer=setInterval(function(){if(!paused&&seen&&!document.hidden)go(cur+1)},6500);
+  if(rm.addEventListener)rm.addEventListener('change',function(){if(rm.matches)stop()});
+  if(!seen)new IntersectionObserver(function(e){seen=e[0].isIntersecting},{threshold:.4}).observe(cf);
+  var sec=cf.parentNode;
+  sec.addEventListener('pointerenter',function(){paused=true});sec.addEventListener('pointerleave',function(){paused=false});
+  sec.addEventListener('focusin',function(){paused=true});sec.addEventListener('focusout',function(){paused=false});
+  document.getElementById('cfPrev').onclick=function(){go(cur-1,1)};document.getElementById('cfNext').onclick=function(){go(cur+1,1)};
+  dots.forEach(function(b,i){b.onclick=function(){go(i,1)}});
+  cf.addEventListener('click',function(e){if(dragged){dragged=false;return}var c=e.target.closest('.dc');if(c&&+c.dataset.i!==cur)go(+c.dataset.i,1)});
+  cf.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){e.preventDefault();go(cur-1,1)}if(e.key==='ArrowRight'){e.preventDefault();go(cur+1,1)}});
+  var acc=0,steps=0,idle=0;
+  cf.addEventListener('wheel',function(e){var m=e.deltaMode===1?16:e.deltaMode===2?400:1,dx=e.deltaX*m,dy=e.deltaY*m;if(e.shiftKey&&!dx){dx=dy;dy=0}
+    if(Math.abs(dx)<=Math.abs(dy)||Math.abs(dx)<2)return;e.preventDefault();clearTimeout(idle);idle=setTimeout(function(){acc=0;steps=0},200);acc+=dx;
+    if(steps===0&&Math.abs(acc)>=50){go(cur+Math.sign(acc),1);steps=1;acc=0}else if(steps===1&&Math.abs(acc)>=600){go(cur+Math.sign(acc),1);steps=2}},{passive:false});
+  var sx=null,sy=0;
+  cf.addEventListener('pointerdown',function(e){sx=e.clientX;sy=e.clientY;dragged=false});
+  cf.addEventListener('pointermove',function(e){if(sx!=null&&Math.abs(e.clientX-sx)>8&&Math.abs(e.clientX-sx)>Math.abs(e.clientY-sy))dragged=true});
+  cf.addEventListener('pointerup',function(e){if(sx==null)return;var dx=e.clientX-sx;if(dragged&&Math.abs(dx)>40)go(cur+(dx<0?1:-1),1);sx=null});
+  cf.addEventListener('pointercancel',function(){sx=null});
+  cf.addEventListener('dragstart',function(e){e.preventDefault()});
+  addEventListener('resize',layout);layout();
+})();
+</script>
 
 <section class="sec" id="room" aria-labelledby="room-h">
   <div class="wrap">{{mockHead}}{{mock}}</div>
@@ -323,7 +411,7 @@ footer{padding:40px 0 48px;color:var(--mute);font-size:13px}
     <a class="brand" href="/{{path}}" aria-label="{{name}} home">{{bmark}}<span>{{mbase}}<i>X</i></span></a>
     <nav aria-label="Footer">{{footNav}}</nav>
   </div>
-  <div class="legal">{{disclaimer}}<span>{{legal}}</span></div>
+  <div class="legal">{{disclaimer}}<span>{{legal}}</span>{{photoCredits}}</div>
 </footer>
 
 <script src="https://unpkg.com/@bwalletx/connect@0.5.0/dist/bwalletx-connect.global.js"></script>

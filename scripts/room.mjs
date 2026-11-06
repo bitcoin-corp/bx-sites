@@ -1,7 +1,8 @@
 // "room" layout: a full b*X family landing page (hero with art, product mock of the room, how it works, what the
 // room holds, sealing, who it's for, the stack, live/coming status, what we don't do, operators, final CTA).
 // Used by any site whose config has a `room` object (es.room for the Spanish page). bpropertyx.com and bgalleryx.com
-// are the worked examples. Art is original SVG (templates/art/<name>.svg), no stock or generated photos.
+// are the worked examples. Hero and band art is original SVG (templates/art/<name>.svg). The optional example-rooms
+// carousel (room.examples) uses Unsplash photos, self-hosted and credited in templates/photos/CREDITS.json.
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -76,6 +77,44 @@ export function renderRoom(root, s, v) {
   const opCards = op.cards.map(([t, h, p]) => `<li><span class="mono tagl">${esc(t)}</span><h3>${esc(h)}</h3><p>${esc(p)}</p></li>`).join('');
   const f = r.final;
 
+  // example deal rooms: a swipeable fan of bChatX room cards (photos self-hosted from templates/photos/<domain>/,
+  // credited from templates/photos/CREDITS.json). Content is example only and labelled so on the page.
+  const x = r.examples;
+  let examples = '', photoCredits = '';
+  if (x) {
+    const n = x.cards.length;
+    const initials = (role) => role.replace(/['’]s\b/g, '').replace(/[^\p{L}\s]/gu, ' ').trim().split(/\s+/).slice(0, 2).map((w) => w[0].toUpperCase()).join('');
+    const cards = x.cards.map((c, i) => `<article class="dc" data-i="${i}" role="group" aria-roledescription="slide" aria-label="${i + 1} ${esc(x.slide)} ${n}: ${esc(c.name)}">
+  <div class="dc-ph"><img src="/photos/${esc(c.img)}" width="900" height="560" alt="${esc(c.alt)}"${i < 3 || i === n - 1 ? '' : ' loading="lazy"'} decoding="async" draggable="false"><span class="dc-st${c.sealed ? ' on' : ''}">${c.sealed ? icon('seal', 'ic-s') : '<i></i>'}${esc(c.sealed ? L.sealed : L.open)}</span></div>
+  <div class="dc-b">
+    <p class="dc-k">${bmark('dc-bm')}<span>ChatX</span><i aria-hidden="true">·</i>${icon('lock', 'ic-s')}<span>${esc(x.tag)}</span></p>
+    <p class="dc-t">${esc(c.name)}</p>
+    <p class="dc-p">${esc(c.purpose)}</p>
+    <ul class="dc-c">${c.chips.map(([t, s]) => `<li${s ? ` class="st st-${esc(s)}"` : ' class="st"'}>${esc(t)}</li>`).join('')}</ul>
+    <div class="dc-m"><span class="dc-av" aria-hidden="true">${c.members.map((m) => `<i>${esc(initials(m))}</i>`).join('')}</span><span class="dc-r">${c.members.map(esc).join(' · ')}</span></div>
+  </div>
+</article>`).join('');
+    const dots = x.cards.map((c, i) => `<button type="button" aria-label="${esc(c.name)}"${i === 0 ? ' aria-current="true"' : ''}></button>`).join('');
+    examples = `<section class="xr" aria-labelledby="xr-h">
+  <p class="eye xr-k" id="xr-h">${esc(x.kicker)}</p>
+  <div class="cf" id="cf" tabindex="0" role="region" aria-roledescription="carousel" aria-label="${esc(x.label)}">${cards}</div>
+  <div class="cf-nav">
+    <button class="cf-a" id="cfPrev" type="button" aria-label="${esc(x.prev)}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5 M11 6l-6 6 6 6"/></svg></button>
+    <div class="cf-dots" id="cfDots" role="group" aria-label="${esc(x.pick)}">${dots}</div>
+    <button class="cf-a" id="cfNext" type="button" aria-label="${esc(x.next)}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14 M13 6l6 6-6 6"/></svg></button>
+  </div>
+  <p class="xr-n">${esc(x.note)} <a href="#photo-credits">${esc(x.credit)}</a></p>
+</section>`;
+    const credits = JSON.parse(readFileSync(join(root, 'templates', 'photos', 'CREDITS.json'), 'utf8')).photos;
+    const seen = new Map();
+    for (const c of x.cards) {
+      const p = credits[`${s.domain}/${c.img}`];
+      if (!p) throw new Error(`no credit for ${s.domain}/${c.img} in templates/photos/CREDITS.json`);
+      if (!seen.has(p.username)) seen.set(p.username, p);
+    }
+    photoCredits = `<p class="credits" id="photo-credits">${esc(x.creditsLead)} ${[...seen.values()].map((p) => `<a href="https://unsplash.com/@${esc(p.username)}?utm_source=${esc(s.domain)}&amp;utm_medium=referral" rel="noopener">${esc(p.photographer)}</a>`).join(', ')}.</p>`;
+  }
+
   const vals = {
     ...v,
     mbase: v.base.replace(/^b(?=[A-Z])/, ""),
@@ -85,6 +124,7 @@ export function renderRoom(root, s, v) {
     heroEyebrow: esc(r.eyebrow), heroStatement: rich(r.statement), heroLede: esc(r.lede),
     heroCtas: [r.cta, r.cta2].filter(Boolean).map(btn).join(''),
     ghost: esc(r.ghost), artCaption: esc(r.artCaption),
+    examples, photoCredits,
     mockHead: head(r.mockHead, 'room-h'), mock,
     howHead: head(r.how, 'how-h'), steps,
     holdsHead: head(r.holds, 'holds-h'), holds,

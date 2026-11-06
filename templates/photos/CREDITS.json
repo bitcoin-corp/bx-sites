@@ -1,0 +1,19 @@
+{
+  "about": "Photos in the example-room carousels on bpropertyx.com and bgalleryx.com. All from Unsplash, under the Unsplash License (https://unsplash.com/license): free for commercial use, attribution not required but given. Downloaded from the Unsplash CDN, cropped, resized to 900x560 and converted to webp; self-hosted, not hotlinked. Each was checked by eye: no faces, no logos or brand names, no signs or house numbers, no landmarks, no recognisable artworks.",
+  "photos": {
+    "bpropertyx.com/hillside-villa.webp": { "id": "1zNSvdjCis8", "cdn": "photo-1758692513983-ebf181d2ec2a", "photographer": "Simon Tartarotti", "username": "simontartarotti", "url": "https://unsplash.com/photos/1zNSvdjCis8" },
+    "bpropertyx.com/penthouse.webp": { "id": "qFbauOaA9UY", "cdn": "photo-1707484687082-9493754d389f", "photographer": "Vangel Dimo", "username": "vangeldimo", "url": "https://unsplash.com/photos/qFbauOaA9UY", "note": "cropped to leave out the coastline town" },
+    "bpropertyx.com/coastal-estate.webp": { "id": "T1HWFSzJ2Uc", "cdn": "photo-1781436459226-292bfc9564a2", "photographer": "Zidhan Ibrahim", "username": "xidhern", "url": "https://unsplash.com/photos/T1HWFSzJ2Uc" },
+    "bpropertyx.com/restoration.webp": { "id": "OKnodp2EfmE", "cdn": "photo-1787313879106-0f2441eab1ed", "photographer": "Barney Goodman", "username": "bgoodpic", "url": "https://unsplash.com/photos/OKnodp2EfmE" },
+    "bpropertyx.com/family-office.webp": { "id": "IA4mXpyGbB0", "cdn": "photo-1719392848850-59cf57d0e139", "photographer": "Amihai Loven", "username": "amihailoven", "url": "https://unsplash.com/photos/IA4mXpyGbB0" },
+    "bpropertyx.com/courtyard-house.webp": { "id": "s5JnDU-MUfY", "cdn": "photo-1783125127059-514d7a90ab99", "photographer": "Salvo Media LLC", "username": "salvomedia", "url": "https://unsplash.com/photos/s5JnDU-MUfY" },
+    "bpropertyx.com/roof-terrace.webp": { "id": "k1hCHacaUu0", "cdn": "photo-1776363284806-873eeef565a7", "photographer": "Aalo Lens", "username": "aalolens", "url": "https://unsplash.com/photos/k1hCHacaUu0" },
+    "bgalleryx.com/blank-canvas.webp": { "id": "piFLApvqtxY", "cdn": "photo-1782879306444-52a0d7d4aee3", "photographer": "Declan Sun", "username": "declansun", "url": "https://unsplash.com/photos/piFLApvqtxY" },
+    "bgalleryx.com/gallery-hallway.webp": { "id": "_42kwMUmZw0", "cdn": "photo-1762928289094-197055a5d5c3", "photographer": "Declan Sun", "username": "declansun", "url": "https://unsplash.com/photos/_42kwMUmZw0" },
+    "bgalleryx.com/gold-frame.webp": { "id": "WbH2fNjw1UA", "cdn": "photo-1774907432786-900e87e15cfc", "photographer": "Adam Kring", "username": "adamkring", "url": "https://unsplash.com/photos/WbH2fNjw1UA" },
+    "bgalleryx.com/stretchers.webp": { "id": "pr-N-QBK7K0", "cdn": "photo-1760794751749-6df8746cf42b", "photographer": "Alican Leblebici", "username": "alican123", "url": "https://unsplash.com/photos/pr-N-QBK7K0", "note": "cropped to leave out a maker's label" },
+    "bgalleryx.com/brushes.webp": { "id": "XbcfTH69aAc", "cdn": "photo-1658303135227-fcdfb0dab396", "photographer": "Jennie Razumnaya", "username": "jennie_ra", "url": "https://unsplash.com/photos/XbcfTH69aAc" },
+    "bgalleryx.com/crates.webp": { "id": "u0ZzvGCpOUk", "cdn": "photo-1647966520051-d4975b0fac7a", "photographer": "Cameron Shurley", "username": "cssluis", "url": "https://unsplash.com/photos/u0ZzvGCpOUk" },
+    "bgalleryx.com/ink-roller.webp": { "id": "7e3JPKP5Jm8", "cdn": "photo-1778690133450-ddb08af48d76", "photographer": "Filippo Castegnaro", "username": "filippocastegnaro", "url": "https://unsplash.com/photos/7e3JPKP5Jm8" }
+  }
+}

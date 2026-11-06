@@ -23,6 +23,14 @@ for (const s of sites) {
     ok(es.includes('data-bwx') && es.includes('lang="es"'), `${s.domain}: es page`);
   }
   if (s.disclaimer) ok(html.includes(s.disclaimer), `${s.domain}: disclaimer line`);
+  // example-room carousel: every photo is self-hosted (no hotlinking) and the page carries the credits list
+  for (const [room, file] of [[s.room, 'index.html'], [s.es?.room, 'es.html']]) {
+    if (!room?.examples) continue;
+    const page = readFileSync(join(d, file), 'utf8');
+    for (const c of room.examples.cards) ok(existsSync(join(d, 'photos', c.img)) && page.includes(`/photos/${c.img}`), `${s.domain}/${file}: photo ${c.img}`);
+    ok(page.includes('id="photo-credits"') && page.includes('href="#photo-credits"'), `${s.domain}/${file}: photo credits`);
+    ok(!/images\.unsplash\.com/.test(page), `${s.domain}/${file}: hotlinked photo`);
+  }
   const auth = readFileSync(join(d, 'api/bwalletx/_auth.js'), 'utf8');
   ok(auth.includes(`|| 'https://${s.domain}'`), `${s.domain}: ORIGIN`);
   ok(!((s.domain !== 'bvideox.com' && /bvideox/.test(auth)) || /\{\{/.test(auth + readFileSync(join(d, 'bwx.js'), 'utf8'))), `${s.domain}: leftover bvideox/{{ in js`);
