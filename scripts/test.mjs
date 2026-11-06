@@ -15,7 +15,14 @@ for (const s of sites) {
   ok(html.includes('<!-- Part of bWalletX strip') && html.includes('<!-- /Part of bWalletX strip -->'), `${s.domain}: strip`);
   ok(html.includes('data-bwx'), `${s.domain}: data-bwx`);
   ok(!/undefined|\{\{/.test(html), `${s.domain}: undefined or {{ left in HTML`);
-  ok(html.includes('https://bmintx.com/flick-off') && html.includes('https://bwalletx.com/get'), `${s.domain}: footer links`);
+  // room-layout sites (B2B landing) carry the family footer without the FLICK OFF campaign link
+  ok((s.room || html.includes('https://bmintx.com/flick-off')) && html.includes('https://bwalletx.com/get'), `${s.domain}: footer links`);
+  if (s.es) {
+    const es = readFileSync(join(d, 'es.html'), 'utf8');
+    ok(!/undefined|\{\{/.test(es), `${s.domain}: undefined or {{ left in es.html`);
+    ok(es.includes('data-bwx') && es.includes('lang="es"'), `${s.domain}: es page`);
+  }
+  if (s.disclaimer) ok(html.includes(s.disclaimer), `${s.domain}: disclaimer line`);
   const auth = readFileSync(join(d, 'api/bwalletx/_auth.js'), 'utf8');
   ok(auth.includes(`|| 'https://${s.domain}'`), `${s.domain}: ORIGIN`);
   ok(!((s.domain !== 'bvideox.com' && /bvideox/.test(auth)) || /\{\{/.test(auth + readFileSync(join(d, 'bwx.js'), 'utf8'))), `${s.domain}: leftover bvideox/{{ in js`);

@@ -2,6 +2,7 @@
 import { readFileSync, writeFileSync, mkdirSync, rmSync, copyFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { renderRoom } from './room.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const T = (p) => readFileSync(join(root, 'templates', p), 'utf8');
@@ -97,13 +98,17 @@ export function build() {
     };
     const out = join(dist, s.domain);
     mkdirSync(join(out, 'api', 'bwalletx'), { recursive: true });
-    writeFileSync(join(out, page.file), fill(T('index.html'), v));
+    // `room` sites get the full family landing layout (templates/room.html via scripts/room.mjs)
+    const html = s.room
+      ? renderRoom(root, s, { ...v, disclaimer: s.disclaimer ? `<span class="disclaimer">${esc(s.disclaimer)}</span>` : '' })
+      : fill(T('index.html'), v);
+    writeFileSync(join(out, page.file), html);
+    if (og) copyFileSync(join(root, 'og', og), join(out, og));
     if (page.lang !== 'en') continue;
     writeFileSync(join(out, 'bwx.js'), fill(T('bwx.js'), v));
     for (const f of ['_auth.js', 'challenge.js', 'verify.js', 'session.js']) writeFileSync(join(out, 'api', 'bwalletx', f), fill(T('api/' + f), v));
     copyFileSync(join(root, 'templates', 'logo.svg'), join(out, 'logo.svg'));
     copyFileSync(join(root, 'templates', 'favicon.svg'), join(out, 'favicon.svg'));
-    if (og) copyFileSync(join(root, 'og', og), join(out, og));
     writeFileSync(join(out, 'package.json'), JSON.stringify({ name: slug + '-site', private: true, type: 'module', dependencies: { '@bsv/sdk': '2.8.10', '@bwalletx/connect': '0.5.0' } }, null, 2) + '\n');
     // every site's /flick-off goes to its switch on bmintx.com (one home for the campaign), www -> apex
     const flickUrl = s.flickOffPath ? `https://bmintx.com/flick-off/${s.flickOffPath}` : 'https://bmintx.com/flick-off';

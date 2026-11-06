@@ -1,0 +1,65 @@
+<svg viewBox="0 0 1600 900" preserveAspectRatio="xMaxYMax slice" xmlns="http://www.w3.org/2000/svg" focusable="false">
+  <!-- Original composition (bCorp): a quiet gallery wall with three invented abstract works. Not real artworks or artists. -->
+  <defs>
+    <linearGradient id="ga-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#090807"/><stop offset=".55" stop-color="#1a1714"/><stop offset=".78" stop-color="#211d19"/></linearGradient>
+    <linearGradient id="ga-floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a2520"/><stop offset=".35" stop-color="#141210"/><stop offset="1" stop-color="#050505"/></linearGradient>
+    <radialGradient id="ga-spot" cx=".5" cy="0" r="1"><stop offset="0" stop-color="#fff4e2" stop-opacity=".26"/><stop offset=".55" stop-color="#fff4e2" stop-opacity=".07"/><stop offset="1" stop-color="#fff4e2" stop-opacity="0"/></radialGradient>
+    <filter id="ga-paint" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency=".018 .05" numOctaves="4" seed="3" result="t"/>
+      <feDisplacementMap in="SourceGraphic" in2="t" scale="11" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="1.8"/>
+    </filter>
+    <filter id="ga-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .22 0" result="g"/>
+      <feComposite in="g" in2="SourceGraphic" operator="in"/>
+    </filter>
+    <filter id="ga-shadow" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity=".7"/></filter>
+    <filter id="ga-blur"><feGaussianBlur stdDeviation="5"/></filter>
+    <clipPath id="ga-c1"><rect x="860" y="236" width="400" height="388"/></clipPath>
+    <clipPath id="ga-c2"><rect x="1356" y="318" width="168" height="222"/></clipPath>
+    <clipPath id="ga-c3"><rect x="690" y="356" width="104" height="138"/></clipPath>
+    <g id="ga-works">
+      <!-- work 1: large colour-field, crimson over umber -->
+      <g filter="url(#ga-shadow)"><rect x="852" y="228" width="416" height="404" fill="#0c0b0a"/></g>
+      <g clip-path="url(#ga-c1)">
+        <rect x="860" y="236" width="400" height="388" fill="#2a1512"/>
+        <g filter="url(#ga-paint)">
+          <rect x="884" y="260" width="352" height="214" fill="#8f2232"/>
+          <rect x="884" y="488" width="352" height="18" fill="#d9cfbc" opacity=".85"/>
+          <rect x="884" y="520" width="352" height="82" fill="#5b3826"/>
+          <rect x="900" y="290" width="240" height="120" fill="#a8303f" opacity=".55"/>
+        </g>
+        <rect x="860" y="236" width="400" height="388" fill="#fff" filter="url(#ga-grain)"/>
+      </g>
+      <!-- work 2: bone ground, a single deep-red square -->
+      <g filter="url(#ga-shadow)"><rect x="1350" y="312" width="180" height="234" fill="#0c0b0a"/></g>
+      <g clip-path="url(#ga-c2)">
+        <rect x="1356" y="318" width="168" height="222" fill="#d8cfbe"/>
+        <g filter="url(#ga-paint)"><rect x="1392" y="372" width="84" height="84" fill="#7c1d2b"/><rect x="1380" y="476" width="120" height="6" fill="#3a2a22" opacity=".7"/></g>
+        <rect x="1356" y="318" width="168" height="222" fill="#fff" filter="url(#ga-grain)"/>
+      </g>
+      <!-- work 3: small, umber and ochre -->
+      <g filter="url(#ga-shadow)"><rect x="685" y="351" width="114" height="148" fill="#0c0b0a"/></g>
+      <g clip-path="url(#ga-c3)">
+        <rect x="690" y="356" width="104" height="138" fill="#3a2a20"/>
+        <g filter="url(#ga-paint)"><rect x="700" y="372" width="84" height="62" fill="#9a6a3a"/><rect x="700" y="444" width="84" height="36" fill="#1d1612"/></g>
+      </g>
+    </g>
+  </defs>
+  <rect width="1600" height="700" fill="url(#ga-wall)"/>
+  <ellipse cx="1060" cy="120" rx="360" ry="620" fill="url(#ga-spot)"/>
+  <ellipse cx="1440" cy="190" rx="190" ry="460" fill="url(#ga-spot)" opacity=".8"/>
+  <ellipse cx="742" cy="230" rx="130" ry="340" fill="url(#ga-spot)" opacity=".55"/>
+  <rect x="0" y="700" width="1600" height="200" fill="url(#ga-floor)"/>
+  <rect x="0" y="698" width="1600" height="2" fill="#3a342d"/>
+  <rect x="0" y="700" width="1600" height="1" fill="#f5e9d6" opacity=".12"/>
+  <use href="#ga-works"/>
+  <!-- reflections in the polished floor -->
+  <g opacity=".16" filter="url(#ga-blur)"><use href="#ga-works" transform="translate(0 1400) scale(1 -1)"/></g>
+  <rect x="0" y="700" width="1600" height="200" fill="url(#ga-floor)" opacity=".55"/>
+  <!-- bench -->
+  <rect x="930" y="740" width="300" height="16" fill="#0e0c0b"/>
+  <rect x="930" y="740" width="300" height="1" fill="#f5e9d6" opacity=".2"/>
+  <rect x="948" y="756" width="10" height="44" fill="#0b0a09"/><rect x="1202" y="756" width="10" height="44" fill="#0b0a09"/>
+</svg>

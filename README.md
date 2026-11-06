@@ -8,7 +8,7 @@ Shared static-site template for the b*X product family (bWalletX, BSV).
 pnpm build   # sites.config.json + templates/ -> dist/<domain>/
 pnpm test    # builds everything and checks each site
 pnpm new-domain <domain> --base bFoo --accent '#hex' --tagline '...' --purpose '...'   # the new-domain package (PACKAGE.md)
-pnpm og <domain> [version]   # re-render one site's share card
+pnpm og <domain> [version] [es]   # re-render one site's share card (es: the Spanish card)
 ```
 
 **New domain?** Follow [PACKAGE.md](PACKAGE.md). Going live needs RB's OK in the COO chat.
@@ -20,7 +20,7 @@ project; without it the buttons render and the API returns 503 "not switched on 
 
 Config per site: `domain`, `base` (wordmark without the gold X), `accent`, `status` (`live` | `holding`),
 `managedElsewhere`, `flickOff`, `tagline`, `purpose`, `eyebrow`, `headline` (`*word*` = outlined, `<br>` allowed), `lede`,
-optional `how` / `why` (otherwise defaults by status).
+optional `how` / `why` (otherwise defaults by status). A site with a `room` object gets the full landing layout instead (see PACKAGE.md).
 
 ## Do NOT deploy managed sites from here
 

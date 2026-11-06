@@ -1,0 +1,18 @@
+<svg viewBox="0 0 1600 440" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" focusable="false">
+  <!-- Original composition (bCorp): a raking-light close-up of an invented painted surface, as in a condition report. -->
+  <defs>
+    <linearGradient id="gd-c" x1="0" y1="0" x2="1" y2=".4"><stop offset="0" stop-color="#3b1a16"/><stop offset=".3" stop-color="#8f2232"/><stop offset=".52" stop-color="#b03a45"/><stop offset=".6" stop-color="#d8cfbc"/><stop offset=".66" stop-color="#6a4330"/><stop offset="1" stop-color="#1e1410"/></linearGradient>
+    <filter id="gd-relief" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency=".006 .035" numOctaves="5" seed="21" result="h"/>
+      <feDiffuseLighting in="h" surfaceScale="9" diffuseConstant="1.1" lighting-color="#fff2e0" result="l"><feDistantLight azimuth="200" elevation="38"/></feDiffuseLighting>
+      <feComposite in="SourceGraphic" in2="l" operator="arithmetic" k1="1.25" k2="0" k3="0" k4="0"/>
+    </filter>
+    <linearGradient id="gd-v" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity=".55"/><stop offset=".3" stop-color="#000" stop-opacity="0"/><stop offset=".75" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".7"/></linearGradient>
+    <linearGradient id="gd-h" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".5"/><stop offset=".2" stop-color="#000" stop-opacity="0"/><stop offset=".85" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/></linearGradient>
+  </defs>
+  <rect width="1600" height="440" fill="url(#gd-c)" filter="url(#gd-relief)"/>
+  <rect width="1600" height="440" fill="url(#gd-v)"/>
+  <rect width="1600" height="440" fill="url(#gd-h)"/>
+  <!-- registrar's measurement marks, as in a condition report -->
+  <g stroke="#efe9df" stroke-opacity=".5" stroke-width="1" fill="none"><path d="M1120 120h120M1120 112v16M1240 112v16"/><circle cx="1300" cy="250" r="34" stroke-dasharray="4 4"/></g>
+</svg>

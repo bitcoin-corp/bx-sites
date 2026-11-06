@@ -1,0 +1,68 @@
+<svg viewBox="0 0 1600 900" preserveAspectRatio="xMaxYMax slice" xmlns="http://www.w3.org/2000/svg" focusable="false">
+  <!-- Original composition (bCorp): an unnamed villa at dusk, travertine, glass and a reflecting pool. Not a real building. -->
+  <defs>
+    <linearGradient id="pa-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#030303"/><stop offset=".45" stop-color="#0d0907"/><stop offset=".72" stop-color="#2b1810"/><stop offset=".8" stop-color="#3e2418"/></linearGradient>
+    <radialGradient id="pa-glow" cx="1240" cy="640" r="620" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#d98a5c" stop-opacity=".42"/><stop offset=".5" stop-color="#8a4a2c" stop-opacity=".14"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+    <linearGradient id="pa-glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a3423"/><stop offset=".55" stop-color="#b9714a"/><stop offset="1" stop-color="#f2c59b"/></linearGradient>
+    <linearGradient id="pa-glass2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".55"/><stop offset=".35" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></linearGradient>
+    <linearGradient id="pa-band" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7a4630"/><stop offset=".6" stop-color="#e3a77a"/><stop offset="1" stop-color="#8a5236"/></linearGradient>
+    <linearGradient id="pa-beam" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe2c4" stop-opacity=".12"/><stop offset="1" stop-color="#ffe2c4" stop-opacity="0"/></linearGradient>
+    <linearGradient id="pa-pool" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b0f10"/><stop offset="1" stop-color="#020303"/></linearGradient>
+    <filter id="pa-stone" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".6 .035" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 .36  0 0 0 0 .29  0 0 0 0 .23  0 0 0 .9 0" result="c"/>
+      <feComposite in="c" in2="SourceGraphic" operator="in"/>
+    </filter>
+    <filter id="pa-blur"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="pa-soft"><feGaussianBlur stdDeviation="18"/></filter>
+    <clipPath id="pa-poolclip"><rect x="740" y="654" width="860" height="112"/></clipPath>
+    <g id="pa-house">
+      <!-- upper volume -->
+      <rect x="1030" y="250" width="440" height="112" fill="#120e0b"/>
+      <rect x="1052" y="286" width="396" height="30" fill="url(#pa-band)" opacity=".78"/>
+      <g stroke="#120e0b" stroke-width="3"><path d="M1118 286v30M1184 286v30M1250 286v30M1316 286v30M1382 286v30"/></g>
+      <rect x="1004" y="236" width="500" height="15" fill="#1c1612"/>
+      <rect x="1004" y="250" width="500" height="2" fill="#d9976b" opacity=".55"/>
+      <!-- main roof slab -->
+      <rect x="700" y="362" width="900" height="22" fill="#1d1713"/>
+      <rect x="700" y="383" width="900" height="3" fill="#e6a77b" opacity=".7"/>
+      <!-- stone wall -->
+      <rect x="770" y="386" width="166" height="256" fill="#3b332c"/>
+      <rect x="770" y="386" width="166" height="256" filter="url(#pa-stone)" fill="#fff"/>
+      <rect x="770" y="386" width="166" height="256" fill="url(#pa-glass2)" opacity=".8"/>
+      <!-- glass volume with warm interior -->
+      <rect x="936" y="386" width="560" height="256" fill="url(#pa-glass)" opacity=".9"/>
+      <rect x="936" y="386" width="560" height="256" fill="url(#pa-glass2)"/>
+      <rect x="980" y="590" width="300" height="20" fill="#2a1a12" opacity=".85"/>
+      <rect x="1330" y="520" width="90" height="90" fill="#2a1a12" opacity=".5"/>
+      <rect x="950" y="398" width="532" height="2" fill="#fff3e2" opacity=".55"/>
+      <g stroke="#140f0c" stroke-width="4"><path d="M1016 386v256M1096 386v256M1176 386v256M1256 386v256M1336 386v256M1416 386v256"/></g>
+      <rect x="1496" y="386" width="46" height="256" fill="#15110e"/>
+      <rect x="1496" y="386" width="46" height="256" filter="url(#pa-stone)" fill="#fff" opacity=".55"/>
+      <!-- terrace -->
+      <rect x="690" y="642" width="910" height="12" fill="#2c241e"/>
+      <rect x="690" y="642" width="910" height="1.5" fill="#f0c49c" opacity=".45"/>
+    </g>
+  </defs>
+  <rect width="1600" height="900" fill="url(#pa-sky)"/>
+  <rect width="1600" height="900" fill="url(#pa-glow)"/>
+  <!-- garden mass in shadow -->
+  <path d="M1540 642c10-60 30-120 60-150v150z" fill="#070605"/>
+  <path d="M640 642c20-30 50-48 80-50l30 50z" fill="#0a0806"/>
+  <use href="#pa-house"/>
+  <!-- reflecting pool -->
+  <rect x="740" y="654" width="860" height="112" fill="url(#pa-pool)"/>
+  <g clip-path="url(#pa-poolclip)" opacity=".32" filter="url(#pa-blur)"><use href="#pa-house" transform="translate(0 1296) scale(1 -1)"/></g>
+  <g stroke="#f2c59b" stroke-opacity=".18" stroke-width="1"><path d="M780 690h300M1120 712h380M860 736h240"/></g>
+  <rect x="0" y="766" width="1600" height="134" fill="#030303"/>
+  <!-- light -->
+  <polygon points="1600,0 1600,120 900,640 760,640" fill="url(#pa-beam)"/>
+  <ellipse cx="1210" cy="610" rx="300" ry="40" fill="#f2b88a" opacity=".12" filter="url(#pa-soft)"/>
+  <!-- architect's hairlines -->
+  <g stroke="#f4f1e8" stroke-opacity=".16" stroke-width="1" fill="none">
+    <path d="M700 320h900M700 312v16M936 312v16M1496 312v16"/>
+    <path d="M936 210v120M1496 200v130" stroke-dasharray="3 6"/>
+    <path d="M520 642h170M540 636l8 6-8 6"/>
+    <path d="M520 386h170" stroke-dasharray="3 6"/>
+  </g>
+</svg>

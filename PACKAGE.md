@@ -34,7 +34,9 @@ For a richer page, edit the site's entry in `sites.config.json`, then run `pnpm 
 - `disclaimer`: a line shown in the footer (and styled as a disclaimer when a section's `note` is the same text);
 - `es`: a Spanish page. Same fields as the site (overrides plus `ui`), built to `es.html` and served at `/es`, with hreflang links and an Español/English switch.
 
-bpropertyx.com and bgalleryx.com are the worked examples for `ui`, `disclaimer` and `es`.
+- `room`: the full b*X family landing layout (`templates/room.html`, built by `scripts/room.mjs`): hero with original SVG art (`templates/art/`), a product mock of the room, how it works, what the room holds, sealing, who it's for, the stack, live/coming status, what we don't do, operators and a final CTA. Put the Spanish version in `es.room`. Share cards for room sites use `templates/og-room.html`; render the Spanish card with `pnpm og <domain> <version> es` and set `es.ogImage`.
+
+bpropertyx.com and bgalleryx.com are the worked examples for `room`, `disclaimer` and `es`.
 
 bmarketingx.com and bwebx.com are worked examples.
 

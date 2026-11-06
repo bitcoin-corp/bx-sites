@@ -706,297 +706,814 @@
       "status": "holding",
       "managedElsewhere": false,
       "flickOff": null,
-      "tagline": "Property records, kept on Bitcoin",
-      "purpose": "Software for a property's records: title documents, plans, permits, signed agreements and the share register of the company that holds it, on Bitcoin SV with bWalletX.",
-      "eyebrow": "Property records · coming soon",
-      "headline": "Every property.<br>*One* record.",
-      "lede": "bPropertyX is coming. It will keep a property's title documents, plans, permits and inspections, its signed agreements and its maintenance log in one permanent, timestamped record on Bitcoin SV, opened with bWalletX. It is not open yet.",
-      "ogLine": "Title, plans, permits and signed agreements in one permanent record.",
-      "ogAction": "Talk to us",
-      "ui": {
-        "navHow": "What it is",
-        "howKicker": "What it is"
-      },
-      "ctas": [
-        [
-          "Talk to us",
-          "mailto:support@bwalletx.com?subject=bPropertyX%20operator%20enquiry",
-          "primary"
+      "tagline": "The private deal room for luxury property",
+      "purpose": "One private room for a property project: documents, approvals and contracts, the full change history, signing on the phone sealed on Bitcoin, and identity checks built in. For owners, their representatives, developers and family offices.",
+      "eyebrow": "Private deal rooms · luxury property",
+      "headline": "The private deal room for *luxury property*.",
+      "lede": "Owners, their representatives, developers and family offices keep a project's whole record in one room: documents, approvals and contracts, every change, and signatures made on the phone and sealed on Bitcoin.",
+      "ogLine": "Documents, approvals and contracts in one room. Signed on the phone, sealed on Bitcoin.",
+      "ogAction": "Book a walkthrough",
+      "ogImage": "og-bpropertyx-v2.png",
+      "disclaimer": "No offer of investments is made on this site. Any offer is made only by a licensed operator in its own jurisdiction, under local law.",
+      "legal": "The Bitcoin Corporation Ltd, company no. 16735102, England and Wales.",
+      "room": {
+        "art": "property",
+        "detailArt": "property-plan",
+        "labels": {
+          "sealed": "Sealed",
+          "signed": "Signed",
+          "awaiting": "Awaiting signature",
+          "draft": "Draft"
+        },
+        "nav": [
+          [
+            "The room",
+            "#room"
+          ],
+          [
+            "How it works",
+            "#how"
+          ],
+          [
+            "What we don't do",
+            "#limits"
+          ],
+          [
+            "Operators",
+            "#operators"
+          ]
         ],
-        [
-          "For operators",
-          "#operators",
+        "eyebrow": "Private deal rooms · luxury property",
+        "statement": "The private deal room for *luxury property*.",
+        "lede": "Owners, their representatives, developers and family offices keep a project's whole record in one room: documents, approvals and contracts, every change, and signatures made on the phone and sealed on Bitcoin.",
+        "cta": [
+          "Book a private walkthrough",
+          "mailto:support@bwalletx.com?subject=bPropertyX%20private%20walkthrough",
+          "gold"
+        ],
+        "cta2": [
+          "Get bWalletX",
+          "https://bwalletx.com/get",
           "ghost"
-        ]
-      ],
-      "navLinks": [
-        [
-          "Operators",
-          "#operators"
-        ]
-      ],
-      "howTitle": "A permanent record for every building.",
-      "howLede": "bPropertyX is record-keeping software, not an estate agent. Each document is recorded as a token on Bitcoin SV that represents that record.",
-      "how": [
-        [
-          "Record it",
-          "Add the title documents, plans, permits and inspection reports. Each one is fingerprinted and timestamped on Bitcoin SV, so any later change shows."
         ],
-        [
-          "Sign it",
-          "Leases, sales agreements and building contracts are signed by every party in bSignX, each with their own bWalletX key."
-        ],
-        [
-          "Keep it",
-          "Every entry joins the property's history: what was added, when, and by whom. The history can't be quietly rewritten."
-        ]
-      ],
-      "whyKicker": "What it will hold",
-      "whyTitle": "Four parts, one property.",
-      "why": [
-        [
-          "Record",
-          "The property file",
-          "Title documents, plans, permits, inspections and a maintenance log, together in one place."
-        ],
-        [
-          "Contracts",
-          "Signed agreements",
-          "Leases, sales agreements and building contracts, signed in bSignX by every party."
-        ],
-        [
-          "Company",
-          "The share register",
-          "Where a company holds the property, its register of shareholders is kept with bSharesX."
-        ],
-        [
-          "Payments",
-          "Wallet to wallet",
-          "Payments go directly between the parties' bWalletX wallets, with a receipt for each one."
-        ]
-      ],
-      "sections": [
-        {
-          "id": "operators",
+        "ghost": "PROPERTYX",
+        "artCaption": "Illustration, not a real building",
+        "mockHead": {
+          "kicker": "The room",
+          "title": "One room. *Every* document, approval and signature.",
+          "lede": "Everyone on the project works in the same private room. Drawings, approvals and contracts sit beside the conversation about them, and every signed version is sealed."
+        },
+        "mock": {
+          "alt": "Illustration of a bPropertyX room: a document list, an approvals timeline and a sealed document.",
+          "room": "Villa project · Phase 2",
+          "private": "Private · members only",
+          "members": [
+            "Owner",
+            "Owner's rep.",
+            "Architect",
+            "Contractor",
+            "Counsel"
+          ],
+          "docsTitle": "Documents",
+          "docs": [
+            [
+              "Phase 2 drawings · rev. C",
+              "PDF · 48 sheets",
+              "sealed"
+            ],
+            [
+              "Planning permission",
+              "PDF · 6 pages",
+              "sealed"
+            ],
+            [
+              "Main contractor agreement",
+              "Contract · 3 parties",
+              "awaiting"
+            ],
+            [
+              "Structural engineer's report",
+              "PDF · 22 pages",
+              "signed"
+            ],
+            [
+              "Variation 03 · terrace stone",
+              "Draft for comment",
+              "draft"
+            ]
+          ],
+          "timelineTitle": "Approvals",
+          "timeline": [
+            [
+              "Architect",
+              "uploaded Phase 2 drawings, rev. C",
+              "09:12",
+              ""
+            ],
+            [
+              "Owner's representative",
+              "signed rev. C",
+              "11:40",
+              "sign"
+            ],
+            [
+              "Owner",
+              "signed on the phone",
+              "12:05",
+              "sign"
+            ],
+            [
+              "Sealed on Bitcoin.",
+              "Fingerprint time-stamped",
+              "12:06",
+              "seal"
+            ],
+            [
+              "Rev. B",
+              "marked superseded, kept on file",
+              "12:06",
+              ""
+            ]
+          ],
+          "seal": {
+            "title": "Phase 2 drawings · rev. C",
+            "rows": [
+              [
+                "Fingerprint",
+                "3f9a61c0…8e21c21e"
+              ],
+              [
+                "Time-stamped",
+                "6 Nov 2026 · 12:06"
+              ],
+              [
+                "Signed by",
+                "3 members"
+              ]
+            ],
+            "action": "Check the seal",
+            "note": "Only this fingerprint goes on Bitcoin. The document stays in the room."
+          },
+          "caption": "Illustration with example content."
+        },
+        "how": {
+          "kicker": "How it works",
+          "title": "From first drawing to *final signature*.",
+          "lede": "The room is set up with you for each project. Nothing to install beyond a wallet.",
+          "steps": [
+            [
+              "Open the room",
+              "We set up a private room for the project. Each member is invited and signs in with their own wallet: bWalletX, or another BRC-100 wallet. No shared passwords.",
+              "Live"
+            ],
+            [
+              "Know who is in it",
+              "Members can complete an identity check before they sign, so everyone knows who is on the other side of a signature.",
+              "Live"
+            ],
+            [
+              "Bring in the record",
+              "Drawings, permits, reports and contracts go into the room beside the conversation about them. New versions replace old ones, and the old ones stay on file.",
+              "Live"
+            ],
+            [
+              "Sign on the phone",
+              "Scan the code on a document, read it, and sign in bWalletX on your phone. The signed version is sealed on Bitcoin.",
+              "Live"
+            ]
+          ]
+        },
+        "holds": {
+          "kicker": "In the room",
+          "title": "Everything the project *depends on*.",
+          "items": [
+            [
+              "doc",
+              "Documents and drawings",
+              "Plans, permits, surveys and reports in one place, with every version kept."
+            ],
+            [
+              "check",
+              "Approvals",
+              "Each sign-off is a signature by a named member, at a recorded time."
+            ],
+            [
+              "contract",
+              "Contracts",
+              "Purchase, construction and consultancy contracts, drafted and signed in bSignX."
+            ],
+            [
+              "history",
+              "Change history",
+              "What changed, when and by whom. Superseded versions stay on file."
+            ],
+            [
+              "pen",
+              "Signing on the phone",
+              "Every party signs with their own wallet, wherever they are."
+            ],
+            [
+              "id",
+              "Identity checks",
+              "Built in, so you know who you are dealing with before anyone signs."
+            ]
+          ]
+        },
+        "seal": {
+          "kicker": "Sealed on Bitcoin",
+          "title": "Any change *shows*.",
+          "lede": "When a document is signed, a fingerprint of it is time-stamped on Bitcoin. Change a single comma in the file and the fingerprint no longer matches.",
+          "points": [
+            [
+              "The document stays in the room",
+              "Only the fingerprint goes on chain. No personal data is put on Bitcoin."
+            ],
+            [
+              "You choose who can check it",
+              "Share a seal with a bank, a notary or a buyer, and they can check it without joining the room."
+            ],
+            [
+              "The seal stays",
+              "Fingerprints on Bitcoin stay checkable after the project is finished."
+            ]
+          ],
+          "cert": {
+            "alt": "Illustration of a seal record for a signed set of drawings.",
+            "issuer": "bPropertyX",
+            "no": "Example",
+            "kicker": "Seal record",
+            "title": "Phase 2 drawings · rev. C",
+            "rows": [
+              [
+                "Room",
+                "Villa project · Phase 2"
+              ],
+              [
+                "Signed by",
+                "Owner · Owner's rep. · Architect"
+              ],
+              [
+                "Time-stamped",
+                "6 Nov 2026 · 12:06 UTC"
+              ],
+              [
+                "Replaces",
+                "Rev. B, kept on file"
+              ]
+            ],
+            "fpLabel": "Fingerprint (SHA-256)",
+            "fp": "3f9a61c0 7d2e4b18 a95c03f7 6e1b9d42 c08a5f3e 2b7d16c9 94e0a3b5 8e21c21e",
+            "foot": "Change one byte of the file and this fingerprint no longer matches.",
+            "caption": "Illustration with example content."
+          }
+        },
+        "who": {
+          "kicker": "Who it's for",
+          "title": "For the people who *carry the project*.",
+          "items": [
+            [
+              "Owners",
+              "Every document, decision and signature on your property, in one place."
+            ],
+            [
+              "Owner's representatives",
+              "Run approvals and keep the record straight across architects, engineers and contractors."
+            ],
+            [
+              "Developers",
+              "Drawings, permits and contracts for each phase, in a room your partners can rely on."
+            ],
+            [
+              "Family offices",
+              "A private, checkable record of the properties you look after, kept for the long term."
+            ]
+          ]
+        },
+        "stack": {
+          "kicker": "Built on the family",
+          "title": "Room, wallet and *contracts*.",
+          "lede": "Three parts of the bWalletX family that work today, put together for your project.",
+          "items": [
+            [
+              "bChatX",
+              "The room",
+              "Private rooms where the conversation, the documents and the signatures sit together.",
+              "https://bchatx.com/"
+            ],
+            [
+              "bWalletX",
+              "The wallet",
+              "Each member's own key, on the phone, the web or Chrome. It signs you in and it signs documents.",
+              "https://bwalletx.com/"
+            ],
+            [
+              "bSignX",
+              "The contracts",
+              "Contracts both sides sign: the same version for everyone, sealed on chain.",
+              "https://bsignx.com/"
+            ]
+          ]
+        },
+        "status": {
+          "title": "What works today",
+          "liveTitle": "Live today",
+          "live": [
+            "**Private rooms** in bChatX, with documents and conversation together.",
+            "**Signing on the phone** with bWalletX, sealed on Bitcoin.",
+            "**Identity checks** for members.",
+            "**Change history**, with superseded versions kept on file."
+          ],
+          "nextTitle": "Coming soon",
+          "next": [
+            "**bPropertyX's own sign-in** at bpropertyx.com. Today your room opens in bChatX.",
+            "**Ready-made project rooms**, with folders and checklists for drawings, permits and contracts.",
+            "**Operator sites** for each market, naming the local operator."
+          ]
+        },
+        "limits": {
+          "kicker": "What we don't do",
+          "title": "Software, *not a broker*.",
+          "items": [
+            "**We never hold client money or property.** Payments and title stay with the parties.",
+            "**We don't sell, broker or value property.**",
+            "**We don't offer or advise on investments.**",
+            "**No personal data goes on Bitcoin.** Only fingerprints of documents do."
+          ]
+        },
+        "operators": {
           "kicker": "For operators",
           "title": "Run bPropertyX in your market.",
-          "lede": "Software by The Bitcoin Corporation Ltd. Each market is run by an independent, locally licensed operator.",
+          "lede": "Software by The Bitcoin Corporation Ltd. Each market is run by an independent, locally licensed operator, and each market's site names its operator.",
           "cards": [
             [
               "Software",
               "The platform, ready to run",
-              "bPropertyX with bWalletX sign-in, agreements in bSignX and share registers in bSharesX."
+              "bPropertyX with wallet sign-in, project rooms, signing on the phone and sealing on Bitcoin, kept up to date."
             ],
             [
               "Local",
               "Your licences, your rules",
-              "You hold the licences your market requires and work under your own regulator. We supply the software."
+              "You hold the licences your market requires, check your own clients and work under your own regulator."
             ],
             [
               "Together",
               "Setting up",
-              "We set the software up with you and keep it running."
+              "We set the software up with you, train your team and keep it running."
             ]
           ],
-          "links": [
-            [
-              "Talk to us",
-              "mailto:support@bwalletx.com?subject=bPropertyX%20operator%20enquiry",
-              "primary"
-            ]
-          ],
-          "note": "No offer of investments is made on this site. Any offer is made only by a licensed operator in its own jurisdiction, under local law."
-        },
-        {
-          "kicker": "Works with",
-          "title": "Built on the family.",
-          "links": [
-            [
-              "bWalletX: the wallet",
-              "https://bwalletx.com/",
-              "ghost"
-            ],
-            [
-              "bSignX: contracts both sides sign",
-              "https://bsignx.com/",
-              "ghost"
-            ],
-            [
-              "bSharesX: share registers",
-              "https://bsharesx.com/",
-              "ghost"
-            ],
-            [
-              "bGalleryX: records for art",
-              "https://bgalleryx.com/",
-              "ghost"
-            ]
-          ]
-        }
-      ],
-      "footerLinks": [
-        [
-          "bSignX",
-          "https://bsignx.com/"
-        ],
-        [
-          "bSharesX",
-          "https://bsharesx.com/"
-        ],
-        [
-          "bGalleryX",
-          "https://bgalleryx.com/"
-        ]
-      ],
-      "disclaimer": "No offer of investments is made on this site. Any offer is made only by a licensed operator in its own jurisdiction, under local law.",
-      "es": {
-        "ui": {
-          "navHow": "Qué es",
-          "howKicker": "Qué es",
-          "familyLine": "parte de la familia bWalletX",
-          "getWallet": "Obtener bWalletX",
-          "status": "Próximamente"
-        },
-        "tagline": "Registros de propiedad, guardados en Bitcoin",
-        "purpose": "Software para los registros de un inmueble: títulos, planos, licencias, acuerdos firmados y el libro de accionistas de la sociedad propietaria, en Bitcoin SV con bWalletX.",
-        "eyebrow": "Registros de propiedad · próximamente",
-        "headline": "Cada inmueble.<br>*Un* registro.",
-        "lede": "bPropertyX está en camino. Guardará los títulos, planos, licencias e inspecciones de un inmueble, sus acuerdos firmados y su bitácora de mantenimiento en un solo registro permanente, con fecha y hora, en Bitcoin SV. Se abre con bWalletX. Todavía no está disponible.",
-        "ctas": [
-          [
-            "Hable con nosotros",
-            "mailto:support@bwalletx.com?subject=Consulta%20de%20operador%20bPropertyX",
-            "primary"
-          ],
-          [
-            "Para operadores",
-            "#operators",
+          "cta": [
+            "Talk to us about operating",
+            "mailto:support@bwalletx.com?subject=bPropertyX%20operator%20enquiry",
             "ghost"
           ]
-        ],
-        "navLinks": [
-          [
-            "Operadores",
-            "#operators"
+        },
+        "note": "No offer of investments is made on this site. Any offer is made only by a licensed operator in its own jurisdiction, under local law.",
+        "final": {
+          "title": "See the room *for yourself*.",
+          "lede": "We will walk you through a project room with example documents, from the first upload to a sealed signature.",
+          "cta": [
+            "Book a private walkthrough",
+            "mailto:support@bwalletx.com?subject=bPropertyX%20private%20walkthrough",
+            "gold"
+          ],
+          "cta2": [
+            "Get bWalletX",
+            "https://bwalletx.com/get",
+            "ghost"
           ]
-        ],
-        "howTitle": "Un registro permanente para cada edificio.",
-        "howLede": "bPropertyX es software de registros, no una agencia inmobiliaria. Cada documento queda registrado como un token en Bitcoin SV que representa ese registro.",
-        "how": [
+        },
+        "footer": [
           [
-            "Regístrelo",
-            "Suba los títulos, planos, licencias e informes de inspección. Cada uno recibe una huella digital y una marca de tiempo en Bitcoin SV, así que cualquier cambio posterior se nota."
+            "Part of the bWalletX family",
+            "https://bwalletx.com/family"
           ],
           [
-            "Fírmelo",
-            "Arrendamientos, promesas de compraventa y contratos de obra los firman todas las partes en bSignX, cada una con su propia clave de bWalletX."
+            "bWalletX",
+            "https://bwalletx.com/"
           ],
           [
-            "Consérvelo",
-            "Cada entrada se suma al historial del inmueble: qué se agregó, cuándo y por quién. El historial no se puede reescribir en silencio."
-          ]
-        ],
-        "whyKicker": "Lo que guardará",
-        "whyTitle": "Cuatro partes, un inmueble.",
-        "why": [
-          [
-            "Registro",
-            "El expediente del inmueble",
-            "Títulos, planos, licencias, inspecciones y una bitácora de mantenimiento, todo en un mismo lugar."
+            "bChatX",
+            "https://bchatx.com/"
           ],
-          [
-            "Contratos",
-            "Acuerdos firmados",
-            "Arrendamientos, promesas de compraventa y contratos de obra, firmados en bSignX por cada parte."
-          ],
-          [
-            "Sociedad",
-            "El libro de accionistas",
-            "Cuando una sociedad es la dueña del inmueble, su libro de accionistas se lleva con bSharesX."
-          ],
-          [
-            "Pagos",
-            "De billetera a billetera",
-            "Los pagos van directamente entre las billeteras bWalletX de las partes, con un recibo por cada uno."
-          ]
-        ],
-        "sections": [
-          {
-            "id": "operators",
-            "kicker": "Para operadores",
-            "title": "Opere bPropertyX en su país.",
-            "lede": "Software de The Bitcoin Corporation Ltd. Cada país o región lo opera un operador independiente, con licencia local.",
-            "cards": [
-              [
-                "Software",
-                "La plataforma, lista para operar",
-                "bPropertyX con acceso por bWalletX, acuerdos en bSignX y libros de accionistas en bSharesX."
-              ],
-              [
-                "Local",
-                "Sus licencias, sus reglas",
-                "Usted obtiene las licencias que exige su país y trabaja bajo su propio regulador. Nosotros ponemos el software."
-              ],
-              [
-                "Juntos",
-                "La puesta en marcha",
-                "Configuramos el software con usted y lo mantenemos funcionando."
-              ]
-            ],
-            "links": [
-              [
-                "Hable con nosotros",
-                "mailto:support@bwalletx.com?subject=Consulta%20de%20operador%20bPropertyX",
-                "primary"
-              ]
-            ],
-            "note": "Este sitio no ofrece inversiones. Cualquier oferta la hace únicamente un operador autorizado en su propia jurisdicción, conforme a la ley local."
-          },
-          {
-            "kicker": "Funciona con",
-            "title": "Construido sobre la familia.",
-            "links": [
-              [
-                "bWalletX: la billetera",
-                "https://bwalletx.com/",
-                "ghost"
-              ],
-              [
-                "bSignX: contratos que firman ambas partes",
-                "https://bsignx.com/",
-                "ghost"
-              ],
-              [
-                "bSharesX: libros de accionistas",
-                "https://bsharesx.com/",
-                "ghost"
-              ],
-              [
-                "bGalleryX: registros para el arte",
-                "https://bgalleryx.com/es",
-                "ghost"
-              ]
-            ]
-          }
-        ],
-        "footerLinks": [
           [
             "bSignX",
             "https://bsignx.com/"
           ],
           [
-            "bSharesX",
-            "https://bsharesx.com/"
+            "bGalleryX",
+            "https://bgalleryx.com/"
           ],
           [
-            "bGalleryX",
-            "https://bgalleryx.com/es"
+            "Get bWalletX",
+            "https://bwalletx.com/get"
           ]
-        ],
-        "disclaimer": "Este sitio no ofrece inversiones. Cualquier oferta la hace únicamente un operador autorizado en su propia jurisdicción, conforme a la ley local.",
-        "legal": "The Bitcoin Corporation Ltd, sociedad n.º 16735102."
+        ]
       },
-      "ogImage": "og-bpropertyx-v1.png"
+      "es": {
+        "tagline": "La sala privada para negocios inmobiliarios de lujo",
+        "purpose": "Una sala privada para cada proyecto inmobiliario: documentos, aprobaciones y contratos, todo el historial de cambios, firma desde el celular sellada en Bitcoin y verificación de identidad incluida. Para propietarios, sus representantes, desarrolladores y family offices.",
+        "eyebrow": "Salas privadas · inmuebles de lujo",
+        "headline": "La sala privada para *inmuebles de lujo*.",
+        "lede": "Propietarios, sus representantes, desarrolladores y family offices llevan todo el expediente de un proyecto en una sola sala: documentos, aprobaciones y contratos, cada cambio, y firmas hechas desde el celular y selladas en Bitcoin.",
+        "ogLine": "Documentos, aprobaciones y contratos en una sala. Firmados desde el celular, sellados en Bitcoin.",
+        "ogAction": "Agende un recorrido",
+        "ogImage": "og-bpropertyx-es-v2.png",
+        "disclaimer": "Este sitio no ofrece inversiones. Cualquier oferta la hace únicamente un operador autorizado en su propia jurisdicción, conforme a la ley local.",
+        "legal": "The Bitcoin Corporation Ltd, sociedad n.º 16735102, Inglaterra y Gales.",
+        "room": {
+          "art": "property",
+          "detailArt": "property-plan",
+          "labels": {
+            "sealed": "Sellado",
+            "signed": "Firmado",
+            "awaiting": "Pendiente de firma",
+            "draft": "Borrador"
+          },
+          "nav": [
+            [
+              "La sala",
+              "#room"
+            ],
+            [
+              "Cómo funciona",
+              "#how"
+            ],
+            [
+              "Lo que no hacemos",
+              "#limits"
+            ],
+            [
+              "Operadores",
+              "#operators"
+            ]
+          ],
+          "eyebrow": "Salas privadas · inmuebles de lujo",
+          "statement": "La sala privada para negocios *inmobiliarios de lujo*.",
+          "lede": "Propietarios, sus representantes, desarrolladores y family offices llevan todo el expediente de un proyecto en una sola sala: documentos, aprobaciones y contratos, cada cambio, y firmas hechas desde el celular y selladas en Bitcoin.",
+          "cta": [
+            "Agende un recorrido privado",
+            "mailto:support@bwalletx.com?subject=Recorrido%20privado%20por%20bPropertyX",
+            "gold"
+          ],
+          "cta2": [
+            "Obtener bWalletX",
+            "https://bwalletx.com/get",
+            "ghost"
+          ],
+          "ghost": "PROPERTYX",
+          "artCaption": "Ilustración, no es un edificio real",
+          "mockHead": {
+            "kicker": "La sala",
+            "title": "Una sala. *Cada* documento, aprobación y firma.",
+            "lede": "Todo el equipo del proyecto trabaja en la misma sala privada. Planos, aprobaciones y contratos quedan junto a la conversación sobre ellos, y cada versión firmada queda sellada."
+          },
+          "mock": {
+            "alt": "Ilustración de una sala de bPropertyX: una lista de documentos, una línea de aprobaciones y un documento sellado.",
+            "room": "Proyecto villa · Fase 2",
+            "private": "Privada · solo miembros",
+            "members": [
+              "Propietario",
+              "Representante",
+              "Arquitecto",
+              "Constructor",
+              "Abogado"
+            ],
+            "docsTitle": "Documentos",
+            "docs": [
+              [
+                "Planos Fase 2 · rev. C",
+                "PDF · 48 planos",
+                "sealed"
+              ],
+              [
+                "Licencia de construcción",
+                "PDF · 6 páginas",
+                "sealed"
+              ],
+              [
+                "Contrato de obra principal",
+                "Contrato · 3 partes",
+                "awaiting"
+              ],
+              [
+                "Informe del ingeniero estructural",
+                "PDF · 22 páginas",
+                "signed"
+              ],
+              [
+                "Cambio 03 · piedra de la terraza",
+                "Borrador para comentarios",
+                "draft"
+              ]
+            ],
+            "timelineTitle": "Aprobaciones",
+            "timeline": [
+              [
+                "Arquitecto",
+                "subió los planos de la Fase 2, rev. C",
+                "09:12",
+                ""
+              ],
+              [
+                "Representante del propietario",
+                "firmó la rev. C",
+                "11:40",
+                "sign"
+              ],
+              [
+                "Propietario",
+                "firmó desde el celular",
+                "12:05",
+                "sign"
+              ],
+              [
+                "Sellado en Bitcoin.",
+                "Huella con fecha y hora",
+                "12:06",
+                "seal"
+              ],
+              [
+                "Rev. B",
+                "marcada como reemplazada, queda en el archivo",
+                "12:06",
+                ""
+              ]
+            ],
+            "seal": {
+              "title": "Planos Fase 2 · rev. C",
+              "rows": [
+                [
+                  "Huella",
+                  "3f9a61c0…8e21c21e"
+                ],
+                [
+                  "Fecha y hora",
+                  "6 nov. 2026 · 12:06"
+                ],
+                [
+                  "Firmado por",
+                  "3 miembros"
+                ]
+              ],
+              "action": "Verificar el sello",
+              "note": "Solo esta huella va a Bitcoin. El documento se queda en la sala."
+            },
+            "caption": "Ilustración con contenido de ejemplo."
+          },
+          "how": {
+            "kicker": "Cómo funciona",
+            "title": "Del primer plano a la *firma final*.",
+            "lede": "La sala se configura con usted para cada proyecto. No hay nada que instalar, salvo una billetera.",
+            "steps": [
+              [
+                "Abra la sala",
+                "Creamos una sala privada para el proyecto. Cada miembro recibe una invitación y entra con su propia billetera: bWalletX u otra billetera BRC-100. Sin contraseñas compartidas.",
+                "Disponible"
+              ],
+              [
+                "Sepa quién está",
+                "Los miembros pueden verificar su identidad antes de firmar, para que todos sepan con quién están tratando.",
+                "Disponible"
+              ],
+              [
+                "Suba el expediente",
+                "Planos, licencias, informes y contratos entran a la sala junto a la conversación sobre ellos. Cada versión nueva reemplaza a la anterior, y la anterior queda en el archivo.",
+                "Disponible"
+              ],
+              [
+                "Firme desde el celular",
+                "Escanee el código de un documento, léalo y fírmelo en bWalletX desde su celular. La versión firmada queda sellada en Bitcoin.",
+                "Disponible"
+              ]
+            ]
+          },
+          "holds": {
+            "kicker": "En la sala",
+            "title": "Todo lo que el proyecto *necesita*.",
+            "items": [
+              [
+                "doc",
+                "Documentos y planos",
+                "Planos, licencias, levantamientos e informes en un solo lugar, con todas sus versiones."
+              ],
+              [
+                "check",
+                "Aprobaciones",
+                "Cada visto bueno es una firma de un miembro identificado, con fecha y hora."
+              ],
+              [
+                "contract",
+                "Contratos",
+                "Contratos de compraventa, de obra y de consultoría, redactados y firmados en bSignX."
+              ],
+              [
+                "history",
+                "Historial de cambios",
+                "Qué cambió, cuándo y quién lo hizo. Las versiones reemplazadas quedan en el archivo."
+              ],
+              [
+                "pen",
+                "Firma desde el celular",
+                "Cada parte firma con su propia billetera, esté donde esté."
+              ],
+              [
+                "id",
+                "Verificación de identidad",
+                "Incluida, para saber con quién trata antes de que alguien firme."
+              ]
+            ]
+          },
+          "seal": {
+            "kicker": "Sellado en Bitcoin",
+            "title": "Cualquier cambio *se nota*.",
+            "lede": "Cuando se firma un documento, una huella digital del archivo queda registrada en Bitcoin con fecha y hora. Si alguien cambia una sola coma, la huella deja de coincidir.",
+            "points": [
+              [
+                "El documento se queda en la sala",
+                "Solo la huella va a la cadena. Ningún dato personal se publica en Bitcoin."
+              ],
+              [
+                "Usted decide quién lo verifica",
+                "Comparta un sello con un banco, una notaría o un comprador, y podrán verificarlo sin entrar a la sala."
+              ],
+              [
+                "El sello permanece",
+                "Las huellas en Bitcoin se pueden seguir verificando cuando el proyecto ya terminó."
+              ]
+            ],
+            "cert": {
+              "alt": "Ilustración de un registro de sello para un juego de planos firmado.",
+              "issuer": "bPropertyX",
+              "no": "Ejemplo",
+              "kicker": "Registro de sello",
+              "title": "Planos Fase 2 · rev. C",
+              "rows": [
+                [
+                  "Sala",
+                  "Proyecto villa · Fase 2"
+                ],
+                [
+                  "Firmado por",
+                  "Propietario · Representante · Arquitecto"
+                ],
+                [
+                  "Fecha y hora",
+                  "6 nov. 2026 · 12:06 UTC"
+                ],
+                [
+                  "Reemplaza a",
+                  "Rev. B, en el archivo"
+                ]
+              ],
+              "fpLabel": "Huella digital (SHA-256)",
+              "fp": "3f9a61c0 7d2e4b18 a95c03f7 6e1b9d42 c08a5f3e 2b7d16c9 94e0a3b5 8e21c21e",
+              "foot": "Si cambia un solo byte del archivo, esta huella deja de coincidir.",
+              "caption": "Ilustración con contenido de ejemplo."
+            }
+          },
+          "who": {
+            "kicker": "Para quién es",
+            "title": "Para quienes *llevan el proyecto*.",
+            "items": [
+              [
+                "Propietarios",
+                "Cada documento, decisión y firma sobre su inmueble, en un solo lugar."
+              ],
+              [
+                "Representantes del propietario",
+                "Coordine aprobaciones y mantenga el expediente en orden entre arquitectos, ingenieros y constructores."
+              ],
+              [
+                "Desarrolladores",
+                "Planos, licencias y contratos de cada fase, en una sala en la que sus socios pueden confiar."
+              ],
+              [
+                "Family offices",
+                "Un registro privado y verificable de los inmuebles que administran, pensado para el largo plazo."
+              ]
+            ]
+          },
+          "stack": {
+            "kicker": "Hecho con la familia",
+            "title": "Sala, billetera y *contratos*.",
+            "lede": "Tres piezas de la familia bWalletX que ya funcionan, reunidas para su proyecto.",
+            "items": [
+              [
+                "bChatX",
+                "La sala",
+                "Salas privadas donde la conversación, los documentos y las firmas están juntos.",
+                "https://bchatx.com/"
+              ],
+              [
+                "bWalletX",
+                "La billetera",
+                "La clave propia de cada miembro, en el celular, en la web o en Chrome. Con ella se entra y con ella se firma.",
+                "https://bwalletx.com/"
+              ],
+              [
+                "bSignX",
+                "Los contratos",
+                "Contratos que firman ambas partes: la misma versión para todos, sellada en la cadena.",
+                "https://bsignx.com/"
+              ]
+            ]
+          },
+          "status": {
+            "title": "Lo que funciona hoy",
+            "liveTitle": "Disponible hoy",
+            "live": [
+              "**Salas privadas** en bChatX, con documentos y conversación juntos.",
+              "**Firma desde el celular** con bWalletX, sellada en Bitcoin.",
+              "**Verificación de identidad** para los miembros.",
+              "**Historial de cambios**, con las versiones reemplazadas en el archivo."
+            ],
+            "nextTitle": "Próximamente",
+            "next": [
+              "**Acceso propio de bPropertyX** en bpropertyx.com. Hoy su sala se abre en bChatX.",
+              "**Salas de proyecto listas para usar**, con carpetas y listas de control para planos, licencias y contratos.",
+              "**Sitios de operador** para cada mercado, con el nombre del operador local."
+            ]
+          },
+          "limits": {
+            "kicker": "Lo que no hacemos",
+            "title": "Somos software, *no intermediarios*.",
+            "items": [
+              "**Nunca custodiamos dinero ni inmuebles de clientes.** Los pagos y la titularidad quedan en manos de las partes.",
+              "**No vendemos, no intermediamos ni tasamos inmuebles.**",
+              "**No ofrecemos ni asesoramos inversiones.**",
+              "**Ningún dato personal va a Bitcoin.** Solo las huellas de los documentos."
+            ]
+          },
+          "operators": {
+            "kicker": "Para operadores",
+            "title": "Opere bPropertyX en su país.",
+            "lede": "Software de The Bitcoin Corporation Ltd. Cada mercado lo opera un operador independiente con licencia local, y el sitio de cada mercado lleva el nombre de su operador.",
+            "cards": [
+              [
+                "Software",
+                "La plataforma, lista para operar",
+                "bPropertyX con acceso por billetera, salas de proyecto, firma en el celular y sellado en Bitcoin, siempre al día."
+              ],
+              [
+                "Local",
+                "Sus licencias, sus reglas",
+                "Usted obtiene las licencias que exige su mercado, verifica a sus propios clientes y responde ante su propio regulador."
+              ],
+              [
+                "Juntos",
+                "La puesta en marcha",
+                "Configuramos el software con usted, capacitamos a su equipo y lo mantenemos funcionando."
+              ]
+            ],
+            "cta": [
+              "Hablemos de operar",
+              "mailto:support@bwalletx.com?subject=Consulta%20de%20operador%20bPropertyX",
+              "ghost"
+            ]
+          },
+          "note": "Este sitio no ofrece inversiones. Cualquier oferta la hace únicamente un operador autorizado en su propia jurisdicción, conforme a la ley local.",
+          "final": {
+            "title": "Conozca la sala *en persona*.",
+            "lede": "Le mostramos una sala de proyecto con documentos de ejemplo, desde la primera carga hasta una firma sellada.",
+            "cta": [
+              "Agende un recorrido privado",
+              "mailto:support@bwalletx.com?subject=Recorrido%20privado%20por%20bPropertyX",
+              "gold"
+            ],
+            "cta2": [
+              "Obtener bWalletX",
+              "https://bwalletx.com/get",
+              "ghost"
+            ]
+          },
+          "footer": [
+            [
+              "Parte de la familia bWalletX",
+              "https://bwalletx.com/family"
+            ],
+            [
+              "bWalletX",
+              "https://bwalletx.com/"
+            ],
+            [
+              "bChatX",
+              "https://bchatx.com/"
+            ],
+            [
+              "bSignX",
+              "https://bsignx.com/"
+            ],
+            [
+              "bGalleryX",
+              "https://bgalleryx.com/es"
+            ],
+            [
+              "Obtener bWalletX",
+              "https://bwalletx.com/get"
+            ]
+          ]
+        }
+      }
     },
     {
       "domain": "bgalleryx.com",
@@ -1005,279 +1522,822 @@
       "status": "holding",
       "managedElsewhere": false,
       "flickOff": null,
-      "tagline": "Provenance for art, kept on Bitcoin",
-      "purpose": "Software for an artwork's records: provenance, certificates of authenticity, condition reports and signed loan and consignment agreements, on Bitcoin SV with bWalletX.",
-      "eyebrow": "Art records · coming soon",
-      "headline": "Every work.<br>Its *whole* story.",
-      "lede": "bGalleryX is coming. It will keep an artwork's provenance, its certificate of authenticity, its condition reports and its signed agreements in one permanent, timestamped record on Bitcoin SV, opened with bWalletX. It is not open yet.",
-      "ogLine": "Provenance, certificates and condition reports in one permanent record.",
-      "ogAction": "Talk to us",
-      "ui": {
-        "navHow": "What it is",
-        "howKicker": "What it is"
-      },
-      "ctas": [
-        [
-          "Talk to us",
-          "mailto:support@bwalletx.com?subject=bGalleryX%20operator%20enquiry",
-          "primary"
+      "tagline": "The private room for an artwork's record",
+      "purpose": "One private room for each artwork: provenance, certificate of authenticity, condition reports, and loan and sale contracts, signed on the phone and sealed on Bitcoin. For galleries, collectors and artists.",
+      "eyebrow": "Private record rooms · fine art",
+      "headline": "Every work.<br>Its *whole* record.",
+      "lede": "Galleries, collectors and artists keep a work's whole record in one room: provenance, its certificate of authenticity, condition reports, and loan and sale contracts, each signed on the phone and sealed on Bitcoin.",
+      "ogLine": "Provenance, certificates and condition reports in one room, sealed on Bitcoin.",
+      "ogAction": "Book a walkthrough",
+      "ogImage": "og-bgalleryx-v2.png",
+      "disclaimer": "No offer of investments is made on this site. Any offer is made only by a licensed operator in its own jurisdiction, under local law.",
+      "legal": "The Bitcoin Corporation Ltd, company no. 16735102, England and Wales.",
+      "room": {
+        "art": "gallery",
+        "detailArt": "gallery-detail",
+        "labels": {
+          "sealed": "Sealed",
+          "signed": "Signed",
+          "awaiting": "Awaiting signature",
+          "draft": "Draft"
+        },
+        "nav": [
+          [
+            "The room",
+            "#room"
+          ],
+          [
+            "How it works",
+            "#how"
+          ],
+          [
+            "What we don't do",
+            "#limits"
+          ],
+          [
+            "Operators",
+            "#operators"
+          ]
         ],
-        [
-          "For operators",
-          "#operators",
+        "eyebrow": "Private record rooms · fine art",
+        "statement": "The private room for *an artwork's record*.",
+        "lede": "Galleries, collectors and artists keep a work's whole record in one room: provenance, its certificate of authenticity, condition reports, and loan and sale contracts, each signed on the phone and sealed on Bitcoin.",
+        "cta": [
+          "Book a private walkthrough",
+          "mailto:support@bwalletx.com?subject=bGalleryX%20private%20walkthrough",
+          "gold"
+        ],
+        "cta2": [
+          "Get bWalletX",
+          "https://bwalletx.com/get",
           "ghost"
-        ]
-      ],
-      "navLinks": [
-        [
-          "Operators",
-          "#operators"
-        ]
-      ],
-      "howTitle": "A record that travels with the work.",
-      "howLede": "bGalleryX is record-keeping software for artists, galleries and collectors; it takes no part in sales. Each certificate is recorded as a token on Bitcoin SV that represents that certificate.",
-      "how": [
-        [
-          "Certify it",
-          "The artist or the gallery signs a certificate of authenticity with their own bWalletX key."
         ],
-        [
-          "Add its story",
-          "Exhibitions, loans, condition reports and changes of owner are added as they happen, each one timestamped."
-        ],
-        [
-          "Keep it",
-          "Anyone the record is shared with can check the provenance chain, and no one can quietly rewrite it."
-        ]
-      ],
-      "whyKicker": "What it will hold",
-      "whyTitle": "Four records, one artwork.",
-      "why": [
-        [
-          "Provenance",
-          "Provenance and ownership",
-          "The artist, the exhibitions and every recorded owner of the work, in order."
-        ],
-        [
-          "Certificate",
-          "Certificate of authenticity",
-          "Signed by the artist or the gallery with their own key, so anyone can check who issued it."
-        ],
-        [
-          "Condition",
-          "Condition reports",
-          "Reports from conservators and registrars, with photographs, dated and kept with the work."
-        ],
-        [
-          "Agreements",
-          "Loans and consignments",
-          "Loan and consignment agreements, signed by both sides in bSignX."
-        ]
-      ],
-      "sections": [
-        {
-          "id": "operators",
+        "ghost": "GALLERYX",
+        "artCaption": "Illustration, invented works",
+        "mockHead": {
+          "kicker": "The room",
+          "title": "One work. *Its whole* record.",
+          "lede": "Each artwork has its own private room. The certificate, the provenance and every condition report sit beside the conversation about the work, and every signed document is sealed."
+        },
+        "mock": {
+          "alt": "Illustration of a bGalleryX room: a document list, a provenance timeline and a sealed certificate.",
+          "room": "Untitled, 2019 · oil on linen",
+          "private": "Private · members only",
+          "members": [
+            "Artist",
+            "Gallery",
+            "Collector",
+            "Registrar"
+          ],
+          "docsTitle": "Records",
+          "docIcon": "frame",
+          "docs": [
+            [
+              "Certificate of authenticity",
+              "Issued by the artist",
+              "sealed"
+            ],
+            [
+              "Provenance record",
+              "Studio · exhibitions · owners",
+              "sealed"
+            ],
+            [
+              "Condition report · on arrival",
+              "With 14 photographs",
+              "signed"
+            ],
+            [
+              "Loan agreement · exhibition",
+              "Contract · 2 parties",
+              "awaiting"
+            ],
+            [
+              "Condition report · after the loan",
+              "Draft",
+              "draft"
+            ]
+          ],
+          "timelineTitle": "Provenance",
+          "timeline": [
+            [
+              "Artist's studio",
+              "issued the certificate",
+              "2019",
+              "sign"
+            ],
+            [
+              "Gallery",
+              "countersigned the certificate",
+              "2019",
+              "sign"
+            ],
+            [
+              "Collector",
+              "added as owner, on a signed sale contract",
+              "2023",
+              "sign"
+            ],
+            [
+              "Registrar",
+              "added a condition report with photographs",
+              "2026",
+              ""
+            ],
+            [
+              "Sealed on Bitcoin.",
+              "Fingerprint time-stamped",
+              "2026",
+              "seal"
+            ]
+          ],
+          "seal": {
+            "title": "Certificate of authenticity · Untitled, 2019",
+            "rows": [
+              [
+                "Fingerprint",
+                "a71c04e9…5b3f0d62"
+              ],
+              [
+                "Time-stamped",
+                "6 Nov 2026 · 12:06"
+              ],
+              [
+                "Signed by",
+                "Artist · Gallery"
+              ]
+            ],
+            "action": "Check the seal",
+            "note": "Only this fingerprint goes on Bitcoin. The certificate stays in the room."
+          },
+          "caption": "Illustration with example content."
+        },
+        "how": {
+          "kicker": "How it works",
+          "title": "From the studio to the *next owner*.",
+          "lede": "A room is set up with you for each work or collection. Nothing to install beyond a wallet.",
+          "steps": [
+            [
+              "Open the room",
+              "The gallery, the collector or the artist's studio opens a private room for the work. Each member signs in with their own wallet: bWalletX, or another BRC-100 wallet.",
+              "Live"
+            ],
+            [
+              "Certify it",
+              "The artist or the gallery signs a certificate of authenticity with their own key. Members can complete an identity check first.",
+              "Live"
+            ],
+            [
+              "Add its story",
+              "Exhibitions, loans, condition reports with photographs and changes of owner are added as they happen, each one dated.",
+              "Live"
+            ],
+            [
+              "Sign on the phone",
+              "Loan, consignment and sale contracts are signed in bWalletX on the phone, and the signed version is sealed on Bitcoin.",
+              "Live"
+            ]
+          ]
+        },
+        "holds": {
+          "kicker": "In the room",
+          "title": "Everything that *travels with the work*.",
+          "items": [
+            [
+              "history",
+              "Provenance",
+              "The artist, the exhibitions and every recorded owner of the work, in order."
+            ],
+            [
+              "seal",
+              "Certificate of authenticity",
+              "Signed by the artist or the gallery with their own key, so anyone can check who issued it."
+            ],
+            [
+              "lens",
+              "Condition reports",
+              "Reports from conservators and registrars, with photographs, dated and kept with the work."
+            ],
+            [
+              "contract",
+              "Loans and consignments",
+              "Loan and consignment agreements, signed by both sides in bSignX."
+            ],
+            [
+              "pen",
+              "Sale contracts",
+              "The signed contract between seller and buyer, kept in the record. We take no part in the sale."
+            ],
+            [
+              "id",
+              "Identity checks",
+              "Built in, so you know who you are dealing with before anyone signs."
+            ]
+          ]
+        },
+        "seal": {
+          "kicker": "Sealed on Bitcoin",
+          "title": "Any change *shows*.",
+          "lede": "When a certificate or a contract is signed, a fingerprint of it is time-stamped on Bitcoin. Change a single word and the fingerprint no longer matches.",
+          "points": [
+            [
+              "The record stays in the room",
+              "Only the fingerprint goes on chain. No personal data is put on Bitcoin."
+            ],
+            [
+              "You choose who can check it",
+              "Share a seal with a buyer, an insurer or a museum, and they can check it without joining the room."
+            ],
+            [
+              "The record goes with the work",
+              "When a work is lent or sold, the new holder can be invited into its room, and the history is already there."
+            ]
+          ],
+          "cert": {
+            "alt": "Illustration of a certificate of authenticity for an invented work.",
+            "issuer": "bGalleryX",
+            "no": "Example",
+            "kicker": "Certificate of authenticity",
+            "title": "Untitled, 2019",
+            "rows": [
+              [
+                "Medium",
+                "Oil on linen"
+              ],
+              [
+                "Size",
+                "120 × 100 cm"
+              ],
+              [
+                "Issued by",
+                "The artist's studio"
+              ],
+              [
+                "Countersigned",
+                "The gallery"
+              ],
+              [
+                "Time-stamped",
+                "6 Nov 2026 · 12:06 UTC"
+              ]
+            ],
+            "fpLabel": "Fingerprint (SHA-256)",
+            "fp": "a71c04e9 2f6b8d31 0c95e7a4 4d18b2f6 e93a0c57 71f4d8b2 06c3e95a 5b3f0d62",
+            "foot": "The certificate's fingerprint is time-stamped on Bitcoin. Any change to it shows.",
+            "caption": "Illustration with example content. Invented work."
+          }
+        },
+        "who": {
+          "kicker": "Who it's for",
+          "title": "For the people who *keep the record*.",
+          "items": [
+            [
+              "Galleries",
+              "Certificates, consignments and loans for every work you show, in one place."
+            ],
+            [
+              "Collectors",
+              "A private, checkable record of each work's history, ready to share when you lend or sell."
+            ],
+            [
+              "Artists",
+              "Sign your own certificates with your own key, so your work carries your word."
+            ],
+            [
+              "Registrars and conservators",
+              "Condition reports and photographs, dated and signed, kept with the work."
+            ]
+          ]
+        },
+        "stack": {
+          "kicker": "Built on the family",
+          "title": "Room, wallet and *contracts*.",
+          "lede": "Three parts of the bWalletX family that work today, put together for your project.",
+          "items": [
+            [
+              "bChatX",
+              "The room",
+              "Private rooms where the conversation, the documents and the signatures sit together.",
+              "https://bchatx.com/"
+            ],
+            [
+              "bWalletX",
+              "The wallet",
+              "Each member's own key, on the phone, the web or Chrome. It signs you in and it signs documents.",
+              "https://bwalletx.com/"
+            ],
+            [
+              "bSignX",
+              "The contracts",
+              "Contracts both sides sign: the same version for everyone, sealed on chain.",
+              "https://bsignx.com/"
+            ]
+          ]
+        },
+        "status": {
+          "title": "What works today",
+          "liveTitle": "Live today",
+          "live": [
+            "**Private rooms** in bChatX, with documents and conversation together.",
+            "**Signing on the phone** with bWalletX, sealed on Bitcoin.",
+            "**Identity checks** for members.",
+            "**Change history**, with superseded versions kept on file."
+          ],
+          "nextTitle": "Coming soon",
+          "next": [
+            "**bGalleryX's own sign-in** at bgalleryx.com. Today your room opens in bChatX.",
+            "**Ready-made rooms for artworks**, with certificate and condition-report templates.",
+            "**Operator sites** for each market, naming the local operator."
+          ]
+        },
+        "limits": {
+          "kicker": "What we don't do",
+          "title": "Software, *not a dealer*.",
+          "items": [
+            "**We never hold client money or art.** Works and payments stay with their owners.",
+            "**We don't sell, broker or value art,** and take no part or fee in any sale.",
+            "**We don't offer or advise on investments.**",
+            "**No personal data goes on Bitcoin.** Only fingerprints of documents do."
+          ]
+        },
+        "operators": {
           "kicker": "For operators",
           "title": "Run bGalleryX in your market.",
-          "lede": "Software by The Bitcoin Corporation Ltd. Each market is run by an independent, locally licensed operator.",
+          "lede": "Software by The Bitcoin Corporation Ltd. Each market is run by an independent, locally licensed operator, and each market's site names its operator.",
           "cards": [
             [
               "Software",
               "The platform, ready to run",
-              "bGalleryX with bWalletX sign-in, agreements in bSignX and certificates signed by artists and galleries."
+              "bGalleryX with wallet sign-in, rooms for each work, signing on the phone and sealing on Bitcoin, kept up to date."
             ],
             [
               "Local",
               "Your licences, your rules",
-              "You hold the licences your market requires and work under your own regulator. We supply the software."
+              "You hold the licences your market requires, check your own clients and work under your own regulator."
             ],
             [
               "Together",
               "Setting up",
-              "We set the software up with you and keep it running."
+              "We set the software up with you, train your team and keep it running."
             ]
           ],
-          "links": [
-            [
-              "Talk to us",
-              "mailto:support@bwalletx.com?subject=bGalleryX%20operator%20enquiry",
-              "primary"
-            ]
-          ],
-          "note": "No offer of investments is made on this site. Any offer is made only by a licensed operator in its own jurisdiction, under local law."
-        },
-        {
-          "kicker": "Works with",
-          "title": "Built on the family.",
-          "links": [
-            [
-              "bWalletX: the wallet",
-              "https://bwalletx.com/",
-              "ghost"
-            ],
-            [
-              "bSignX: contracts both sides sign",
-              "https://bsignx.com/",
-              "ghost"
-            ],
-            [
-              "bPropertyX: records for property",
-              "https://bpropertyx.com/",
-              "ghost"
-            ]
-          ]
-        }
-      ],
-      "footerLinks": [
-        [
-          "bSignX",
-          "https://bsignx.com/"
-        ],
-        [
-          "bPropertyX",
-          "https://bpropertyx.com/"
-        ]
-      ],
-      "disclaimer": "No offer of investments is made on this site. Any offer is made only by a licensed operator in its own jurisdiction, under local law.",
-      "es": {
-        "ui": {
-          "navHow": "Qué es",
-          "howKicker": "Qué es",
-          "familyLine": "parte de la familia bWalletX",
-          "getWallet": "Obtener bWalletX",
-          "status": "Próximamente"
-        },
-        "tagline": "La procedencia del arte, guardada en Bitcoin",
-        "purpose": "Software para los registros de una obra de arte: procedencia, certificados de autenticidad, informes de estado y acuerdos de préstamo y consignación firmados, en Bitcoin SV con bWalletX.",
-        "eyebrow": "Registros de arte · próximamente",
-        "headline": "Cada obra.<br>Toda su *historia*.",
-        "lede": "bGalleryX está en camino. Guardará la procedencia de una obra, su certificado de autenticidad, sus informes de estado y sus acuerdos firmados en un solo registro permanente, con fecha y hora, en Bitcoin SV. Se abre con bWalletX. Todavía no está disponible.",
-        "ctas": [
-          [
-            "Hable con nosotros",
-            "mailto:support@bwalletx.com?subject=Consulta%20de%20operador%20bGalleryX",
-            "primary"
-          ],
-          [
-            "Para operadores",
-            "#operators",
+          "cta": [
+            "Talk to us about operating",
+            "mailto:support@bwalletx.com?subject=bGalleryX%20operator%20enquiry",
             "ghost"
           ]
-        ],
-        "navLinks": [
-          [
-            "Operadores",
-            "#operators"
+        },
+        "note": "No offer of investments is made on this site. Any offer is made only by a licensed operator in its own jurisdiction, under local law.",
+        "final": {
+          "title": "See a work's room *for yourself*.",
+          "lede": "We will walk you through an artwork room with example records, from the certificate to a sealed loan agreement.",
+          "cta": [
+            "Book a private walkthrough",
+            "mailto:support@bwalletx.com?subject=bGalleryX%20private%20walkthrough",
+            "gold"
+          ],
+          "cta2": [
+            "Get bWalletX",
+            "https://bwalletx.com/get",
+            "ghost"
           ]
-        ],
-        "howTitle": "Un registro que acompaña a la obra.",
-        "howLede": "bGalleryX es software de registros para artistas, galerías y coleccionistas; no participa en ventas. Cada certificado queda registrado como un token en Bitcoin SV que representa ese certificado.",
-        "how": [
+        },
+        "footer": [
           [
-            "Certifíquela",
-            "El artista o la galería firma un certificado de autenticidad con su propia clave de bWalletX."
+            "Part of the bWalletX family",
+            "https://bwalletx.com/family"
           ],
           [
-            "Sume su historia",
-            "Exposiciones, préstamos, informes de estado y cambios de propietario se agregan a medida que ocurren, cada uno con fecha y hora."
+            "bWalletX",
+            "https://bwalletx.com/"
           ],
           [
-            "Consérvela",
-            "Quien reciba el registro puede verificar la cadena de procedencia, y nadie puede reescribirla en silencio."
-          ]
-        ],
-        "whyKicker": "Lo que guardará",
-        "whyTitle": "Cuatro registros, una obra.",
-        "why": [
-          [
-            "Procedencia",
-            "Procedencia y propiedad",
-            "El artista, las exposiciones y cada propietario registrado de la obra, en orden."
+            "bChatX",
+            "https://bchatx.com/"
           ],
-          [
-            "Certificado",
-            "Certificado de autenticidad",
-            "Firmado por el artista o la galería con su propia clave, para que cualquiera pueda verificar quién lo emitió."
-          ],
-          [
-            "Estado",
-            "Informes de estado",
-            "Informes de conservadores y registradores, con fotografías, fechados y guardados con la obra."
-          ],
-          [
-            "Acuerdos",
-            "Préstamos y consignaciones",
-            "Acuerdos de préstamo y consignación, firmados por ambas partes en bSignX."
-          ]
-        ],
-        "sections": [
-          {
-            "id": "operators",
-            "kicker": "Para operadores",
-            "title": "Opere bGalleryX en su país.",
-            "lede": "Software de The Bitcoin Corporation Ltd. Cada país o región lo opera un operador independiente, con licencia local.",
-            "cards": [
-              [
-                "Software",
-                "La plataforma, lista para operar",
-                "bGalleryX con acceso por bWalletX, acuerdos en bSignX y certificados firmados por artistas y galerías."
-              ],
-              [
-                "Local",
-                "Sus licencias, sus reglas",
-                "Usted obtiene las licencias que exige su país y trabaja bajo su propio regulador. Nosotros ponemos el software."
-              ],
-              [
-                "Juntos",
-                "La puesta en marcha",
-                "Configuramos el software con usted y lo mantenemos funcionando."
-              ]
-            ],
-            "links": [
-              [
-                "Hable con nosotros",
-                "mailto:support@bwalletx.com?subject=Consulta%20de%20operador%20bGalleryX",
-                "primary"
-              ]
-            ],
-            "note": "Este sitio no ofrece inversiones. Cualquier oferta la hace únicamente un operador autorizado en su propia jurisdicción, conforme a la ley local."
-          },
-          {
-            "kicker": "Funciona con",
-            "title": "Construido sobre la familia.",
-            "links": [
-              [
-                "bWalletX: la billetera",
-                "https://bwalletx.com/",
-                "ghost"
-              ],
-              [
-                "bSignX: contratos que firman ambas partes",
-                "https://bsignx.com/",
-                "ghost"
-              ],
-              [
-                "bPropertyX: registros de propiedad",
-                "https://bpropertyx.com/es",
-                "ghost"
-              ]
-            ]
-          }
-        ],
-        "footerLinks": [
           [
             "bSignX",
             "https://bsignx.com/"
           ],
           [
             "bPropertyX",
-            "https://bpropertyx.com/es"
+            "https://bpropertyx.com/"
+          ],
+          [
+            "Get bWalletX",
+            "https://bwalletx.com/get"
           ]
-        ],
-        "disclaimer": "Este sitio no ofrece inversiones. Cualquier oferta la hace únicamente un operador autorizado en su propia jurisdicción, conforme a la ley local.",
-        "legal": "The Bitcoin Corporation Ltd, sociedad n.º 16735102."
+        ]
       },
-      "ogImage": "og-bgalleryx-v1.png"
+      "es": {
+        "tagline": "La sala privada para el expediente de una obra",
+        "purpose": "Una sala privada para cada obra: procedencia, certificado de autenticidad, informes de estado, y contratos de préstamo y de compraventa, firmados desde el celular y sellados en Bitcoin. Para galerías, coleccionistas y artistas.",
+        "eyebrow": "Salas privadas · arte",
+        "headline": "Cada obra.<br>Todo su *expediente*.",
+        "lede": "Galerías, coleccionistas y artistas llevan todo el expediente de una obra en una sola sala: procedencia, certificado de autenticidad, informes de estado, y contratos de préstamo y de compraventa, cada uno firmado desde el celular y sellado en Bitcoin.",
+        "ogLine": "Procedencia, certificados e informes de estado en una sala, sellados en Bitcoin.",
+        "ogAction": "Agende un recorrido",
+        "ogImage": "og-bgalleryx-es-v2.png",
+        "disclaimer": "Este sitio no ofrece inversiones. Cualquier oferta la hace únicamente un operador autorizado en su propia jurisdicción, conforme a la ley local.",
+        "legal": "The Bitcoin Corporation Ltd, sociedad n.º 16735102, Inglaterra y Gales.",
+        "room": {
+          "art": "gallery",
+          "detailArt": "gallery-detail",
+          "labels": {
+            "sealed": "Sellado",
+            "signed": "Firmado",
+            "awaiting": "Pendiente de firma",
+            "draft": "Borrador"
+          },
+          "nav": [
+            [
+              "La sala",
+              "#room"
+            ],
+            [
+              "Cómo funciona",
+              "#how"
+            ],
+            [
+              "Lo que no hacemos",
+              "#limits"
+            ],
+            [
+              "Operadores",
+              "#operators"
+            ]
+          ],
+          "eyebrow": "Salas privadas · arte",
+          "statement": "La sala privada para *el expediente de una obra*.",
+          "lede": "Galerías, coleccionistas y artistas llevan todo el expediente de una obra en una sola sala: procedencia, certificado de autenticidad, informes de estado, y contratos de préstamo y de compraventa, cada uno firmado desde el celular y sellado en Bitcoin.",
+          "cta": [
+            "Agende un recorrido privado",
+            "mailto:support@bwalletx.com?subject=Recorrido%20privado%20por%20bGalleryX",
+            "gold"
+          ],
+          "cta2": [
+            "Obtener bWalletX",
+            "https://bwalletx.com/get",
+            "ghost"
+          ],
+          "ghost": "GALLERYX",
+          "artCaption": "Ilustración, obras inventadas",
+          "mockHead": {
+            "kicker": "La sala",
+            "title": "Una obra. *Todo* su expediente.",
+            "lede": "Cada obra tiene su propia sala privada. El certificado, la procedencia y cada informe de estado quedan junto a la conversación sobre la obra, y cada documento firmado queda sellado."
+          },
+          "mock": {
+            "alt": "Ilustración de una sala de bGalleryX: una lista de registros, una línea de procedencia y un certificado sellado.",
+            "room": "Sin título, 2019 · óleo sobre lino",
+            "private": "Privada · solo miembros",
+            "members": [
+              "Artista",
+              "Galería",
+              "Coleccionista",
+              "Registrador"
+            ],
+            "docsTitle": "Registros",
+            "docIcon": "frame",
+            "docs": [
+              [
+                "Certificado de autenticidad",
+                "Emitido por el artista",
+                "sealed"
+              ],
+              [
+                "Registro de procedencia",
+                "Taller · exposiciones · propietarios",
+                "sealed"
+              ],
+              [
+                "Informe de estado · a la llegada",
+                "Con 14 fotografías",
+                "signed"
+              ],
+              [
+                "Contrato de préstamo · exposición",
+                "Contrato · 2 partes",
+                "awaiting"
+              ],
+              [
+                "Informe de estado · tras el préstamo",
+                "Borrador",
+                "draft"
+              ]
+            ],
+            "timelineTitle": "Procedencia",
+            "timeline": [
+              [
+                "Taller del artista",
+                "emitió el certificado",
+                "2019",
+                "sign"
+              ],
+              [
+                "Galería",
+                "refrendó el certificado",
+                "2019",
+                "sign"
+              ],
+              [
+                "Coleccionista",
+                "registrado como propietario, con contrato de compraventa firmado",
+                "2023",
+                "sign"
+              ],
+              [
+                "Registrador",
+                "agregó un informe de estado con fotografías",
+                "2026",
+                ""
+              ],
+              [
+                "Sellado en Bitcoin.",
+                "Huella con fecha y hora",
+                "2026",
+                "seal"
+              ]
+            ],
+            "seal": {
+              "title": "Certificado de autenticidad · Sin título, 2019",
+              "rows": [
+                [
+                  "Huella",
+                  "a71c04e9…5b3f0d62"
+                ],
+                [
+                  "Fecha y hora",
+                  "6 nov. 2026 · 12:06"
+                ],
+                [
+                  "Firmado por",
+                  "Artista · Galería"
+                ]
+              ],
+              "action": "Verificar el sello",
+              "note": "Solo esta huella va a Bitcoin. El certificado se queda en la sala."
+            },
+            "caption": "Ilustración con contenido de ejemplo."
+          },
+          "how": {
+            "kicker": "Cómo funciona",
+            "title": "Del taller al *próximo propietario*.",
+            "lede": "Configuramos con usted una sala para cada obra o colección. No hay nada que instalar, salvo una billetera.",
+            "steps": [
+              [
+                "Abra la sala",
+                "La galería, el coleccionista o el taller del artista abre una sala privada para la obra. Cada miembro entra con su propia billetera: bWalletX u otra billetera BRC-100.",
+                "Disponible"
+              ],
+              [
+                "Certifíquela",
+                "El artista o la galería firma el certificado de autenticidad con su propia clave. Los miembros pueden verificar su identidad antes.",
+                "Disponible"
+              ],
+              [
+                "Sume su historia",
+                "Exposiciones, préstamos, informes de estado con fotografías y cambios de propietario se agregan a medida que ocurren, cada uno con su fecha.",
+                "Disponible"
+              ],
+              [
+                "Firme desde el celular",
+                "Los contratos de préstamo, consignación y compraventa se firman en bWalletX desde el celular, y la versión firmada queda sellada en Bitcoin.",
+                "Disponible"
+              ]
+            ]
+          },
+          "holds": {
+            "kicker": "En la sala",
+            "title": "Todo lo que *acompaña a la obra*.",
+            "items": [
+              [
+                "history",
+                "Procedencia",
+                "El artista, las exposiciones y cada propietario registrado de la obra, en orden."
+              ],
+              [
+                "seal",
+                "Certificado de autenticidad",
+                "Firmado por el artista o la galería con su propia clave, para que cualquiera pueda verificar quién lo emitió."
+              ],
+              [
+                "lens",
+                "Informes de estado",
+                "Informes de conservadores y registradores, con fotografías, fechados y guardados con la obra."
+              ],
+              [
+                "contract",
+                "Préstamos y consignaciones",
+                "Contratos de préstamo y de consignación, firmados por ambas partes en bSignX."
+              ],
+              [
+                "pen",
+                "Contratos de compraventa",
+                "El contrato firmado entre vendedor y comprador, guardado en el expediente. No participamos en la venta."
+              ],
+              [
+                "id",
+                "Verificación de identidad",
+                "Incluida, para saber con quién trata antes de que alguien firme."
+              ]
+            ]
+          },
+          "seal": {
+            "kicker": "Sellado en Bitcoin",
+            "title": "Cualquier cambio *se nota*.",
+            "lede": "Cuando se firma un certificado o un contrato, una huella digital del documento queda registrada en Bitcoin con fecha y hora. Si alguien cambia una sola palabra, la huella deja de coincidir.",
+            "points": [
+              [
+                "El expediente se queda en la sala",
+                "Solo la huella va a la cadena. Ningún dato personal se publica en Bitcoin."
+              ],
+              [
+                "Usted decide quién lo verifica",
+                "Comparta un sello con un comprador, una aseguradora o un museo, y podrán verificarlo sin entrar a la sala."
+              ],
+              [
+                "El expediente acompaña a la obra",
+                "Cuando una obra se presta o se vende, el nuevo tenedor puede recibir una invitación a su sala, y la historia ya está ahí."
+              ]
+            ],
+            "cert": {
+              "alt": "Ilustración de un certificado de autenticidad de una obra inventada.",
+              "issuer": "bGalleryX",
+              "no": "Ejemplo",
+              "kicker": "Certificado de autenticidad",
+              "title": "Sin título, 2019",
+              "rows": [
+                [
+                  "Técnica",
+                  "Óleo sobre lino"
+                ],
+                [
+                  "Medidas",
+                  "120 × 100 cm"
+                ],
+                [
+                  "Emitido por",
+                  "El taller del artista"
+                ],
+                [
+                  "Refrendado por",
+                  "La galería"
+                ],
+                [
+                  "Fecha y hora",
+                  "6 nov. 2026 · 12:06 UTC"
+                ]
+              ],
+              "fpLabel": "Huella digital (SHA-256)",
+              "fp": "a71c04e9 2f6b8d31 0c95e7a4 4d18b2f6 e93a0c57 71f4d8b2 06c3e95a 5b3f0d62",
+              "foot": "La huella del certificado está registrada en Bitcoin con fecha y hora. Cualquier cambio se nota.",
+              "caption": "Ilustración con contenido de ejemplo. Obra inventada."
+            }
+          },
+          "who": {
+            "kicker": "Para quién es",
+            "title": "Para quienes *cuidan el expediente*.",
+            "items": [
+              [
+                "Galerías",
+                "Certificados, consignaciones y préstamos de cada obra que exhiben, en un solo lugar."
+              ],
+              [
+                "Coleccionistas",
+                "Un registro privado y verificable de la historia de cada obra, listo para compartir cuando la presten o la vendan."
+              ],
+              [
+                "Artistas",
+                "Firme sus propios certificados con su propia clave, para que su obra lleve su palabra."
+              ],
+              [
+                "Registradores y conservadores",
+                "Informes de estado y fotografías, fechados y firmados, guardados con la obra."
+              ]
+            ]
+          },
+          "stack": {
+            "kicker": "Hecho con la familia",
+            "title": "Sala, billetera y *contratos*.",
+            "lede": "Tres piezas de la familia bWalletX que ya funcionan, reunidas para su proyecto.",
+            "items": [
+              [
+                "bChatX",
+                "La sala",
+                "Salas privadas donde la conversación, los documentos y las firmas están juntos.",
+                "https://bchatx.com/"
+              ],
+              [
+                "bWalletX",
+                "La billetera",
+                "La clave propia de cada miembro, en el celular, en la web o en Chrome. Con ella se entra y con ella se firma.",
+                "https://bwalletx.com/"
+              ],
+              [
+                "bSignX",
+                "Los contratos",
+                "Contratos que firman ambas partes: la misma versión para todos, sellada en la cadena.",
+                "https://bsignx.com/"
+              ]
+            ]
+          },
+          "status": {
+            "title": "Lo que funciona hoy",
+            "liveTitle": "Disponible hoy",
+            "live": [
+              "**Salas privadas** en bChatX, con documentos y conversación juntos.",
+              "**Firma desde el celular** con bWalletX, sellada en Bitcoin.",
+              "**Verificación de identidad** para los miembros.",
+              "**Historial de cambios**, con las versiones reemplazadas en el archivo."
+            ],
+            "nextTitle": "Próximamente",
+            "next": [
+              "**Acceso propio de bGalleryX** en bgalleryx.com. Hoy su sala se abre en bChatX.",
+              "**Salas listas para obras de arte**, con plantillas de certificado y de informe de estado.",
+              "**Sitios de operador** para cada mercado, con el nombre del operador local."
+            ]
+          },
+          "limits": {
+            "kicker": "Lo que no hacemos",
+            "title": "Somos software, *no marchantes*.",
+            "items": [
+              "**Nunca custodiamos dinero ni obras de clientes.** Las obras y los pagos quedan con sus dueños.",
+              "**No vendemos, no intermediamos ni tasamos obras,** y no participamos ni cobramos en ninguna venta.",
+              "**No ofrecemos ni asesoramos inversiones.**",
+              "**Ningún dato personal va a Bitcoin.** Solo las huellas de los documentos."
+            ]
+          },
+          "operators": {
+            "kicker": "Para operadores",
+            "title": "Opere bGalleryX en su país.",
+            "lede": "Software de The Bitcoin Corporation Ltd. Cada mercado lo opera un operador independiente con licencia local, y el sitio de cada mercado lleva el nombre de su operador.",
+            "cards": [
+              [
+                "Software",
+                "La plataforma, lista para operar",
+                "bGalleryX con acceso por billetera, salas para cada obra, firma en el celular y sellado en Bitcoin, siempre al día."
+              ],
+              [
+                "Local",
+                "Sus licencias, sus reglas",
+                "Usted obtiene las licencias que exige su mercado, verifica a sus propios clientes y responde ante su propio regulador."
+              ],
+              [
+                "Juntos",
+                "La puesta en marcha",
+                "Configuramos el software con usted, capacitamos a su equipo y lo mantenemos funcionando."
+              ]
+            ],
+            "cta": [
+              "Hablemos de operar",
+              "mailto:support@bwalletx.com?subject=Consulta%20de%20operador%20bGalleryX",
+              "ghost"
+            ]
+          },
+          "note": "Este sitio no ofrece inversiones. Cualquier oferta la hace únicamente un operador autorizado en su propia jurisdicción, conforme a la ley local.",
+          "final": {
+            "title": "Conozca la sala de una obra *en persona*.",
+            "lede": "Le mostramos la sala de una obra con registros de ejemplo, desde el certificado hasta un contrato de préstamo sellado.",
+            "cta": [
+              "Agende un recorrido privado",
+              "mailto:support@bwalletx.com?subject=Recorrido%20privado%20por%20bGalleryX",
+              "gold"
+            ],
+            "cta2": [
+              "Obtener bWalletX",
+              "https://bwalletx.com/get",
+              "ghost"
+            ]
+          },
+          "footer": [
+            [
+              "Parte de la familia bWalletX",
+              "https://bwalletx.com/family"
+            ],
+            [
+              "bWalletX",
+              "https://bwalletx.com/"
+            ],
+            [
+              "bChatX",
+              "https://bchatx.com/"
+            ],
+            [
+              "bSignX",
+              "https://bsignx.com/"
+            ],
+            [
+              "bPropertyX",
+              "https://bpropertyx.com/es"
+            ],
+            [
+              "Obtener bWalletX",
+              "https://bwalletx.com/get"
+            ]
+          ]
+        }
+      }
     }
   ]
 }
