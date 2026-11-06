@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{lang}}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{name}} · {{tagline}}</title>
 <meta name="description" content="{{purpose}}">
-<link rel="canonical" href="https://{{domain}}/">
+<link rel="canonical" href="https://{{domain}}/{{path}}">{{altLinks}}
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://{{domain}}/">
+<meta property="og:url" content="https://{{domain}}/{{path}}">{{ogLocale}}
 <meta property="og:site_name" content="{{name}}">
 <meta property="og:title" content="{{name}} · {{tagline}}">
 <meta property="og:description" content="{{purpose}}">
@@ -67,20 +67,20 @@ section{padding:88px 0;border-bottom:1px solid var(--line)}
 .prices .amt{font:700 20px 'Space Grotesk';color:var(--ink);text-align:right;white-space:nowrap}
 .links{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
 footer{padding:40px 0;color:var(--mute);font-size:13px}
-footer .legal{display:block;margin-top:6px}
+footer .legal{display:block;margin-top:6px}{{extraCss}}
 </style>
 </head>
 <body>
 {{strip}}
 <header class="wrap nav">
   <a class="brand" href="/" aria-label="{{name}} home"><img src="/logo.svg" width="28" height="28" alt=""><span>{{base}}<span class="gold">X</span></span></a>
-  <nav class="nav-links" aria-label="Main"><a class="hide-s" href="#how">How it works</a>{{navExtra}}{{navFlick}}<span data-bwx></span></nav>
+  <nav class="nav-links" aria-label="Main"><a class="hide-s" href="#how">{{navHow}}</a>{{navExtra}}{{navFlick}}{{langLink}}<span data-bwx></span></nav>
 </header>
 
 <main>
 <section class="hero">
   <div class="wrap">
-    {{statusBadge}}
+    {{statusBadge}}{{heroLang}}
     <p class="eyebrow">{{eyebrow}}</p>
     <h1>{{headline}}</h1>
     <p class="lede">{{lede}}</p>
@@ -90,7 +90,7 @@ footer .legal{display:block;margin-top:6px}
 
 <section id="how">
   <div class="wrap">
-    <p class="kicker">How it works</p>
+    <p class="kicker">{{howKicker}}</p>
     <h2>{{howTitle}}</h2>{{howLede}}
     <div class="three">{{how}}</div>
   </div>
@@ -106,7 +106,7 @@ footer .legal{display:block;margin-top:6px}
 {{sections}}
 </main>
 
-<footer class="wrap">{{name}} · part of the bWalletX family · {{footerLinks}}<a href="https://bmintx.com/flick-off">FLICK OFF</a> · <a href="https://bwalletx.com/get">Get bWalletX</a><span class="legal">{{legal}}</span></footer>
+<footer class="wrap">{{name}} · {{familyLine}} · {{footerLinks}}<a href="https://bmintx.com/flick-off">FLICK OFF</a> · <a href="https://bwalletx.com/get">{{getWallet}}</a>{{disclaimer}}<span class="legal">{{legal}}</span></footer>
 
 <script src="https://unpkg.com/@bwalletx/connect@0.5.0/dist/bwalletx-connect.global.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>

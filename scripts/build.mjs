@@ -13,7 +13,13 @@ export function build() {
   const dist = join(root, 'dist');
   rmSync(dist, { recursive: true, force: true });
   const strip = T('strip.html').trim();
-  for (const s of sites) {
+  for (const site of sites) {
+    // optional translated page: site.es = { ...overrides, ui: {...} } -> es.html (served at /es), same template
+    const pages = [{ s: site, lang: 'en', file: 'index.html', path: '' }];
+    if (site.es) pages.push({ s: { ...site, ...site.es }, lang: 'es', file: 'es.html', path: 'es' });
+    for (const page of pages) {
+    const s = page.s;
+    const ui = { navHow: 'How it works', howKicker: 'How it works', familyLine: 'part of the bWalletX family', getWallet: 'Get bWalletX', status: 'Coming soon', ...(s.ui || {}) };
     const name = s.base + 'X';
     const slug = name.toLowerCase().replace(/[^a-z0-9]/g, '');
     const holding = s.status === 'holding';
@@ -60,7 +66,7 @@ export function build() {
     ${x.cards ? `<div class="four">${x.cards.map(([t, h, p]) => `<div class="card">${t ? `<span class="tag">${esc(t)}</span>` : ''}<h3>${esc(h)}</h3><p>${esc(p)}</p></div>`).join('')}</div>` : ''}
     ${x.prices ? `<div class="prices">${x.prices.map(([n, d, a]) => `<div><b>${esc(n)}</b><span class="amt">${esc(a)}</span><span>${esc(d)}</span></div>`).join('')}</div>` : ''}
     ${x.links ? `<div class="links">${x.links.map(btn).join('')}</div>` : ''}
-    ${x.note ? `<p class="note">${esc(x.note)}</p>` : ''}
+    ${x.note ? `<p class="note${x.note === s.disclaimer ? ' disclaimer' : ''}">${esc(x.note)}</p>` : ''}
     ${x.form && x.form.live ? interestForm(x.form) : ''}
   </div>
 </section>`).join('\n');
@@ -75,14 +81,24 @@ export function build() {
       footerLinks: (s.footerLinks || []).map(([label, url]) => `<a href="${href(url)}">${esc(label)}</a> · `).join(''),
       legal: esc(s.legal || defaults.legal || ''),
       tagline: esc(s.tagline), purpose: esc(s.purpose), eyebrow: esc(s.eyebrow), headline, lede: esc(s.lede),
-      statusBadge: holding ? '<span class="status">Coming soon</span>' : '',
+      statusBadge: holding ? `<span class="status">${esc(ui.status)}</span>` : '',
+      lang: page.lang, path: page.path,
+      altLinks: site.es ? `\n<link rel="alternate" hreflang="en" href="https://${s.domain}/">\n<link rel="alternate" hreflang="es" href="https://${s.domain}/es">` : '',
+      ogLocale: site.es ? `\n<meta property="og:locale" content="${page.lang === 'es' ? 'es_CO' : 'en_GB'}">` : '',
+      langLink: site.es ? (page.lang === 'es' ? '<a class="hide-s" href="/" lang="en" hreflang="en">English</a>' : '<a class="hide-s" href="/es" lang="es" hreflang="es">Español</a>') : '',
+      heroLang: site.es ? (page.lang === 'es' ? '<a class="lang-m" href="/" lang="en" hreflang="en">English</a>' : '<a class="lang-m" href="/es" lang="es" hreflang="es">Español</a>') : '',
+      navHow: esc(ui.navHow), howKicker: esc(ui.howKicker), familyLine: esc(ui.familyLine), getWallet: esc(ui.getWallet),
+      disclaimer: s.disclaimer ? `<span class="legal disclaimer">${esc(s.disclaimer)}</span>` : '',
+      extraCss: (s.disclaimer ? '\n.disclaimer{color:#bdb8aa;max-width:760px}\n.note.disclaimer{border-left:2px solid var(--accent);padding-left:14px;color:#d8d3c5}' : '')
+        + (site.es ? '\n.lang-m{display:none;float:right;font:600 13px/1 \'Space Grotesk\';color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:6px 12px}\n.lang-m:focus-visible{outline:2px solid var(--accent);outline-offset:3px}\n@media(max-width:640px){.lang-m{display:inline-block}}' : ''),
       navFlick: flick,
       howTitle: esc(s.howTitle || (holding ? 'Not open yet. Here is the plan.' : 'Connect. Sign. Own it.')),
       how, why,
     };
     const out = join(dist, s.domain);
     mkdirSync(join(out, 'api', 'bwalletx'), { recursive: true });
-    writeFileSync(join(out, 'index.html'), fill(T('index.html'), v));
+    writeFileSync(join(out, page.file), fill(T('index.html'), v));
+    if (page.lang !== 'en') continue;
     writeFileSync(join(out, 'bwx.js'), fill(T('bwx.js'), v));
     for (const f of ['_auth.js', 'challenge.js', 'verify.js', 'session.js']) writeFileSync(join(out, 'api', 'bwalletx', f), fill(T('api/' + f), v));
     copyFileSync(join(root, 'templates', 'logo.svg'), join(out, 'logo.svg'));
@@ -95,6 +111,7 @@ export function build() {
     if (s.domain !== 'bmintx.com') redirects.push({ source: '/flick-off', destination: flickUrl, permanent: false }, { source: '/flick-off/:path*', destination: 'https://bmintx.com/flick-off/:path*', permanent: false });
     writeFileSync(join(out, 'vercel.json'), JSON.stringify({ cleanUrls: true, redirects }, null, 2) + '\n');
     if (s.managedElsewhere) writeFileSync(join(out, 'DO-NOT-DEPLOY.txt'), `${s.domain} is managed elsewhere. This build is for reference only.\n`);
+    }
   }
   return sites;
 }

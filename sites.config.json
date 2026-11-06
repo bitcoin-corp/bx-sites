@@ -698,6 +698,586 @@
         ]
       ],
       "ogImage": "og-bmarketingx-v1.png"
+    },
+    {
+      "domain": "bpropertyx.com",
+      "base": "bProperty",
+      "accent": "#D4806A",
+      "status": "holding",
+      "managedElsewhere": false,
+      "flickOff": null,
+      "tagline": "Property records, kept on Bitcoin",
+      "purpose": "Software for a property's records: title documents, plans, permits, signed agreements and the share register of the company that holds it, on Bitcoin SV with bWalletX.",
+      "eyebrow": "Property records · coming soon",
+      "headline": "Every property.<br>*One* record.",
+      "lede": "bPropertyX is coming. It will keep a property's title documents, plans, permits and inspections, its signed agreements and its maintenance log in one permanent, timestamped record on Bitcoin SV, opened with bWalletX. It is not open yet.",
+      "ogLine": "Title, plans, permits and signed agreements in one permanent record.",
+      "ogAction": "Talk to us",
+      "ui": {
+        "navHow": "What it is",
+        "howKicker": "What it is"
+      },
+      "ctas": [
+        [
+          "Talk to us",
+          "mailto:support@bwalletx.com?subject=bPropertyX%20operator%20enquiry",
+          "primary"
+        ],
+        [
+          "For operators",
+          "#operators",
+          "ghost"
+        ]
+      ],
+      "navLinks": [
+        [
+          "Operators",
+          "#operators"
+        ]
+      ],
+      "howTitle": "A permanent record for every building.",
+      "howLede": "bPropertyX is record-keeping software, not an estate agent. Each document is recorded as a token on Bitcoin SV that represents that record.",
+      "how": [
+        [
+          "Record it",
+          "Add the title documents, plans, permits and inspection reports. Each one is fingerprinted and timestamped on Bitcoin SV, so any later change shows."
+        ],
+        [
+          "Sign it",
+          "Leases, sales agreements and building contracts are signed by every party in bSignX, each with their own bWalletX key."
+        ],
+        [
+          "Keep it",
+          "Every entry joins the property's history: what was added, when, and by whom. The history can't be quietly rewritten."
+        ]
+      ],
+      "whyKicker": "What it will hold",
+      "whyTitle": "Four parts, one property.",
+      "why": [
+        [
+          "Record",
+          "The property file",
+          "Title documents, plans, permits, inspections and a maintenance log, together in one place."
+        ],
+        [
+          "Contracts",
+          "Signed agreements",
+          "Leases, sales agreements and building contracts, signed in bSignX by every party."
+        ],
+        [
+          "Company",
+          "The share register",
+          "Where a company holds the property, its register of shareholders is kept with bSharesX."
+        ],
+        [
+          "Payments",
+          "Wallet to wallet",
+          "Payments go directly between the parties' bWalletX wallets, with a receipt for each one."
+        ]
+      ],
+      "sections": [
+        {
+          "id": "operators",
+          "kicker": "For operators",
+          "title": "Run bPropertyX in your market.",
+          "lede": "Software by The Bitcoin Corporation Ltd. Each market is run by an independent, locally licensed operator.",
+          "cards": [
+            [
+              "Software",
+              "The platform, ready to run",
+              "bPropertyX with bWalletX sign-in, agreements in bSignX and share registers in bSharesX."
+            ],
+            [
+              "Local",
+              "Your licences, your rules",
+              "You hold the licences your market requires and work under your own regulator. We supply the software."
+            ],
+            [
+              "Together",
+              "Setting up",
+              "We set the software up with you and keep it running."
+            ]
+          ],
+          "links": [
+            [
+              "Talk to us",
+              "mailto:support@bwalletx.com?subject=bPropertyX%20operator%20enquiry",
+              "primary"
+            ]
+          ],
+          "note": "No offer of investments is made on this site. Any offer is made only by a licensed operator in its own jurisdiction, under local law."
+        },
+        {
+          "kicker": "Works with",
+          "title": "Built on the family.",
+          "links": [
+            [
+              "bWalletX: the wallet",
+              "https://bwalletx.com/",
+              "ghost"
+            ],
+            [
+              "bSignX: contracts both sides sign",
+              "https://bsignx.com/",
+              "ghost"
+            ],
+            [
+              "bSharesX: share registers",
+              "https://bsharesx.com/",
+              "ghost"
+            ],
+            [
+              "bGalleryX: records for art",
+              "https://bgalleryx.com/",
+              "ghost"
+            ]
+          ]
+        }
+      ],
+      "footerLinks": [
+        [
+          "bSignX",
+          "https://bsignx.com/"
+        ],
+        [
+          "bSharesX",
+          "https://bsharesx.com/"
+        ],
+        [
+          "bGalleryX",
+          "https://bgalleryx.com/"
+        ]
+      ],
+      "disclaimer": "No offer of investments is made on this site. Any offer is made only by a licensed operator in its own jurisdiction, under local law.",
+      "es": {
+        "ui": {
+          "navHow": "Qué es",
+          "howKicker": "Qué es",
+          "familyLine": "parte de la familia bWalletX",
+          "getWallet": "Obtener bWalletX",
+          "status": "Próximamente"
+        },
+        "tagline": "Registros de propiedad, guardados en Bitcoin",
+        "purpose": "Software para los registros de un inmueble: títulos, planos, licencias, acuerdos firmados y el libro de accionistas de la sociedad propietaria, en Bitcoin SV con bWalletX.",
+        "eyebrow": "Registros de propiedad · próximamente",
+        "headline": "Cada inmueble.<br>*Un* registro.",
+        "lede": "bPropertyX está en camino. Guardará los títulos, planos, licencias e inspecciones de un inmueble, sus acuerdos firmados y su bitácora de mantenimiento en un solo registro permanente, con fecha y hora, en Bitcoin SV. Se abre con bWalletX. Todavía no está disponible.",
+        "ctas": [
+          [
+            "Hable con nosotros",
+            "mailto:support@bwalletx.com?subject=Consulta%20de%20operador%20bPropertyX",
+            "primary"
+          ],
+          [
+            "Para operadores",
+            "#operators",
+            "ghost"
+          ]
+        ],
+        "navLinks": [
+          [
+            "Operadores",
+            "#operators"
+          ]
+        ],
+        "howTitle": "Un registro permanente para cada edificio.",
+        "howLede": "bPropertyX es software de registros, no una agencia inmobiliaria. Cada documento queda registrado como un token en Bitcoin SV que representa ese registro.",
+        "how": [
+          [
+            "Regístrelo",
+            "Suba los títulos, planos, licencias e informes de inspección. Cada uno recibe una huella digital y una marca de tiempo en Bitcoin SV, así que cualquier cambio posterior se nota."
+          ],
+          [
+            "Fírmelo",
+            "Arrendamientos, promesas de compraventa y contratos de obra los firman todas las partes en bSignX, cada una con su propia clave de bWalletX."
+          ],
+          [
+            "Consérvelo",
+            "Cada entrada se suma al historial del inmueble: qué se agregó, cuándo y por quién. El historial no se puede reescribir en silencio."
+          ]
+        ],
+        "whyKicker": "Lo que guardará",
+        "whyTitle": "Cuatro partes, un inmueble.",
+        "why": [
+          [
+            "Registro",
+            "El expediente del inmueble",
+            "Títulos, planos, licencias, inspecciones y una bitácora de mantenimiento, todo en un mismo lugar."
+          ],
+          [
+            "Contratos",
+            "Acuerdos firmados",
+            "Arrendamientos, promesas de compraventa y contratos de obra, firmados en bSignX por cada parte."
+          ],
+          [
+            "Sociedad",
+            "El libro de accionistas",
+            "Cuando una sociedad es la dueña del inmueble, su libro de accionistas se lleva con bSharesX."
+          ],
+          [
+            "Pagos",
+            "De billetera a billetera",
+            "Los pagos van directamente entre las billeteras bWalletX de las partes, con un recibo por cada uno."
+          ]
+        ],
+        "sections": [
+          {
+            "id": "operators",
+            "kicker": "Para operadores",
+            "title": "Opere bPropertyX en su país.",
+            "lede": "Software de The Bitcoin Corporation Ltd. Cada país o región lo opera un operador independiente, con licencia local.",
+            "cards": [
+              [
+                "Software",
+                "La plataforma, lista para operar",
+                "bPropertyX con acceso por bWalletX, acuerdos en bSignX y libros de accionistas en bSharesX."
+              ],
+              [
+                "Local",
+                "Sus licencias, sus reglas",
+                "Usted obtiene las licencias que exige su país y trabaja bajo su propio regulador. Nosotros ponemos el software."
+              ],
+              [
+                "Juntos",
+                "La puesta en marcha",
+                "Configuramos el software con usted y lo mantenemos funcionando."
+              ]
+            ],
+            "links": [
+              [
+                "Hable con nosotros",
+                "mailto:support@bwalletx.com?subject=Consulta%20de%20operador%20bPropertyX",
+                "primary"
+              ]
+            ],
+            "note": "Este sitio no ofrece inversiones. Cualquier oferta la hace únicamente un operador autorizado en su propia jurisdicción, conforme a la ley local."
+          },
+          {
+            "kicker": "Funciona con",
+            "title": "Construido sobre la familia.",
+            "links": [
+              [
+                "bWalletX: la billetera",
+                "https://bwalletx.com/",
+                "ghost"
+              ],
+              [
+                "bSignX: contratos que firman ambas partes",
+                "https://bsignx.com/",
+                "ghost"
+              ],
+              [
+                "bSharesX: libros de accionistas",
+                "https://bsharesx.com/",
+                "ghost"
+              ],
+              [
+                "bGalleryX: registros para el arte",
+                "https://bgalleryx.com/es",
+                "ghost"
+              ]
+            ]
+          }
+        ],
+        "footerLinks": [
+          [
+            "bSignX",
+            "https://bsignx.com/"
+          ],
+          [
+            "bSharesX",
+            "https://bsharesx.com/"
+          ],
+          [
+            "bGalleryX",
+            "https://bgalleryx.com/es"
+          ]
+        ],
+        "disclaimer": "Este sitio no ofrece inversiones. Cualquier oferta la hace únicamente un operador autorizado en su propia jurisdicción, conforme a la ley local.",
+        "legal": "The Bitcoin Corporation Ltd, sociedad n.º 16735102."
+      },
+      "ogImage": "og-bpropertyx-v1.png"
+    },
+    {
+      "domain": "bgalleryx.com",
+      "base": "bGallery",
+      "accent": "#D94E64",
+      "status": "holding",
+      "managedElsewhere": false,
+      "flickOff": null,
+      "tagline": "Provenance for art, kept on Bitcoin",
+      "purpose": "Software for an artwork's records: provenance, certificates of authenticity, condition reports and signed loan and consignment agreements, on Bitcoin SV with bWalletX.",
+      "eyebrow": "Art records · coming soon",
+      "headline": "Every work.<br>Its *whole* story.",
+      "lede": "bGalleryX is coming. It will keep an artwork's provenance, its certificate of authenticity, its condition reports and its signed agreements in one permanent, timestamped record on Bitcoin SV, opened with bWalletX. It is not open yet.",
+      "ogLine": "Provenance, certificates and condition reports in one permanent record.",
+      "ogAction": "Talk to us",
+      "ui": {
+        "navHow": "What it is",
+        "howKicker": "What it is"
+      },
+      "ctas": [
+        [
+          "Talk to us",
+          "mailto:support@bwalletx.com?subject=bGalleryX%20operator%20enquiry",
+          "primary"
+        ],
+        [
+          "For operators",
+          "#operators",
+          "ghost"
+        ]
+      ],
+      "navLinks": [
+        [
+          "Operators",
+          "#operators"
+        ]
+      ],
+      "howTitle": "A record that travels with the work.",
+      "howLede": "bGalleryX is record-keeping software for artists, galleries and collectors; it takes no part in sales. Each certificate is recorded as a token on Bitcoin SV that represents that certificate.",
+      "how": [
+        [
+          "Certify it",
+          "The artist or the gallery signs a certificate of authenticity with their own bWalletX key."
+        ],
+        [
+          "Add its story",
+          "Exhibitions, loans, condition reports and changes of owner are added as they happen, each one timestamped."
+        ],
+        [
+          "Keep it",
+          "Anyone the record is shared with can check the provenance chain, and no one can quietly rewrite it."
+        ]
+      ],
+      "whyKicker": "What it will hold",
+      "whyTitle": "Four records, one artwork.",
+      "why": [
+        [
+          "Provenance",
+          "Provenance and ownership",
+          "The artist, the exhibitions and every recorded owner of the work, in order."
+        ],
+        [
+          "Certificate",
+          "Certificate of authenticity",
+          "Signed by the artist or the gallery with their own key, so anyone can check who issued it."
+        ],
+        [
+          "Condition",
+          "Condition reports",
+          "Reports from conservators and registrars, with photographs, dated and kept with the work."
+        ],
+        [
+          "Agreements",
+          "Loans and consignments",
+          "Loan and consignment agreements, signed by both sides in bSignX."
+        ]
+      ],
+      "sections": [
+        {
+          "id": "operators",
+          "kicker": "For operators",
+          "title": "Run bGalleryX in your market.",
+          "lede": "Software by The Bitcoin Corporation Ltd. Each market is run by an independent, locally licensed operator.",
+          "cards": [
+            [
+              "Software",
+              "The platform, ready to run",
+              "bGalleryX with bWalletX sign-in, agreements in bSignX and certificates signed by artists and galleries."
+            ],
+            [
+              "Local",
+              "Your licences, your rules",
+              "You hold the licences your market requires and work under your own regulator. We supply the software."
+            ],
+            [
+              "Together",
+              "Setting up",
+              "We set the software up with you and keep it running."
+            ]
+          ],
+          "links": [
+            [
+              "Talk to us",
+              "mailto:support@bwalletx.com?subject=bGalleryX%20operator%20enquiry",
+              "primary"
+            ]
+          ],
+          "note": "No offer of investments is made on this site. Any offer is made only by a licensed operator in its own jurisdiction, under local law."
+        },
+        {
+          "kicker": "Works with",
+          "title": "Built on the family.",
+          "links": [
+            [
+              "bWalletX: the wallet",
+              "https://bwalletx.com/",
+              "ghost"
+            ],
+            [
+              "bSignX: contracts both sides sign",
+              "https://bsignx.com/",
+              "ghost"
+            ],
+            [
+              "bPropertyX: records for property",
+              "https://bpropertyx.com/",
+              "ghost"
+            ]
+          ]
+        }
+      ],
+      "footerLinks": [
+        [
+          "bSignX",
+          "https://bsignx.com/"
+        ],
+        [
+          "bPropertyX",
+          "https://bpropertyx.com/"
+        ]
+      ],
+      "disclaimer": "No offer of investments is made on this site. Any offer is made only by a licensed operator in its own jurisdiction, under local law.",
+      "es": {
+        "ui": {
+          "navHow": "Qué es",
+          "howKicker": "Qué es",
+          "familyLine": "parte de la familia bWalletX",
+          "getWallet": "Obtener bWalletX",
+          "status": "Próximamente"
+        },
+        "tagline": "La procedencia del arte, guardada en Bitcoin",
+        "purpose": "Software para los registros de una obra de arte: procedencia, certificados de autenticidad, informes de estado y acuerdos de préstamo y consignación firmados, en Bitcoin SV con bWalletX.",
+        "eyebrow": "Registros de arte · próximamente",
+        "headline": "Cada obra.<br>Toda su *historia*.",
+        "lede": "bGalleryX está en camino. Guardará la procedencia de una obra, su certificado de autenticidad, sus informes de estado y sus acuerdos firmados en un solo registro permanente, con fecha y hora, en Bitcoin SV. Se abre con bWalletX. Todavía no está disponible.",
+        "ctas": [
+          [
+            "Hable con nosotros",
+            "mailto:support@bwalletx.com?subject=Consulta%20de%20operador%20bGalleryX",
+            "primary"
+          ],
+          [
+            "Para operadores",
+            "#operators",
+            "ghost"
+          ]
+        ],
+        "navLinks": [
+          [
+            "Operadores",
+            "#operators"
+          ]
+        ],
+        "howTitle": "Un registro que acompaña a la obra.",
+        "howLede": "bGalleryX es software de registros para artistas, galerías y coleccionistas; no participa en ventas. Cada certificado queda registrado como un token en Bitcoin SV que representa ese certificado.",
+        "how": [
+          [
+            "Certifíquela",
+            "El artista o la galería firma un certificado de autenticidad con su propia clave de bWalletX."
+          ],
+          [
+            "Sume su historia",
+            "Exposiciones, préstamos, informes de estado y cambios de propietario se agregan a medida que ocurren, cada uno con fecha y hora."
+          ],
+          [
+            "Consérvela",
+            "Quien reciba el registro puede verificar la cadena de procedencia, y nadie puede reescribirla en silencio."
+          ]
+        ],
+        "whyKicker": "Lo que guardará",
+        "whyTitle": "Cuatro registros, una obra.",
+        "why": [
+          [
+            "Procedencia",
+            "Procedencia y propiedad",
+            "El artista, las exposiciones y cada propietario registrado de la obra, en orden."
+          ],
+          [
+            "Certificado",
+            "Certificado de autenticidad",
+            "Firmado por el artista o la galería con su propia clave, para que cualquiera pueda verificar quién lo emitió."
+          ],
+          [
+            "Estado",
+            "Informes de estado",
+            "Informes de conservadores y registradores, con fotografías, fechados y guardados con la obra."
+          ],
+          [
+            "Acuerdos",
+            "Préstamos y consignaciones",
+            "Acuerdos de préstamo y consignación, firmados por ambas partes en bSignX."
+          ]
+        ],
+        "sections": [
+          {
+            "id": "operators",
+            "kicker": "Para operadores",
+            "title": "Opere bGalleryX en su país.",
+            "lede": "Software de The Bitcoin Corporation Ltd. Cada país o región lo opera un operador independiente, con licencia local.",
+            "cards": [
+              [
+                "Software",
+                "La plataforma, lista para operar",
+                "bGalleryX con acceso por bWalletX, acuerdos en bSignX y certificados firmados por artistas y galerías."
+              ],
+              [
+                "Local",
+                "Sus licencias, sus reglas",
+                "Usted obtiene las licencias que exige su país y trabaja bajo su propio regulador. Nosotros ponemos el software."
+              ],
+              [
+                "Juntos",
+                "La puesta en marcha",
+                "Configuramos el software con usted y lo mantenemos funcionando."
+              ]
+            ],
+            "links": [
+              [
+                "Hable con nosotros",
+                "mailto:support@bwalletx.com?subject=Consulta%20de%20operador%20bGalleryX",
+                "primary"
+              ]
+            ],
+            "note": "Este sitio no ofrece inversiones. Cualquier oferta la hace únicamente un operador autorizado en su propia jurisdicción, conforme a la ley local."
+          },
+          {
+            "kicker": "Funciona con",
+            "title": "Construido sobre la familia.",
+            "links": [
+              [
+                "bWalletX: la billetera",
+                "https://bwalletx.com/",
+                "ghost"
+              ],
+              [
+                "bSignX: contratos que firman ambas partes",
+                "https://bsignx.com/",
+                "ghost"
+              ],
+              [
+                "bPropertyX: registros de propiedad",
+                "https://bpropertyx.com/es",
+                "ghost"
+              ]
+            ]
+          }
+        ],
+        "footerLinks": [
+          [
+            "bSignX",
+            "https://bsignx.com/"
+          ],
+          [
+            "bPropertyX",
+            "https://bpropertyx.com/es"
+          ]
+        ],
+        "disclaimer": "Este sitio no ofrece inversiones. Cualquier oferta la hace únicamente un operador autorizado en su propia jurisdicción, conforme a la ley local.",
+        "legal": "The Bitcoin Corporation Ltd, sociedad n.º 16735102."
+      },
+      "ogImage": "og-bgalleryx-v1.png"
     }
   ]
 }

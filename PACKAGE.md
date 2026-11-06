@@ -30,6 +30,11 @@ For a richer page, edit the site's entry in `sites.config.json`, then run `pnpm 
 - `sections`, each with `{ id, kicker, title, lede, cards, prices, links, note }`;
 - `footerLinks`, `legal`;
 - `ogLine`, `ogAction`, `ogHeadline`.
+- `ui` (`navHow`, `howKicker`, `familyLine`, `getWallet`, `status`) to relabel the fixed template words;
+- `disclaimer`: a line shown in the footer (and styled as a disclaimer when a section's `note` is the same text);
+- `es`: a Spanish page. Same fields as the site (overrides plus `ui`), built to `es.html` and served at `/es`, with hreflang links and an Español/English switch.
+
+bpropertyx.com and bgalleryx.com are the worked examples for `ui`, `disclaimer` and `es`.
 
 bmarketingx.com and bwebx.com are worked examples.
 
